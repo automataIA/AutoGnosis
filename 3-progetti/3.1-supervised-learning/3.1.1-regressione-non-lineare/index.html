@@ -9,21 +9,21 @@
     <meta name="author" content="Sören Weber">
     <title>3.1.1 Regressione non-lineare  -  Data Science &amp; Co.</title>
     <link href="../../../3-progetti/3.1-supervised-learning/3.1.1-regressione-non-lineare/index.xml" rel="alternate" type="application/rss+xml" title="3.1.1 Regressione non-lineare  -  Data Science &amp; Co.">
-    <link href="../../../images/favicon.svg?1673793906" rel="icon" type="image/svg+xml">
+    <link href="../../../images/favicon.svg?1673801494" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../../../css/fontawesome-all.min.css?1673793906" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1673793906" rel="stylesheet"></noscript>
-    <link href="../../../css/featherlight.min.css?1673793906" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/featherlight.min.css?1673793906" rel="stylesheet"></noscript>
-    <link href="../../../css/auto-complete.css?1673793906" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1673793906" rel="stylesheet"></noscript>
-    <link href="../../../css/perfect-scrollbar.min.css?1673793906" rel="stylesheet">
-    <link href="../../../css/nucleus.css?1673793906" rel="stylesheet">
-    <link href="../../../css/fonts.css?1673793906" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1673793906" rel="stylesheet"></noscript>
-    <link href="../../../css/theme.css?1673793906" rel="stylesheet">
-    <link href="../../../css/theme-relearn-light.css?1673793906" rel="stylesheet" id="variant-style">
-    <link href="../../../css/ie.css?1673793906" rel="stylesheet">
-    <link href="../../../css/variant.css?1673793906" rel="stylesheet">
-    <link href="../../../css/print.css?1673793906" rel="stylesheet" media="print">
-    <script src="../../../js/url.js?1673793906"></script>
-    <script src="../../../js/variant.js?1673793906"></script>
+    <link href="../../../css/fontawesome-all.min.css?1673801494" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1673801494" rel="stylesheet"></noscript>
+    <link href="../../../css/featherlight.min.css?1673801494" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/featherlight.min.css?1673801494" rel="stylesheet"></noscript>
+    <link href="../../../css/auto-complete.css?1673801494" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1673801494" rel="stylesheet"></noscript>
+    <link href="../../../css/perfect-scrollbar.min.css?1673801494" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1673801494" rel="stylesheet">
+    <link href="../../../css/fonts.css?1673801494" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1673801494" rel="stylesheet"></noscript>
+    <link href="../../../css/theme.css?1673801494" rel="stylesheet">
+    <link href="../../../css/theme-relearn-light.css?1673801494" rel="stylesheet" id="variant-style">
+    <link href="../../../css/ie.css?1673801494" rel="stylesheet">
+    <link href="../../../css/variant.css?1673801494" rel="stylesheet">
+    <link href="../../../css/print.css?1673801494" rel="stylesheet" media="print">
+    <script src="../../../js/url.js?1673801494"></script>
+    <script src="../../../js/variant.js?1673801494"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/example.com/';
       window.variants && variants.init( [ 'relearn-light' ] );
     </script>
-    <script src="../../../js/jquery.min.js?1673793906" defer></script>
+    <script src="../../../js/jquery.min.js?1673801494" defer></script>
     <style>
       #body img.bg-white {
         background-color: white;
@@ -125,537 +125,10 @@
 <h1 id="3.1.1-regressione-non-lineare">3.1.1 Regressione non-lineare</h1>
 
 <h2 id="1--introduzione-al-problema">1.  Introduzione al problema:</h2>
-<h4 id="presentazione-del-problema-della-previsione-del-fornitura-energetica-necessaria-e-motivazione-per-lo-studio">Presentazione del problema della previsione del fornitura energetica necessaria e motivazione per lo studio</h4>
-<p>
-
-<style>
-      div.splitbox {width:100%; overflow:auto;}
-
-      div.splitbox div.left {
-                    width:48%;
-                    float:left;}
-      div.splitbox div.right {
-                    width:48%;
-                    float:right;}
-
-      @media only screen and (max-width: 600px) {
-      div.splitbox div.left {
-                    width:100%;
-                    float:left;}
-      div.splitbox div.right {
-                    width:100%;
-                    float:left;}
-      }
-  </style><div class="splitbox"><div class="left">
-
-
-<a href="https://images.unsplash.com/photo-1587168173357-99c7e95fb5cd?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1075&amp;q=80" data-featherlight="image">
-<img src="https://images.unsplash.com/photo-1587168173357-99c7e95fb5cd?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1075&amp;q=80" alt="" style="height: auto; width: auto;" loading="lazy">
-</a>
-
-
-</div><div class="right">
-
-La previsione della fornitura energetica necessaria è un problema importante in ambito economico e ambientale. Conoscere il fornitura energetica futura permette di adattare la produzione e la distribuzione di energia alle esigenze della domanda, riducendo gli sprechi e i costi. Inoltre, è anche un importante strumento per la pianificazione e la gestione dell&rsquo;energia rinnovabile, che spesso dipende dalle condizioni meteorologiche.</p>
-<p>La previsione della fornitura energetica necessaria può essere effettuata utilizzando diverse tecniche statistiche e di machine learning. In questo studio, utilizzeremo un modello di regressione non-lineare per prevedere il fornitura energetica in base ai dati sul fornitura energetica passato e sul clima. La motivazione per questo studio è quella di fornire una soluzione pratica e affidabile per la previsione della fornitura energetica e aiutare a ridurre i costi e le emissioni di CO2.</p>
-<p>La motivazione tecnica è quella di fare un progetto tipo facilmente comprensibili che si presti al modello studiato.
-
-
-</div><div style="clear:both"></div></div>
-</p>
+<h4 id="presentazione">Presentazione</h4>
 <h2 id="2--recupero-e-pulizia-dei-dati">2.  Recupero e pulizia dei dati</h2>
-<h4 id="gestione-pulizia-e-pre-elaborazione-dei-datifornitura-energetica-e-informazioni-climatiche">Gestione, pulizia e pre-elaborazione dei dati(fornitura energetica e informazioni climatiche)</h4>
-<p>Il sito in cui sono stati recuperati i dati e quello dell&rsquo;<a href="https://ec.europa.eu/eurostat/databrowser/view/NRG_105M/default/table?lang=en&amp;category=nrg.nrg_quant.nrg_quantm_h.nrg_10m" target="_blank">eurostat</a></p>
+<h4 id="gestione">Gestione</h4>
 <h5 id="21-acquisizione-dei-dati">2.1 Acquisizione dei dati</h5>
-<p>Gli ultimi dati disponibili sono quelli da marzo a dicembre, con alcuni dati mancanti.</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>3</th>
-<th>4</th>
-<th>5</th>
-<th>6</th>
-<th>7</th>
-<th>8</th>
-<th>9</th>
-<th>10</th>
-<th>11</th>
-<th>12</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Belgium</td>
-<td>7.134,404</td>
-<td>6.764,483</td>
-<td>6.681,769</td>
-<td>6.386,188</td>
-<td>7.029,440</td>
-<td>7.840,020</td>
-<td>7.962,518</td>
-<td>7.693,224</td>
-<td>7.729,240</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Bulgaria</td>
-<td>3.623,000</td>
-<td>3.312,000</td>
-<td>2.744,000</td>
-<td>2.815,000</td>
-<td>3.255,000</td>
-<td>3.338,000</td>
-<td>2.991,000</td>
-<td>3.053,000</td>
-<td>3.443,000</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Czechia</td>
-<td>7.003,494</td>
-<td>6.421,639</td>
-<td>6.686,206</td>
-<td>5.724,968</td>
-<td>5.318,586</td>
-<td>6.056,207</td>
-<td>6.523,779</td>
-<td>7.483,805</td>
-<td>7.321,290</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Denmark</td>
-<td>3.245,666</td>
-<td>2.099,411</td>
-<td>2.290,995</td>
-<td>1.452,497</td>
-<td>1.624,629</td>
-<td>1.446,866</td>
-<td>2.035,934</td>
-<td>2.217,429</td>
-<td>2.523,456</td>
-<td>3.258,943</td>
-</tr>
-<tr>
-<td>Germany</td>
-<td>50.476,809</td>
-<td>44.398,747</td>
-<td>42.048,426</td>
-<td>38.686,913</td>
-<td>41.374,756</td>
-<td>39.820,136</td>
-<td>41.090,173</td>
-<td>46.770,959</td>
-<td>47.122,985</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Estonia</td>
-<td>677,000</td>
-<td>598,800</td>
-<td>490,879</td>
-<td>312,366</td>
-<td>306,400</td>
-<td>402,000</td>
-<td>467,500</td>
-<td>429,358</td>
-<td>:</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Ireland</td>
-<td>2.471,024</td>
-<td>2.404,442</td>
-<td>2.345,015</td>
-<td>2.278,174</td>
-<td>2.144,354</td>
-<td>2.169,343</td>
-<td>2.183,806</td>
-<td>2.444,701</td>
-<td>2.718,690</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Greece</td>
-<td>3.586,778</td>
-<td>3.341,144</td>
-<td>3.277,474</td>
-<td>4.100,861</td>
-<td>4.616,283</td>
-<td>4.912,981</td>
-<td>3.973,396</td>
-<td>3.690,766</td>
-<td>3.311,091</td>
-<td>3.790,690</td>
-</tr>
-<tr>
-<td>Spain</td>
-<td>20.870,737</td>
-<td>19.802,021</td>
-<td>20.591,890</td>
-<td>21.190,145</td>
-<td>23.635,009</td>
-<td>22.456,021</td>
-<td>21.372,516</td>
-<td>21.031,028</td>
-<td>22.616,251</td>
-<td>22.320,241</td>
-</tr>
-<tr>
-<td>France</td>
-<td>51.182,635</td>
-<td>43.016,277</td>
-<td>43.951,229</td>
-<td>40.505,660</td>
-<td>40.806,332</td>
-<td>37.931,529</td>
-<td>38.044,707</td>
-<td>41.589,722</td>
-<td>46.637,413</td>
-<td>51.887,146</td>
-</tr>
-<tr>
-<td>Croatia</td>
-<td>844,015</td>
-<td>836,340</td>
-<td>1.066,014</td>
-<td>901,879</td>
-<td>822,734</td>
-<td>852,188</td>
-<td>742,062</td>
-<td>928,886</td>
-<td>1.483,630</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Italy</td>
-<td>22.866,000</td>
-<td>21.741,000</td>
-<td>22.318,000</td>
-<td>24.542,000</td>
-<td>27.814,000</td>
-<td>24.344,000</td>
-<td>23.954,000</td>
-<td>22.919,000</td>
-<td>22.887,000</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Cyprus</td>
-<td>352,777</td>
-<td>314,170</td>
-<td>361,543</td>
-<td>439,070</td>
-<td>534,950</td>
-<td>538,291</td>
-<td>459,010</td>
-<td>380,076</td>
-<td>325,563</td>
-<td>371,284</td>
-</tr>
-<tr>
-<td>Latvia</td>
-<td>686,000</td>
-<td>499,000</td>
-<td>421,000</td>
-<td>407,000</td>
-<td>357,000</td>
-<td>525,000</td>
-<td>553,000</td>
-<td>514,000</td>
-<td>586,000</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Lithuania</td>
-<td>356,590</td>
-<td>287,344</td>
-<td>273,278</td>
-<td>278,807</td>
-<td>290,612</td>
-<td>260,100</td>
-<td>327,800</td>
-<td>321,700</td>
-<td>283,113</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Luxembourg</td>
-<td>199,934</td>
-<td>130,499</td>
-<td>127,139</td>
-<td>127,077</td>
-<td>119,827</td>
-<td>125,017</td>
-<td>121,973</td>
-<td>163,969</td>
-<td>:</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Hungary</td>
-<td>2.401,074</td>
-<td>2.503,952</td>
-<td>2.261,409</td>
-<td>2.399,541</td>
-<td>2.863,443</td>
-<td>2.649,736</td>
-<td>2.599,982</td>
-<td>3.108,019</td>
-<td>:</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Malta</td>
-<td>140,250</td>
-<td>144,109</td>
-<td>163,286</td>
-<td>187,154</td>
-<td>195,848</td>
-<td>213,884</td>
-<td>168,666</td>
-<td>163,857</td>
-<td>135,767</td>
-<td>164,619</td>
-</tr>
-<tr>
-<td>Netherlands</td>
-<td>10.630,140</td>
-<td>8.643,905</td>
-<td>9.346,703</td>
-<td>7.964,809</td>
-<td>8.993,784</td>
-<td>8.825,334</td>
-<td>8.924,673</td>
-<td>10.753,713</td>
-<td>10.762,508</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Austria</td>
-<td>6.053,560</td>
-<td>6.275,728</td>
-<td>6.260,935</td>
-<td>6.573,525</td>
-<td>5.829,360</td>
-<td>5.541,063</td>
-<td>5.261,288</td>
-<td>5.377,409</td>
-<td>5.989,263</td>
-<td>5.699,986</td>
-</tr>
-<tr>
-<td>Poland</td>
-<td>12.855,136</td>
-<td>11.830,078</td>
-<td>12.023,635</td>
-<td>11.662,228</td>
-<td>11.913,081</td>
-<td>11.947,111</td>
-<td>11.652,706</td>
-<td>:</td>
-<td>:</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Portugal</td>
-<td>3.764,000</td>
-<td>4.092,000</td>
-<td>4.057,928</td>
-<td>3.901,036</td>
-<td>4.421,429</td>
-<td>3.789,269</td>
-<td>3.871,832</td>
-<td>4.186,867</td>
-<td>:</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Romania</td>
-<td>4.808,000</td>
-<td>4.462,000</td>
-<td>4.665,000</td>
-<td>4.789,000</td>
-<td>4.402,000</td>
-<td>4.057,000</td>
-<td>3.702,000</td>
-<td>4.079,000</td>
-<td>4.478,000</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Slovenia</td>
-<td>1.162,474</td>
-<td>1.210,422</td>
-<td>1.396,394</td>
-<td>1.423,947</td>
-<td>1.345,783</td>
-<td>1.146,862</td>
-<td>1.024,855</td>
-<td>819,900</td>
-<td>1.530,204</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Slovakia</td>
-<td>2.480,000</td>
-<td>2.007,000</td>
-<td>2.292,000</td>
-<td>2.006,000</td>
-<td>2.030,000</td>
-<td>2.134,000</td>
-<td>1.885,000</td>
-<td>2.136,000</td>
-<td>2.233,000</td>
-<td>2.277,000</td>
-</tr>
-<tr>
-<td>Finland</td>
-<td>6.483,000</td>
-<td>5.600,000</td>
-<td>5.182,000</td>
-<td>4.674,000</td>
-<td>4.668,000</td>
-<td>4.258,000</td>
-<td>4.361,000</td>
-<td>5.541,000</td>
-<td>5.817,089</td>
-<td>6.385,000</td>
-</tr>
-<tr>
-<td>Sweden</td>
-<td>15.659,019</td>
-<td>13.323,140</td>
-<td>12.752,704</td>
-<td>12.834,187</td>
-<td>11.923,827</td>
-<td>10.806,646</td>
-<td>11.356,481</td>
-<td>13.923,566</td>
-<td>14.855,982</td>
-<td>15.914,402</td>
-</tr>
-<tr>
-<td>Norway</td>
-<td>11.304,994</td>
-<td>9.995,470</td>
-<td>9.810,046</td>
-<td>9.469,545</td>
-<td>9.790,416</td>
-<td>10.101,799</td>
-<td>10.949,275</td>
-<td>11.525,717</td>
-<td>12.867,058</td>
-<td>12.368,488</td>
-</tr>
-<tr>
-<td>United Kingdom</td>
-<td>26.744,043</td>
-<td>25.302,781</td>
-<td>23.933,727</td>
-<td>22.849,012</td>
-<td>23.751,389</td>
-<td>23.175,059</td>
-<td>23.592,318</td>
-<td>26.948,637</td>
-<td>:</td>
-<td>:</td>
-</tr>
-<tr>
-<td>North   Macedonia</td>
-<td>436,952</td>
-<td>379,239</td>
-<td>382,294</td>
-<td>435,838</td>
-<td>499,527</td>
-<td>531,761</td>
-<td>463,812</td>
-<td>364,020</td>
-<td>388,100</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Albania</td>
-<td>342,720</td>
-<td>320,069</td>
-<td>520,692</td>
-<td>443,934</td>
-<td>457,805</td>
-<td>477,790</td>
-<td>258,513</td>
-<td>263,104</td>
-<td>433,041</td>
-<td>773,454</td>
-</tr>
-<tr>
-<td>Serbia</td>
-<td>3.834,576</td>
-<td>2.888,114</td>
-<td>2.804,494</td>
-<td>2.664,969</td>
-<td>2.512,631</td>
-<td>2.573,287</td>
-<td>2.337,593</td>
-<td>2.596,618</td>
-<td>:</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Türkiye</td>
-<td>23.563,662</td>
-<td>22.710,045</td>
-<td>23.892,818</td>
-<td>23.190,481</td>
-<td>27.334,784</td>
-<td>26.295,555</td>
-<td>24.029,956</td>
-<td>22.763,409</td>
-<td>22.556,841</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Bosnia-Herzegovina</td>
-<td>1.349,648</td>
-<td>1.042,980</td>
-<td>1.220,749</td>
-<td>1.262,396</td>
-<td>1.344,049</td>
-<td>1.374,492</td>
-<td>1.169,254</td>
-<td>:</td>
-<td>:</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Ukraine</td>
-<td>13.977,500</td>
-<td>12.161,000</td>
-<td>11.765,600</td>
-<td>11.401,100</td>
-<td>11.256,500</td>
-<td>11.294,700</td>
-<td>10.912,200</td>
-<td>12.144,700</td>
-<td>12.870,500</td>
-<td>:</td>
-</tr>
-<tr>
-<td>Georgia</td>
-<td>946,814</td>
-<td>948,255</td>
-<td>1.142,677</td>
-<td>1.184,680</td>
-<td>1.043,248</td>
-<td>1.004,532</td>
-<td>804,760</td>
-<td>783,087</td>
-<td>887,644</td>
-<td>:</td>
-</tr>
-</tbody>
-</table>
-<h5 id="22-gestione-dati-mancanti">2.2 Gestione dati Mancanti</h5>
 <h2 id="3--analisi-dei-dati">3.  Analisi dei dati</h2>
 <h4 id="visualizzazione-e-analisi-dei-dati-per-individuare-eventuali-relazioni-e-tendenze">Visualizzazione e Analisi dei dati per individuare eventuali relazioni e tendenze</h4>
 <h2 id="4--costruzione-del-modello-di-regressione-non-lineare">4.  Costruzione del modello di regressione non-lineare:</h2>
@@ -760,12 +233,12 @@ La previsione della fornitura energetica necessaria è un problema importante in
         <script>
           var contentLangs=['it'];
         </script>
-        <script src="../../../js/auto-complete.js?1673793908" defer></script>
-        <script src="../../../js/lunr/lunr.min.js?1673793908" defer></script>
-        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1673793908" defer></script>
-        <script src="../../../js/lunr/lunr.multi.min.js?1673793908" defer></script>
-        <script src="../../../js/lunr/lunr.it.min.js?1673793908" defer></script>
-        <script src="../../../js/search.js?1673793908" defer></script>
+        <script src="../../../js/auto-complete.js?1673801496" defer></script>
+        <script src="../../../js/lunr/lunr.min.js?1673801496" defer></script>
+        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1673801496" defer></script>
+        <script src="../../../js/lunr/lunr.multi.min.js?1673801496" defer></script>
+        <script src="../../../js/lunr/lunr.it.min.js?1673801496" defer></script>
+        <script src="../../../js/search.js?1673801496" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -908,9 +381,9 @@ La previsione della fornitura energetica necessaria è un problema importante in
         </div>
       </div>
     </aside>
-    <script src="../../../js/clipboard.min.js?1673793908" defer></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1673793908" defer></script>
-    <script src="../../../js/featherlight.min.js?1673793908" defer></script>
-    <script src="../../../js/theme.js?1673793908" defer></script>
+    <script src="../../../js/clipboard.min.js?1673801496" defer></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1673801496" defer></script>
+    <script src="../../../js/featherlight.min.js?1673801496" defer></script>
+    <script src="../../../js/theme.js?1673801496" defer></script>
   </body>
 </html>

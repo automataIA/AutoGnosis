@@ -12,7 +12,7 @@
       <link>https://example.com/3-progetti/3.1-supervised-learning/3.1.1-regressione-non-lineare/index.html</link>
       <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
       <guid>https://example.com/3-progetti/3.1-supervised-learning/3.1.1-regressione-non-lineare/index.html</guid>
-      <description>1. Introduzione al problema: Presentazione del problema della previsione del fornitura energetica necessaria e motivazione per lo studio La previsione della fornitura energetica necessaria è un problema importante in ambito economico e ambientale. Conoscere il fornitura energetica futura permette di adattare la produzione e la distribuzione di energia alle esigenze della domanda, riducendo gli sprechi e i costi. Inoltre, è anche un importante strumento per la pianificazione e la gestione dell&amp;rsquo;energia rinnovabile, che spesso dipende dalle condizioni meteorologiche.</description>
+      <description>1. Introduzione al problema: Presentazione 2. Recupero e pulizia dei dati Gestione 2.1 Acquisizione dei dati 3. Analisi dei dati Visualizzazione e Analisi dei dati per individuare eventuali relazioni e tendenze 4. Costruzione del modello di regressione non-lineare: Processo di costruzione del modello, scelta variabili indipendenti e dipendenti, tuning parametri 5. Valutazione del modello Utilizzo di diverse misure di performance per valutare la qualità del modello costruito 6. Utilizzo del modello Modello finale e sue applicazioni pratiche per la previsione della fornitura energetica necessaria.</description>
     </item>
     <item>
       <title>3.1.2 Classificatore CNN</title>
