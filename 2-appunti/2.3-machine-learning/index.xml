@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2.3 Machine learning  on Data Science &amp; Co.</title>
+    <link>https://example.com/2-appunti/2.3-machine-learning/index.html</link>
+    <description>Recent content in 2.3 Machine learning  on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/2-appunti/2.3-machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3.1 Introduzione al machine learning </title>
+      <link>https://example.com/2-appunti/2.3-machine-learning/2.3.1-introduzione-al-machine-learning/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.3-machine-learning/2.3.1-introduzione-al-machine-learning/index.html</guid>
+      <description>L&amp;rsquo;apprendimento automatico, conosciuto anche come machine learning, è una branca dell&amp;rsquo;intelligenza artificiale che si occupa di sviluppare algoritmi in grado di imparare dai dati. A differenza dell&amp;rsquo;apprendimento supervisionato, dove vengono forniti sia gli input che le etichette di output, nell&amp;rsquo;apprendimento non supervisionato l&amp;rsquo;algoritmo deve scoprire da solo le regole presenti nei dati. Un altro tipo di apprendimento automatico è l&amp;rsquo;apprendimento per rinforzo, dove un&amp;rsquo;agente interagisce con l&amp;rsquo;ambiente ricevendo ricompense o punizioni in base alle sue azioni.</description>
+    </item>
+    <item>
+      <title>3.2 Tipi di apprendimento automatico </title>
+      <link>https://example.com/2-appunti/2.3-machine-learning/2.3.2-tipi-di-apprendimento-automatico/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.3-machine-learning/2.3.2-tipi-di-apprendimento-automatico/index.html</guid>
+      <description>I tipi di apprendimento automatico sono una delle aree più interessanti e in rapida crescita dell&amp;rsquo;intelligenza artificiale. Esistono diverse categorie di apprendimento automatico, ognuna delle quali viene utilizzata in modo leggermente diverso per risolvere problemi specifici. Di seguito sono elencati alcuni dei tipi più comuni di apprendimento automatico:
+Apprendimento supervisionato: questo tipo di apprendimento richiede che il modello sia addestrato su un set di dati etichettati, in cui ogni esempio ha una label associata che indica l&amp;rsquo;output corretto.</description>
+    </item>
+    <item>
+      <title>3.3 Algoritmi di regressione </title>
+      <link>https://example.com/2-appunti/2.3-machine-learning/2.3.3-algoritmi-di-regressione/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.3-machine-learning/2.3.3-algoritmi-di-regressione/index.html</guid>
+      <description>Gli algoritmi di regressione ML sono una parte importante dell&amp;rsquo;apprendimento automatico, poiché consentono di prevedere una variabile continua in base alle caratteristiche di un insieme di dati. Ci sono diverse tipologie di algoritmi di regressione ML, ciascuno con i suoi vantaggi e svantaggi. Ecco una panoramica delle principali opzioni disponibili:
+Regressione lineare: questo tipo di algoritmo è utilizzato per modellare la relazione tra due variabili, dove una viene utilizzata per prevedere l&amp;rsquo;altra.</description>
+    </item>
+    <item>
+      <title>3.4 Algoritmi di classificazione </title>
+      <link>https://example.com/2-appunti/2.3-machine-learning/2.3.4-algoritmi-di-classificazione/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.3-machine-learning/2.3.4-algoritmi-di-classificazione/index.html</guid>
+      <description>Gli algoritmi di classificazione sono una famiglia di metodi di machine learning utilizzati per assegnare una categoria ad un dato elemento, in base a una serie di caratteristiche prese in considerazione. Un esempio di utilizzo di questi algoritmi è la previsione del rischio di default di un prestito in base a una serie di informazioni relative al debitore, come il reddito, l&amp;rsquo;età e il numero di prestiti già in corso.</description>
+    </item>
+    <item>
+      <title>3.5 Algoritmi di clustering </title>
+      <link>https://example.com/2-appunti/2.3-machine-learning/2.3.5-algoritmi-di-clustering/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.3-machine-learning/2.3.5-algoritmi-di-clustering/index.html</guid>
+      <description>Gli algoritmi di clustering sono una classe di algoritmi di machine learning utilizzati per raggruppare osservazioni simili in &amp;ldquo;cluster&amp;rdquo;. Questi algoritmi sono ampiamente utilizzati in diverse applicazioni, come la segmentazione del mercato, la scoperta di gruppi di prodotti correlati e la classificazione di documenti.
+I metodi di clustering più comunemente utilizzati sono l&amp;rsquo;algoritmo k-means e l&amp;rsquo;algoritmo hierarchical clustering. L&amp;rsquo;algoritmo k-means funziona dividendo il dataset in k cluster predefiniti, mentre l&amp;rsquo;algoritmo di clustering gerarchico crea una gerarchia di cluster a partire da una matrice di distanze tra le osservazioni.</description>
+    </item>
+    <item>
+      <title>3.6 Valutazione e ottimizzazione dei modelli di machine learning </title>
+      <link>https://example.com/2-appunti/2.3-machine-learning/2.3.6-valutazione-e-ottimizzazione-dei-modelli-di-machine-learning/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.3-machine-learning/2.3.6-valutazione-e-ottimizzazione-dei-modelli-di-machine-learning/index.html</guid>
+      <description>La valutazione e ottimizzazione dei modelli di machine learning sono due aspetti cruciali nella progettazione e nell&amp;rsquo;applicazione di qualsiasi sistema di apprendimento automatico. La valutazione dei modelli serve a determinare quanto accuratamente essi sono in grado di prevedere l&amp;rsquo;output desiderato su dati di test, mentre l&amp;rsquo;ottimizzazione mira a migliorare le prestazioni del modello sui dati di training.
+Metriche di valutazione come l&amp;rsquo;accuratezza, il recall e l&amp;rsquo;AUC (area sotto la curva) sono spesso utilizzate per misurare le prestazioni di un modello di machine learning.</description>
+    </item>
+  </channel>
+</rss>

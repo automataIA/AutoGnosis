@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2.6 Reinforcement learning  on Data Science &amp; Co.</title>
+    <link>https://example.com/2-appunti/2.6-reinforcement-learning/index.html</link>
+    <description>Recent content in 2.6 Reinforcement learning  on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/2-appunti/2.6-reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.6.1 Ambienti di reinforcement learning </title>
+      <link>https://example.com/2-appunti/2.6-reinforcement-learning/2.6.1-ambienti-di-reinforcement-learning/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.6-reinforcement-learning/2.6.1-ambienti-di-reinforcement-learning/index.html</guid>
+      <description>Ambienti di reinforcement learning (RL) sono una componente cruciale per lo sviluppo di agenti autonomi in grado di apprendere da sé e di prendere decisioni efficaci in una vasta gamma di applicazioni, dalla robotica al gioco d&amp;rsquo;azzardo alla finanza.
+Ambiente è il termine utilizzato per descrivere l&amp;rsquo;insieme di tutti gli stati e le azioni disponibili per l&amp;rsquo;agente, nonché le conseguenze associate a ogni azione. In generale, gli ambienti RL possono essere suddivisi in due categorie principali: deterministici e stocastici.</description>
+    </item>
+    <item>
+      <title>2.6.2 Algoritmi di ricompensa positiva </title>
+      <link>https://example.com/2-appunti/2.6-reinforcement-learning/2.6.2-algoritmi-di-ricompensa-positiva/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.6-reinforcement-learning/2.6.2-algoritmi-di-ricompensa-positiva/index.html</guid>
+      <description>Gli algoritmi di ricompensa positiva sono una classe di algoritmi di apprendimento automatico utilizzati per addestrare agenti intelligenti ad agire in un ambiente per raggiungere determinati obiettivi. Il funzionamento di base degli algoritmi di ricompensa positiva consiste nel premiare l&amp;rsquo;agente quando compie azioni che portano all&amp;rsquo;obiettivo desiderato, e punirlo quando compie azioni che lo allontanano dall&amp;rsquo;obiettivo.
+Algoritmi Q-Learning sono un esempio di algoritmi di ricompensa positiva che utilizzano una tabella Q per tener traccia della ricompensa prevista per ogni possibile stato-azione dell&amp;rsquo;ambiente.</description>
+    </item>
+    <item>
+      <title>2.6.3 Algoritmi di ricompensa negativa </title>
+      <link>https://example.com/2-appunti/2.6-reinforcement-learning/2.6.3-algoritmi-di-ricompensa-negativa/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.6-reinforcement-learning/2.6.3-algoritmi-di-ricompensa-negativa/index.html</guid>
+      <description>Gli algoritmi di ricompensa negativa sono metodi utilizzati in intelligenza artificiale e apprendimento automatico per educare un agente a evitare determinate azioni o stati indesiderati. Essi funzionano introducendo una penalità per azioni che l&amp;rsquo;agente non dovrebbe compiere, al fine di incoraggiarlo a evitarle.
+Una forma comune di ricompensa negativa è la punizione, che consiste nell&amp;rsquo;aggiungere una quantità negativa alla funzione di ricompensa ogni volta che l&amp;rsquo;agente compie un&amp;rsquo;azione indesiderata. Ciò può essere formalizzato come $R = R_0 - C$, dove $R$ è la funzione di ricompensa finale, $R_0$ è la funzione di ricompensa iniziale e $C$ è una costante che rappresenta la penalità per l&amp;rsquo;azione indesiderata.</description>
+    </item>
+    <item>
+      <title>2.6.4 Esempi di applicazione del reinforcement learning </title>
+      <link>https://example.com/2-appunti/2.6-reinforcement-learning/2.6.4-esempi-di-applicazione-del-reinforcement-learning/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.6-reinforcement-learning/2.6.4-esempi-di-applicazione-del-reinforcement-learning/index.html</guid>
+      <description>Il Reinforcement Learning (RL) è una sottocategoria dell&amp;rsquo;apprendimento automatico che si concentra su come un agente deve agire in un ambiente per massimizzare una ricompensa a lungo termine. RL è stato utilizzato con successo in una varietà di applicazioni, dai giochi di intelligenza artificiale alle reti di controllo industriale.
+Giochi di intelligenza artificiale : Uno dei primi successi notevoli di RL è stato il gioco di scacchi. Un agente RL è stato addestrato per giocare a scacchi utilizzando una combinazione di apprendimento per tentativi ed errori e apprendimento per imitazione.</description>
+    </item>
+  </channel>
+</rss>

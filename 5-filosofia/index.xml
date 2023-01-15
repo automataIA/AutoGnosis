@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>5  -  Φιλοσοφία on Data Science &amp; Co.</title>
+    <link>https://example.com/5-filosofia/index.html</link>
+    <description>Recent content in 5  -  Φιλοσοφία on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/5-filosofia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5.1 Platone</title>
+      <link>https://example.com/5-filosofia/5.1-platone/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
+      <guid>https://example.com/5-filosofia/5.1-platone/index.html</guid>
+      <description>ggfhhfghyjg </description>
+    </item>
+    <item>
+      <title>5.2 Aristotele</title>
+      <link>https://example.com/5-filosofia/5.2-aristotele/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:26:48 +0100</pubDate>
+      <guid>https://example.com/5-filosofia/5.2-aristotele/index.html</guid>
+      <description>asdasdasd </description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2.2 Matematica on Data Science &amp; Co.</title>
+    <link>https://example.com/2-appunti/2.2-matematica/index.html</link>
+    <description>Recent content in 2.2 Matematica on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/2-appunti/2.2-matematica/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.2.1 Algebra </title>
+      <link>https://example.com/2-appunti/2.2-matematica/2.2.1-algebra/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.2-matematica/2.2.1-algebra/index.html</guid>
+      <description>Algebra è una parola di origine araba che significa &amp;ldquo;reinserimento&amp;rdquo; o &amp;ldquo;riunione di parti&amp;rdquo;. La parola fu introdotta in Europa durante il periodo medievale, Algebra è una parola di origine araba che significa &amp;ldquo;reinserimento&amp;rdquo; o &amp;ldquo;riunione di parti&amp;rdquo;. La parola fu introdotta in Europa durante il periodo medievale, quando gli scienziati arabi iniziarono a tradurre i loro testi in latino.
+L&amp;rsquo;algebra è una branca della matematica che si occupa delle relazioni tra numeri e delle loro proprietà.</description>
+    </item>
+    <item>
+      <title>2.2.1 Probabilità e statistica </title>
+      <link>https://example.com/2-appunti/2.2-matematica/2.2.2-probabilit%C3%A0-e-statistica/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.2-matematica/2.2.2-probabilit%C3%A0-e-statistica/index.html</guid>
+      <description>La probabilità e la statistica sono due discipline matematiche che hanno lo scopo di studiare come le cose accadono in modo casuale o incerto.
+La parola &amp;ldquo;statistica&amp;rdquo; deriva dal termine latino &amp;ldquo;status&amp;rdquo;, che significa &amp;ldquo;stato&amp;rdquo; o &amp;ldquo;condizione&amp;rdquo;. La statistica è stata originariamente utilizzata per raccogliere e analizzare i dati sullo stato e le condizioni di una società o di una popolazione, come ad esempio le informazioni demografiche o le statistiche economiche.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2.5 NLP (Natural Language Processing)  on Data Science &amp; Co.</title>
+    <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/index.html</link>
+    <description>Recent content in 2.5 NLP (Natural Language Processing)  on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/2-appunti/2.5-nlp-natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.5.1 Introduzione al NLP </title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/index.html</guid>
+      <description>Il Natural Language Processing (NLP) è una branca dell&amp;rsquo;Intelligenza Artificiale che si occupa di elaborare e analizzare il linguaggio naturale. Il NLP si basa su tecniche di elaborazione del linguaggio, di analisi semantica e di apprendimento automatico, per permettere alle macchine di comprendere e generare il linguaggio umano.
+Il NLP è un campo in continua evoluzione e comprende diverse sottodiscipline come la comprensione del linguaggio, la generazione del linguaggio, la traduzione automatica e l&amp;rsquo;elaborazione di testo.</description>
+    </item>
+    <item>
+      <title>2.5.2 Linguaggio naturale e conversione in dati</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.2-linguaggio-naturale-e-conversione-in-dati/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.2-linguaggio-naturale-e-conversione-in-dati/index.html</guid>
+      <description> 2.5.2.1 Struttura linguaggio naturale: Parole, frasi, parole chiave e significato del testo 2.5.2.2 Tokenizzazione del testo: Processo di suddivisione del testo in parole e frasi 2.5.2.3 Stemming e lemmatizzazione: Processi per ridurre le parole ai loro lemmi o radici 2.5.2.4 Creazione features dal testo: Processo di trasformazione del testo in un formato utilizzabile per l’elaborazione dei dati </description>
+    </item>
+    <item>
+      <title>2.5.3 Classificazione del testo</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/index.html</guid>
+      <description>La classificazione del testo NLP (Natural Language Processing) è una sottocategoria dell&amp;rsquo;elaborazione del linguaggio naturale che si occupa di assegnare una determinata etichetta o categoria ad un dato testo in base al suo contenuto. Questa tecnologia è utilizzata in molte applicazioni, come ad esempio la classificazione automatica di email in base alla loro importanza, la classificazione di recensioni di prodotti in base al sentimento espresso e la classificazione di notizie in base alla loro categoria tematica.</description>
+    </item>
+    <item>
+      <title>2.5.4 Analisi del sentimento</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/index.html</guid>
+      <description>L&amp;rsquo;analisi del sentimento è un&amp;rsquo;area di ricerca interdisciplinare che combina tecniche di elaborazione del linguaggio naturale e di apprendimento automatico per analizzare e comprendere le emozioni espresse in testi scritti o parlati.
+Il suo scopo principale è quello di determinare l&amp;rsquo;atteggiamento o la valutazione espressa nei testi, che possono essere positivi, negativi o neutri. L&amp;rsquo;analisi del sentimento è utilizzata in diversi ambiti, come il marketing, la finanza, le relazioni pubbliche e la comunicazione politica.</description>
+    </item>
+    <item>
+      <title>2.5.5 Riconoscimento entità e relazioni</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.5-riconoscimento-entit%C3%A0-e-relazioni/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.5-riconoscimento-entit%C3%A0-e-relazioni/index.html</guid>
+      <description>Il riconoscimento di entità e relazioni (NER) è una sottotecnologia dell&amp;rsquo;elaborazione del linguaggio naturale (NLP) che mira a estrarre informazioni strutturate dal testo non strutturato. In altre parole, il NER identifica le entità menzionate in un testo, come nomi di persone, luoghi e organizzazioni, e le relazioni tra di loro.
+Il NER è un compito di fondamentale importanza per una vasta gamma di applicazioni, come il recupero dell&amp;rsquo;informazione, l&amp;rsquo;analisi del sentimento e la costruzione di knowledge graph.</description>
+    </item>
+  </channel>
+</rss>

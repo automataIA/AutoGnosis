@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2.7 Machine Learning Explainability  on Data Science &amp; Co.</title>
+    <link>https://example.com/2-appunti/2.7-ml-explainability/index.html</link>
+    <description>Recent content in 2.7 Machine Learning Explainability  on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/2-appunti/2.7-ml-explainability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.7.1 Introduzione alla spiegabilità dei modelli di machine learning </title>
+      <link>https://example.com/2-appunti/2.7-ml-explainability/2.7.1-introduzione-alla-spiegabilita-dei-modelli-di-machine-learning/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.7-ml-explainability/2.7.1-introduzione-alla-spiegabilita-dei-modelli-di-machine-learning/index.html</guid>
+      <description>La spiegabilità dei modelli di machine learning è un argomento sempre più importante nell&amp;rsquo;ambito dell&amp;rsquo;intelligenza artificiale. I modelli di machine learning diventano sempre più complessi e potenti, ma spesso non sono in grado di spiegare come funzionano. Ciò può causare problemi nell&amp;rsquo;utilizzo di tali modelli in alcune applicazioni critiche, come la medicina o la finanza.
+La spiegabilità si riferisce alla capacità di un modello di machine learning di fornire una descrizione comprensibile del proprio funzionamento.</description>
+    </item>
+    <item>
+      <title>2.7.2 Definizione di spiegabilità </title>
+      <link>https://example.com/2-appunti/2.7-ml-explainability/2.7.2-definizione-di-spiegabilit%C3%A0/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.7-ml-explainability/2.7.2-definizione-di-spiegabilit%C3%A0/index.html</guid>
+      <description>La spiegabilità del Machine Learning (ML) è diventata un tema caldo negli ultimi anni a causa dell&amp;rsquo;aumento dell&amp;rsquo;utilizzo di algoritmi di apprendimento automatico in molteplici campi. La spiegabilità si riferisce alla capacità di comprendere e spiegare il funzionamento di un algoritmo di ML. L&amp;rsquo;interpretabilità e la trasparenza sono due aspetti chiave della spiegabilità.
+In primo luogo, l&amp;rsquo;interpretabilità si riferisce alla capacità di comprendere come un algoritmo arriva a una determinata decisione.</description>
+    </item>
+    <item>
+      <title>2.7.3 Perché la spiegabilità è importante </title>
+      <link>https://example.com/2-appunti/2.7-ml-explainability/2.7.3-perch%C3%A9-la-spiegabilit%C3%A0-%C3%A8-importante/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.7-ml-explainability/2.7.3-perch%C3%A9-la-spiegabilit%C3%A0-%C3%A8-importante/index.html</guid>
+      <description>La spiegabilità dei modelli di machine learning è sempre più importante in un mondo in cui l&amp;rsquo;intelligenza artificiale sta diventando sempre più presente nella vita quotidiana. I modelli di machine learning sono potenti strumenti che possono essere utilizzati per prendere decisioni importanti, ma spesso non è chiaro come funzionino. Ciò può causare problemi nell&amp;rsquo;utilizzo di tali modelli in alcune applicazioni critiche, come la medicina o la finanza.
+La spiegabilità si riferisce alla capacità di un modello di machine learning di fornire una descrizione comprensibile del proprio funzionamento.</description>
+    </item>
+    <item>
+      <title>2.7.4 Spiegabilità attraverso le caratteristiche dei dati </title>
+      <link>https://example.com/2-appunti/2.7-ml-explainability/2.7.4-spiegabilit%C3%A0-attraverso-le-caratteristiche-dei-dati/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.7-ml-explainability/2.7.4-spiegabilit%C3%A0-attraverso-le-caratteristiche-dei-dati/index.html</guid>
+      <description>Il concetto di spiegabilità dei modelli è diventato sempre più importante negli ultimi anni a causa dell&amp;rsquo;aumento delle tecnologie avanzate e dell&amp;rsquo;uso crescente di algoritmi di apprendimento automatico. La spiegabilità si riferisce alla capacità di comprendere e interpretare i risultati generati dai modelli, in modo da poter garantire che siano corretti e sicuri.
+Una delle tecniche utilizzate per aumentare la spiegabilità dei modelli è l&amp;rsquo;analisi delle caratteristiche dei dati. Le caratteristiche sono le proprietà o le variabili che descrivono i dati.</description>
+    </item>
+    <item>
+      <title>2.7.5 Plotting residuals </title>
+      <link>https://example.com/2-appunti/2.7-ml-explainability/2.7.5-plotting-residuals/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.7-ml-explainability/2.7.5-plotting-residuals/index.html</guid>
+      <description>Il Plotting residuals è una tecnica utilizzata per analizzare e comprendere i modelli di Machine Learning (ML). Consiste nell&amp;rsquo;osservare la differenza tra i valori previsti dal modello e i valori effettivi. In altre parole, i residuals sono la deviazione tra i dati osservati e quelli previsti dal modello.
+Il Plotting residuals è uno strumento importante per valutare la qualità del modello e identificare eventuali problemi. Ad esempio, se i residuals sono distribuiti in modo casuale intorno a zero, si può dedurre che il modello è adeguato e che non ci sono problemi di sovrapposizione o sottomodellizzazione.</description>
+    </item>
+    <item>
+      <title>2.7.6 Metodi di selezione delle caratteristiche </title>
+      <link>https://example.com/2-appunti/2.7-ml-explainability/2.7.6-metodi-di-selezione-delle-caratteristiche/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.7-ml-explainability/2.7.6-metodi-di-selezione-delle-caratteristiche/index.html</guid>
+      <description>Il Machine Learning (ML) è una tecnologia in rapida crescita che sta cambiando il modo in cui le aziende prendono decisioni e automatizzano i processi. Tuttavia, una delle sfide principali nell&amp;rsquo;utilizzo di queste tecniche è la spiegabilità, ovvero la capacità di comprendere e spiegare come un algoritmo prende una decisione. Una delle principali tecniche per migliorare la spiegabilità è la selezione delle caratteristiche.
+La selezione delle caratteristiche consiste nel ridurre il numero di variabili utilizzate in un algoritmo di ML, mantenendo solo quelle che sono più rilevanti per il problema specifico.</description>
+    </item>
+    <item>
+      <title>2.7.7 Metodi di spiegabilità per i modelli di regressione </title>
+      <link>https://example.com/2-appunti/2.7-ml-explainability/2.7.7-metodi-di-spiegabilit%C3%A0-per-i-modelli-di-regressione/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.7-ml-explainability/2.7.7-metodi-di-spiegabilit%C3%A0-per-i-modelli-di-regressione/index.html</guid>
+      <description>I modelli di regressione sono una delle tecniche di machine learning più utilizzate per prevedere la relazione tra una variabile dipendente e una o più variabili indipendenti. Tuttavia, a volte può essere difficile comprendere perché un modello di regressione ha fatto una determinata previsione. Per questo motivo, sono stati sviluppati diversi metodi di spiegabilità per i modelli di regressione.
+Il primo metodo di spiegabilità è la analisi delle caratteristiche. Questo metodo consiste nel guardare l&amp;rsquo;importanza delle variabili indipendenti nel modello di regressione.</description>
+    </item>
+    <item>
+      <title>2.7.8 Metodi di spiegabilità per i modelli di classificazione </title>
+      <link>https://example.com/2-appunti/2.7-ml-explainability/2.7.8-metodi-di-spiegabilit%C3%A0-per-i-modelli-di-classificazione/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.7-ml-explainability/2.7.8-metodi-di-spiegabilit%C3%A0-per-i-modelli-di-classificazione/index.html</guid>
+      <description>Metodi di spiegabilità per i modelli di classificazione sono una delle aree di ricerca più importanti nell&amp;rsquo;apprendimento automatico. Essi consentono di comprendere come un modello prende le decisioni, il che è fondamentale per il suo utilizzo in ambiti critici come la sanità e la finanza.
+I metodi di spiegabilità possono essere suddivisi in due categorie: globali e locali. I metodi globali forniscono una comprensione generale del modello, ad esempio attraverso la visualizzazione dei pesi delle feature.</description>
+    </item>
+    <item>
+      <title>2.7.9 Plotting</title>
+      <link>https://example.com/2-appunti/2.7-ml-explainability/2.7.9-plotting/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.7-ml-explainability/2.7.9-plotting/index.html</guid>
+      <description>Il Machine Learning (ML) è una disciplina in rapida evoluzione che consente di automatizzare la scoperta di informazioni da grandi set di dati. La spiegabilità, o interpretabilità, è un aspetto fondamentale del ML poiché consente di comprendere come un modello prende decisioni e di identificare eventuali problemi di bias. Il plotting è uno strumento comune per l&amp;rsquo;interpretabilità del ML poiché consente di visualizzare i dati e i risultati del modello in modo semplice e intuitivo.</description>
+    </item>
+  </channel>
+</rss>

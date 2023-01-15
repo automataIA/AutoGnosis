@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2.5.2 Linguaggio naturale e conversione in dati on Data Science &amp; Co.</title>
+    <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.2-linguaggio-naturale-e-conversione-in-dati/index.html</link>
+    <description>Recent content in 2.5.2 Linguaggio naturale e conversione in dati on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.2-linguaggio-naturale-e-conversione-in-dati/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.5.2.1 Struttura linguaggio naturale</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.2-linguaggio-naturale-e-conversione-in-dati/2.5.2.1-struttura-del-linguaggio-naturale/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.2-linguaggio-naturale-e-conversione-in-dati/2.5.2.1-struttura-del-linguaggio-naturale/index.html</guid>
+      <description>Parole, frasi, parole chiave e significato del testo Il linguaggio naturale è una delle caratteristiche più complesse e affascinanti dell&amp;rsquo;essere umano. La struttura del linguaggio naturale comprende una serie di componenti, come le parole, le frasi e il significato del testo, che lavorano insieme per comunicare in modo efficace.
+Le parole sono la base del linguaggio naturale. Esse sono i segni distintivi che utilizziamo per costruire frasi e comunicare significati. Le parole possono essere classificate in base alla loro funzione grammaticale, come sostantivi, verbi, aggettivi, e così via.</description>
+    </item>
+    <item>
+      <title>2.5.2.2 Tokenizzazione del testo</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.2-linguaggio-naturale-e-conversione-in-dati/2.5.2.2-tokenizzazione-del-testo/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.2-linguaggio-naturale-e-conversione-in-dati/2.5.2.2-tokenizzazione-del-testo/index.html</guid>
+      <description>Processo di suddivisione del testo in parole e frasi La tokenizzazione del testo è il processo di suddivisione del testo in unità più piccole, come parole e frasi. Tokenizzazione è un passaggio fondamentale per molte attività di elaborazione del linguaggio naturale, come l&amp;rsquo;analisi del sentimento, la generazione di testo e il riconoscimento vocale.
+Ci sono diversi metodi per eseguire la tokenizzazione del testo, come l&amp;rsquo;uso di caratteri di punteggiatura, espressioni regolari o algoritmi di apprendimento automatico.</description>
+    </item>
+    <item>
+      <title>2.5.2.3 Stemming e lemmatizzazione</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.2-linguaggio-naturale-e-conversione-in-dati/2.5.2.3-stemming-e-lemmatizzazione/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.2-linguaggio-naturale-e-conversione-in-dati/2.5.2.3-stemming-e-lemmatizzazione/index.html</guid>
+      <description>Processi per ridurre le parole ai loro lemmi o radici Il processo di stemming e lemmatizzazione sono entrambi metodi utilizzati per ridurre le parole al loro forma base, o &amp;ldquo;lemma&amp;rdquo;. Tuttavia, ci sono alcune differenze importanti tra i due processi.
+Stemming è un metodo automatizzato per rimuovere le desinenze delle parole in modo da ottenere la radice della parola. Ad esempio, la parola &amp;ldquo;camminando&amp;rdquo; verrebbe ridotta a &amp;ldquo;cammin&amp;rdquo;. Questo processo può essere utile per ridurre le dimensioni del vocabolario e migliorare la performace dei modelli di elaborazione del linguaggio naturale.</description>
+    </item>
+    <item>
+      <title>2.5.2.4 Creazione features dal testo</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.2-linguaggio-naturale-e-conversione-in-dati/2.5.2.4-creazione-features-dal-testo/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.2-linguaggio-naturale-e-conversione-in-dati/2.5.2.4-creazione-features-dal-testo/index.html</guid>
+      <description>Processo di trasformazione del testo in un formato utilizzabile per l’elaborazione dei dati Il processo di creazione delle features dal testo consiste nella trasformazione del testo in un formato utilizzabile per l&amp;rsquo;elaborazione dei dati. Tokenizzazione è il primo passo in questo processo, che consiste nell&amp;rsquo;estrazione delle unità semantiche del testo, come parole o frasi.
+Bag of Words è un metodo comune per la rappresentazione del testo come features. Consiste nella contabilizzazione dell&amp;rsquo;occorrenza delle parole in un documento, ignorando l&amp;rsquo;ordine delle parole.</description>
+    </item>
+  </channel>
+</rss>
