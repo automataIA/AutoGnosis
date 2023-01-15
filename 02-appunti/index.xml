@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>02  -  Appunti di AI on Cap&#39;n Hugo Relearrrn Theme</title>
+    <link>https://example.com/02-appunti/index.html</link>
+    <description>Recent content in 02  -  Appunti di AI on Cap&#39;n Hugo Relearrrn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/02-appunti/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. Introduzione all&#39;AI </title>
+      <link>https://example.com/02-appunti/1.-introduzione-allintelligenza-artificiale/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/02-appunti/1.-introduzione-allintelligenza-artificiale/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2. Matematica </title>
+      <link>https://example.com/02-appunti/2.-matematica/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/02-appunti/2.-matematica/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3. Machine learning </title>
+      <link>https://example.com/02-appunti/3.-machine-learning/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/02-appunti/3.-machine-learning/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>4. Apprendimento profondo </title>
+      <link>https://example.com/02-appunti/4.-apprendimento-profondo/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/02-appunti/4.-apprendimento-profondo/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>5. NLP (Natural Language Processing) </title>
+      <link>https://example.com/02-appunti/5.-nlp-natural-language-processing/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/02-appunti/5.-nlp-natural-language-processing/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>6. Reinforcement learning </title>
+      <link>https://example.com/02-appunti/6.-reinforcement-learning/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/02-appunti/6.-reinforcement-learning/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>7. Ethical AI e responsabilità sociale dell&#39;IA </title>
+      <link>https://example.com/02-appunti/7.-ethical-ai-e-responsabilit%C3%A0-sociale-dellia/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/02-appunti/7.-ethical-ai-e-responsabilit%C3%A0-sociale-dellia/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>8. Machine Learning Explainability </title>
+      <link>https://example.com/02-appunti/8.-machine-learning-explainability/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/02-appunti/8.-machine-learning-explainability/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

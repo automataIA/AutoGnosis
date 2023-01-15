@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AUTOGNOSIS on Data Science &amp; Co.</title>
+    <link>https://example.com/index.html</link>
+    <description>Recent content in AUTOGNOSIS on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1  -  About Me</title>
+      <link>https://example.com/1-introduzione/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/1-introduzione/index.html</guid>
+      <description>Introduzione Sono un data scientist con più di 3 anni di esperienza nella ricerca, con un forte background matematico e oltre 5 anni di esperienza nello sviluppo di reti neurali per risolvere problemi di architettura e scalabilità in vari settori. Ho lavorato su tecniche supervisionate e non supervisionate come regressione, classificazione, clustering, machine learning (ML) e deep learning (DL). Ho anche esperienza nell&amp;rsquo;analisi e gestione dei big data, elaborazione e estrazione dei dati utilizzando Python come linguaggio principale.</description>
+    </item>
+    <item>
+      <title>2  -  Appunti di AI</title>
+      <link>https://example.com/2-appunti/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/index.html</guid>
+      <description>Introduzione alla Sezione Ho organizzato la sezione &amp;ldquo;Appunti di AI&amp;rdquo; in questo modo perché ritengo che sia un modo logico e facile da seguire per il lettore. Il modo in cui organizziamo il contenuto di un sito web o di un documento ha un&amp;rsquo;influenza significativa sulla user experience dei lettori. Un&amp;rsquo;organizzazione logica e ben strutturata rende più facile per l&amp;rsquo;utente trovare e comprendere le informazioni che cerca.
+Organizzare il contenuto in capitoli e sottocapitoli aiuta a suddividere il materiale in porzioni gestibili, rendendolo più facile da leggere e assimilare.</description>
+    </item>
+    <item>
+      <title>3  -  Progetti</title>
+      <link>https://example.com/3-progetti/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/3-progetti/index.html</guid>
+      <description>3.1 Supervised learning 3.1.1 Regressione non-lineare 3.1.2 Classificatore di immagini(CNN) 3.2 Unsupervised Learning 3.2.1 Clustering 3.2.2 Raccomandation System 3.3 Classificazione NLP 3.3.1 Analisi del Sentimento 3.4 Reinforced Learning 3.1.1 Regressione non-lineare </description>
+    </item>
+    <item>
+      <title>4  -  Risorse</title>
+      <link>https://example.com/4-risorse/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/4-risorse/index.html</guid>
+      <description>Certificazioni Professionali Google Data Analytics Professional Certificate Google IT Automation with Python Professional Certificate ML Engineering for Production (MLOps) Specialization Machine Learning Specialization Deep Learning Specialization Natural Language Processing Specialization Dataset Google Dataset Search
+Earth Data
+CERN Open Data Portal
+Global Health Observatory Data Repository
+World Bank Open Data
+data.world
+DataHub
+Libri Python for Data Analysis - William McKinney
+Data Science Projects with Python - Stephen Klosterman
+Data Science (MIT Knowledge series) - John D.</description>
+    </item>
+    <item>
+      <title>5  -  Φιλοσοφία</title>
+      <link>https://example.com/5-filosofia/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/5-filosofia/index.html</guid>
+      <description>omde 12 </description>
+    </item>
+  </channel>
+</rss>

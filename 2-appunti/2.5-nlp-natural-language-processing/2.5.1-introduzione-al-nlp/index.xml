@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2.5.1 Introduzione al NLP  on Data Science &amp; Co.</title>
+    <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/index.html</link>
+    <description>Recent content in 2.5.1 Introduzione al NLP  on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.5.1.1 Definizione e Applicazioni</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/2.5.1.1-definizione-e-applicazioni/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/2.5.1.1-definizione-e-applicazioni/index.html</guid>
+      <description>Cos’è il natural language processing e quali sono le sue applicazioni Il Natural Language Processing (NLP) è un campo dell&amp;rsquo;intelligenza artificiale che si concentra sullo studio di come i computer possono comprendere, interpretare e generare il linguaggio umano. Linguistica computazionale, elaborazione del linguaggio naturale e intelligenza artificiale del linguaggio sono alcune delle altre denominazioni utilizzate per descrivere il NLP.
+Una delle applicazioni più comuni del NLP è il processamento del testo.</description>
+    </item>
+    <item>
+      <title>2.5.1.2 Strumenti e librerie utili</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/2.5.1.2-strumenti-e-librerie-utili/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/2.5.1.2-strumenti-e-librerie-utili/index.html</guid>
+      <description>Strumenti e librerie comunemente utilizzati per il natural language processing Natural Language Processing (NLP) è un campo in rapida crescita che si concentra sull&amp;rsquo;elaborazione del linguaggio umano da parte dei computer. Ci sono molti strumenti e librerie disponibili per coloro che vogliono lavorare con il NLP, alcuni dei quali sono descritti di seguito.
+Python è una delle lingue più popolari per il NLP, in gran parte a causa della vasta gamma di librerie disponibili.</description>
+    </item>
+    <item>
+      <title>2.5.1.3 Concetti Base nell&#39;NLP</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/2.5.1.3-concetti-base/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/2.5.1.3-concetti-base/index.html</guid>
+      <description>Concetti di base del linguaggio naturale e dei dati testuali Il natural language processing (NLP) è una sottodisciplina dell&amp;rsquo;intelligenza artificiale che si concentra sulla comprensione, generazione e analisi del linguaggio umano. I concetti di base del NLP sono importanti per comprendere come i computer possono analizzare, comprendere e generare il linguaggio naturale.
+Uno dei concetti chiave del NLP è l&amp;rsquo;analisi del testo, che implica la rimozione del rumore dai dati testuali e la suddivisione del testo in unità significative, come le parole e le frasi.</description>
+    </item>
+  </channel>
+</rss>

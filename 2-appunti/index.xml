@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2  -  Appunti di AI on Data Science &amp; Co.</title>
+    <link>https://example.com/2-appunti/index.html</link>
+    <description>Recent content in 2  -  Appunti di AI on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/2-appunti/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.1 Introduzione all&#39;AI </title>
+      <link>https://example.com/2-appunti/2.1-introduzione-allintelligenza-artificiale/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.1-introduzione-allintelligenza-artificiale/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2.2 Matematica</title>
+      <link>https://example.com/2-appunti/2.2-matematica/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.2-matematica/index.html</guid>
+      <description>La matematica è una componente fondamentale dell&amp;rsquo;intelligenza artificiale (IA). Le tecniche matematiche sono utilizzate in diversi campi dell&amp;rsquo;IA, come l&amp;rsquo;apprendimento automatico, la computer vision e il natural language processing.
+La parola Matematica proviene dal latino mathematĭca (sottintendendo ars), che deriva dal greco μαϑηματική (sottintendendo τέχνη), da μάθημα apprendimento a sua volta deriva dal verbo μανθάνω imparare; letteralmente matematica vuol dire &amp;ldquo;arte di apprendere&amp;rdquo; Un esempio di come la matematica viene utilizzata nell&amp;rsquo;apprendimento automatico è il gradiente disceso.</description>
+    </item>
+    <item>
+      <title>2.3 Machine learning </title>
+      <link>https://example.com/2-appunti/2.3-machine-learning/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.3-machine-learning/index.html</guid>
+      <description>Il machine learning è una tecnica di intelligenza artificiale che permette ai sistemi informatici di &amp;ldquo;imparare&amp;rdquo; senza essere esplicitamente programmati. L&amp;rsquo;etimologia della parola &amp;ldquo;machine learning&amp;rdquo; è abbastanza semplice: si riferisce all&amp;rsquo;apprendimento da parte delle macchine, ossia l&amp;rsquo;acquisizione di conoscenze e competenze senza un&amp;rsquo;esplicita programmazione da parte di un essere umano. In italiano, il termine &amp;ldquo;machine learning&amp;rdquo; viene tradotto come &amp;ldquo;apprendimento automatico&amp;rdquo;. Il machine learning si basa sull&amp;rsquo;utilizzo di algoritmi che consentono ai sistemi informatici di &amp;ldquo;imparare&amp;rdquo; dai dati forniti loro.</description>
+    </item>
+    <item>
+      <title>2.4 Deep Learning </title>
+      <link>https://example.com/2-appunti/2.4-apprendimento-profondo/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.4-apprendimento-profondo/index.html</guid>
+      <description>Il termine &amp;ldquo;apprendimento profondo&amp;rdquo; (in inglese &amp;ldquo;deep learning&amp;rdquo;) si riferisce a una particolare classe di algoritmi di apprendimento automatico che utilizzano strutture di dati artificiali profonde (come reti neurali) per imparare a compiere compiti specifici. Il termine &amp;ldquo;profondo&amp;rdquo; fa riferimento alla profondità delle strutture di dati utilizzate, dove più &amp;ldquo;profonde&amp;rdquo; sono le strutture, più livelli di astrazione sono presenti e più complessi possono essere i modelli che vengono appresi.
+L&amp;rsquo;apprendimento profondo ha dimostrato di essere molto efficace in molti compiti di apprendimento automatico, come il riconoscimento delle parole e delle immagini, il traduttore automatico, il riconoscimento delle parole parlate e molto altro ancora.</description>
+    </item>
+    <item>
+      <title>2.5 NLP (Natural Language Processing) </title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/index.html</guid>
+      <description>Introduzione al natural language processing Introduzione al natural language processing (NLP) NLP, definizione e applicazioni: Cos&amp;rsquo;è il natural language processing e quali sono le sue applicazioni Strumenti e librerie utili: Strumenti e librerie comunemente utilizzati per il natural language processing Concetti Base: Concetti di base del linguaggio naturale e dei dati testuali Linguaggio naturale e conversione in dati Struttura del linguaggio naturale: parole, frasi, parole chiave e significato del testo Tokenizzazione del testo: processo di suddivisione del testo in parole e frasi Stemming e lemmatizzazione: processi per ridurre le parole ai loro lemmi o radici Creazione delle features da dati testuali: processo di trasformazione del testo in un formato utilizzabile per l&amp;rsquo;elaborazione dei dati Classificazione del testo Cos&amp;rsquo;è e come utilizzarla: la classificazione del testo e come viene utilizzata Algoritmi di classificazione del testo: Naive Bayes, Support Vector Machines (SVM), alberi decisionali, ecc.</description>
+    </item>
+    <item>
+      <title>2.6 Reinforcement learning </title>
+      <link>https://example.com/2-appunti/2.6-reinforcement-learning/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.6-reinforcement-learning/index.html</guid>
+      <description>Reinforcement learning (RL) è una sottosezione dell&amp;rsquo;apprendimento automatico (AI) che si concentra su come gli agenti dovrebbero agire per massimizzare una ricompensa a lungo termine. L&amp;rsquo;agente è un sistema che prende decisioni, mentre l&amp;rsquo;ambiente è il sistema con cui l&amp;rsquo;agente interagisce. Nel RL, l&amp;rsquo;agente è addestrato a scegliere azioni che massimizzano la ricompensa totale futura.
+La storia del RL risale agli anni &amp;lsquo;40, con la pubblicazione del libro &amp;ldquo;The Behavior of Organisms&amp;rdquo; da B.</description>
+    </item>
+    <item>
+      <title>2.7 Machine Learning Explainability </title>
+      <link>https://example.com/2-appunti/2.7-ml-explainability/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.7-ml-explainability/index.html</guid>
+      <description>Machine Learning è una sottosezione dell&amp;rsquo;Intelligenza Artificiale che utilizza algoritmi per consentire alle macchine di &amp;ldquo;imparare&amp;rdquo; dai dati, senza essere programmate esplicitamente. Explainability, d&amp;rsquo;altra parte, si riferisce alla capacità di un algoritmo di fornire una spiegazione comprensibile dei suoi risultati o decisioni.
+Il problema dell&amp;rsquo;opacità degli algoritmi di Machine Learning è diventato sempre più importante a causa dell&amp;rsquo;aumento dell&amp;rsquo;utilizzo degli algoritmi in ambiti critici, come la finanza, la sanità e la sicurezza.</description>
+    </item>
+    <item>
+      <title>2.8 Etica e Responsabilità sociale nell&#39;AI </title>
+      <link>https://example.com/2-appunti/2.8-etica-e-responsabilita-sociale-nellai/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.8-etica-e-responsabilita-sociale-nellai/index.html</guid>
+      <description>L&amp;rsquo;etica e la responsabilità sociale sono diventate temi sempre più importanti nell&amp;rsquo;ambito dell&amp;rsquo;Intelligenza Artificiale (AI). Con l&amp;rsquo;aumento della potenza computazionale e della disponibilità di dati, l&amp;rsquo;AI sta diventando sempre più presente nella vita quotidiana, dalla medicina alla finanza, dalla sicurezza alla produzione industriale. Etica, responsabilità sociale, AI, potenza computazionale, disponibilità di dati
+L&amp;rsquo;AI può avere un impatto significativo sulla società e sull&amp;rsquo;individuo, sia positivo che negativo. È importante quindi che gli sviluppatori e gli utilizzatori di sistemi di AI tengano conto delle implicazioni etiche e sociali del loro lavoro.</description>
+    </item>
+  </channel>
+</rss>
