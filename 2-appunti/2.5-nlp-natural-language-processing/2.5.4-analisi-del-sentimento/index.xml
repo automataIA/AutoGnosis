@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2.5.4 Analisi del sentimento on Data Science &amp; Co.</title>
+    <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/index.html</link>
+    <description>Recent content in 2.5.4 Analisi del sentimento on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.5.4.1 Approcci all’analisi del sentimento</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/2.5.4.1-approcci-allanalisi-del-sentimento/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/2.5.4.1-approcci-allanalisi-del-sentimento/index.html</guid>
+      <description>Etichettatura manuale, utilizzo di lexicon predefiniti, apprendimento automatico L&amp;rsquo;analisi del sentimento è un&amp;rsquo;area di ricerca in cui si cerca di determinare l&amp;rsquo;atteggiamento, la valutazione o l&amp;rsquo;opinione espressi in un testo. Ci sono diversi approcci per l&amp;rsquo;analisi del sentimento, tra cui l&amp;rsquo;etichettatura manuale, l&amp;rsquo;utilizzo di lexicon predefiniti e l&amp;rsquo;apprendimento automatico.
+Etichettatura manuale consiste nel leggere un testo e assegnare un&amp;rsquo;etichetta di sentimento, come positivo, negativo o neutrale, in base all&amp;rsquo;interpretazione personale del lettore.</description>
+    </item>
+    <item>
+      <title>2.5.4.2 Valutazione delle prestazioni</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/2.5.4.2-valutazione-delle-prestazioni/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/2.5.4.2-valutazione-delle-prestazioni/index.html</guid>
+      <description>Valutazione sentiment Analsys: misure di precisione, sensibilità, f1-score e altre metriche Valutazione delle prestazioni nell&amp;rsquo;analisi del sentimento nel campo del Natural Language Processing (NLP) è un aspetto cruciale per determinare la qualità dei modelli utilizzati per identificare e categorizzare i sentimenti espressi in un testo. Ci sono diversi metodi di valutazione utilizzati nell&amp;rsquo;analisi del sentimento, tra cui misure di precisione, sensibilità e f1-score.
+Precisione misura la capacità di un modello di identificare correttamente i sentimenti positivi.</description>
+    </item>
+  </channel>
+</rss>

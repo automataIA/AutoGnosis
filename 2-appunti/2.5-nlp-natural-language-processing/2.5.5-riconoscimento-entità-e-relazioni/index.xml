@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2.5.5 Riconoscimento entità e relazioni on Data Science &amp; Co.</title>
+    <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.5-riconoscimento-entit%C3%A0-e-relazioni/index.html</link>
+    <description>Recent content in 2.5.5 Riconoscimento entità e relazioni on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.5-riconoscimento-entit%C3%A0-e-relazioni/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.5.5.1 Approcci al Riconoscimento</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.5-riconoscimento-entit%C3%A0-e-relazioni/2.5.5.1-approcci-al-riconoscimento/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.5-riconoscimento-entit%C3%A0-e-relazioni/2.5.5.1-approcci-al-riconoscimento/index.html</guid>
+      <description>Metodi di: etichettatura manuale, utilizzo di modelli predefiniti, apprendimento automatico Il riconoscimento del linguaggio naturale (NLP) è un campo dell&amp;rsquo;intelligenza artificiale che si concentra sulla comprensione e la generazione del linguaggio umano. Ci sono diverse tecniche e metodi utilizzati per il riconoscimento del linguaggio naturale, tra cui l&amp;rsquo;etichettatura manuale, l&amp;rsquo;utilizzo di modelli predefiniti e l&amp;rsquo;apprendimento automatico.
+Etichettatura manuale: questo metodo consiste nell&amp;rsquo;assegnare manualmente etichette o tag alle parole o alle frasi di un testo.</description>
+    </item>
+    <item>
+      <title>2.5.5.2 Esempi di utilizzo</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.5-riconoscimento-entit%C3%A0-e-relazioni/2.5.5.2-esempi-di-utilizzo/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.5-riconoscimento-entit%C3%A0-e-relazioni/2.5.5.2-esempi-di-utilizzo/index.html</guid>
+      <description>Esempi di estrazione di informazioni da documenti, classificazione delle domande, generazione di riassunti automatici Il riconoscimento delle entità e delle relazioni è un&amp;rsquo;importante area di ricerca all&amp;rsquo;interno del campo del riconoscimento del linguaggio naturale (NLP). Questa tecnologia consente di estrarre informazioni da documenti scritti in linguaggio naturale, identificando e classificando le entità menzionate all&amp;rsquo;interno del testo e le relazioni tra di loro. Ci sono diverse applicazioni pratiche per questa tecnologia, tra cui l&amp;rsquo;estrazione di informazioni da documenti, la classificazione delle domande e la generazione di riassunti automatici.</description>
+    </item>
+  </channel>
+</rss>

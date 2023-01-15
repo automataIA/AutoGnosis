@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2.4 Deep Learning  on Data Science &amp; Co.</title>
+    <link>https://example.com/2-appunti/2.4-apprendimento-profondo/index.html</link>
+    <description>Recent content in 2.4 Deep Learning  on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/2-appunti/2.4-apprendimento-profondo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4.1 Introduzione all&#39;apprendimento profondo </title>
+      <link>https://example.com/2-appunti/2.4-apprendimento-profondo/2.4.1-introduzione-allapprendimento-profondo/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.4-apprendimento-profondo/2.4.1-introduzione-allapprendimento-profondo/index.html</guid>
+      <description>L&amp;rsquo;apprendimento profondo, o deep learning (DL), è un sottocampo dell&amp;rsquo;intelligenza artificiale (AI) che si concentra sulla creazione di modelli di intelligenza artificiale in grado di apprendere dai dati in modo simile a come lo farebbe un essere umano. I modelli di apprendimento profondo sono stati in grado di ottenere risultati sorprendenti in una vasta gamma di campi, dalla traduzione automatica alla diagnosi medica alla creazione di musica.
+Uno dei principali vantaggi dell&amp;rsquo;apprendimento profondo è la sua capacità di apprendere automaticamente le caratteristiche rilevanti dei dati, eliminando la necessità di una selezione manuale delle caratteristiche da parte degli sviluppatori.</description>
+    </item>
+    <item>
+      <title>4.2 Reti neurali feedforward </title>
+      <link>https://example.com/2-appunti/2.4-apprendimento-profondo/2.4.2-reti-neurali-feedforward/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.4-apprendimento-profondo/2.4.2-reti-neurali-feedforward/index.html</guid>
+      <description>Le reti neurali feedforward sono un tipo di modello di intelligenza artificiale basato sull&amp;rsquo;apprendimento automatico. Funzionano scambiando informazioni attraverso diversi livelli di nodi o &amp;ldquo;neuroni&amp;rdquo;, ognuno dei quali elabora una parte dei dati in entrata. Il modello viene addestrato su un set di dati di addestramento, dove viene fornito un input e il modello deve produrre un output desiderato. Man mano che il modello viene addestrato, i pesi dei suoi nodi vengono aggiustati in modo da ridurre l&amp;rsquo;errore tra l&amp;rsquo;output desiderato e quello effettivo.</description>
+    </item>
+    <item>
+      <title>4.3 Reti neurali convoluzionali </title>
+      <link>https://example.com/2-appunti/2.4-apprendimento-profondo/2.4.3-reti-neurali-convoluzionali/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.4-apprendimento-profondo/2.4.3-reti-neurali-convoluzionali/index.html</guid>
+      <description>Le reti neurali convoluzionali (CNN) sono un tipo di modello di intelligenza artificiale molto utilizzato in diverse applicazioni, come il riconoscimento delle immagini e delle parole. Funzionano estraendo caratteristiche importanti da dati di input, come immagini, e utilizzandole per prendere decisioni o fare previsioni.
+Una delle principali caratteristiche delle CNN è l&amp;rsquo;utilizzo di filtri che scorrono sull&amp;rsquo;input e ne estraggono caratteristiche specifiche. Ad esempio, un filtro potrebbe essere utilizzato per individuare linee orizzontali in un&amp;rsquo;immagine, mentre un altro potrebbe essere utilizzato per rilevare i bordi di un oggetto.</description>
+    </item>
+    <item>
+      <title>4.4 Reti neurali ricorrenti </title>
+      <link>https://example.com/2-appunti/2.4-apprendimento-profondo/2.4.4-reti-neurali-ricorrenti/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.4-apprendimento-profondo/2.4.4-reti-neurali-ricorrenti/index.html</guid>
+      <description>Reti neurali ricorrenti sono una sottoclasse di reti neurali artificiali che utilizzano informazioni passate per migliorare la loro capacità di prevedere eventi futuri. Queste reti sono particolarmente utili per la previsione di sequenze temporali, come i prezzi delle azioni, il linguaggio naturale e i segnali audio e video.
+Le reti neurali ricorrenti funzionano aggiungendo una connessione di feedback alla struttura di una rete neurale tradizionale. In questo modo, essa è in grado di conservare le informazioni sugli eventi passati e utilizzarle per influire sulla previsione di eventi futuri.</description>
+    </item>
+    <item>
+      <title>4.5 Transfer learning </title>
+      <link>https://example.com/2-appunti/2.4-apprendimento-profondo/2.4.5-transfer-learning/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.4-apprendimento-profondo/2.4.5-transfer-learning/index.html</guid>
+      <description>Il transfer learning è una tecnica che consente di trasferire conoscenze acquisite in un modello di apprendimento automatico (ML) in un altro modello. Ciò può essere particolarmente utile quando si dispone di una piccola quantità di dati per un determinato task, ma si dispone di molti dati per un task simile.
+Per esempio, immagina di voler addestrare una rete neurale per riconoscere animali in immagini. Se si dispone solo di pochi dati su un determinato animale, come ad esempio il panda, si può utilizzare una rete neurale già addestrata su immagini di animali in generale e &amp;ldquo;congelare&amp;rdquo; alcuni strati della rete, mentre si addestrano gli strati più profondi sui dati del panda.</description>
+    </item>
+  </channel>
+</rss>

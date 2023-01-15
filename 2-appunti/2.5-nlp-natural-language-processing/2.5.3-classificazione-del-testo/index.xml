@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2.5.3 Classificazione del testo on Data Science &amp; Co.</title>
+    <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/index.html</link>
+    <description>Recent content in 2.5.3 Classificazione del testo on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.5.3.1 Come classificare il testo</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/2.5.3.1-come-classificare-il-testo/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/2.5.3.1-come-classificare-il-testo/index.html</guid>
+      <description>La classificazione del testo e come viene utilizzata La classificazione del testo è una tecnologia di apprendimento automatico che utilizza l&amp;rsquo;elaborazione del linguaggio naturale per assegnare una categoria o un&amp;rsquo;etichetta ad un pezzo di testo. Ciò può essere utile per molte applicazioni, come la classificazione automatica della posta elettronica in spam e non spam, la classificazione dei tweet in argomenti specifici e la classificazione dei documenti in categorie di argomenti.</description>
+    </item>
+    <item>
+      <title>2.5.3.2-Algoritmi di classificazione</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/2.5.3.2-algoritmi-di-classificazione/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/2.5.3.2-algoritmi-di-classificazione/index.html</guid>
+      <description>Naive Bayes, Support Vector Machines (SVM), alberi decisionali, ecc Ci sono diversi algoritmi di classificazione del testo utilizzati nella pratica, tra cui Naive Bayes, Support Vector Machines (SVM) e alberi decisionali. Il Naive Bayes è un algoritmo di classificazione probabilistico che utilizza la teoria della probabilità per assegnare etichette alle istanze di input. Si basa sull&amp;rsquo;ipotesi &amp;ldquo;ingiustificata&amp;rdquo; che tutte le caratteristiche sono indipendenti l&amp;rsquo;una dall&amp;rsquo;altra. In contrasto, gli SVM utilizzano la teoria dei sistemi di supporto per mappare gli esempi di input in uno spazio ad alto numero di dimensioni, in cui sono facilmente separabili.</description>
+    </item>
+    <item>
+      <title>2.5.3.3 Valutazione delle prestazioni</title>
+      <link>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/2.5.3.3-valutazione-delle-prestazioni/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/2.5.3.3-valutazione-delle-prestazioni/index.html</guid>
+      <description>Valutazione del modello: misure di precisione, sensibilità, f1-score e altre metriche La valutazione delle prestazioni degli algoritmi di classificazione del testo è un processo fondamentale per garantire che il modello funzioni in modo efficace. Ci sono diverse misure che possono essere utilizzate per valutare le prestazioni di un modello di classificazione del testo, tra cui la precisione, la sensibilità e le metriche F1 e AUC-ROC.
+Precisione indica la percentuale di classificazioni corrette rispetto al totale di classificazioni effettuate dal modello.</description>
+    </item>
+  </channel>
+</rss>

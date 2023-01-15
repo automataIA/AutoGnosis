@@ -1,0 +1,55 @@
+1. Introduzione all'intelligenza artificiale
+ 1.1 Storia dell'IA
+ 1.2 Definizione di intelligenza artificiale
+ 1.3 Campi di applicazione dell'IA
+2. Matematica
+ 2.1 Probabilità e statistica
+ 2.1.1 Introduzione alla probabilità e alla statistica
+ 2.1.2 Distribuzioni di probabilità
+ 2.1.3 Test di ipotesi
+ 2.1.4 Analisi della varianza
+ 2.2 Algebra
+ 2.2.1 Introduzione all'algebra
+ 2.2.2 Equazioni e disequazioni
+ 2.2.3 Funzioni
+ 2.2.4 Polinomi
+3. Machine learning
+ 3.1 Introduzione al machine learning
+ 3.2 Tipi di apprendimento automatico
+ 3.3 Algoritmi di regressione
+ 3.4 Algoritmi di classificazione
+ 3.5 Algoritmi di clustering
+ 3.6 Valutazione e ottimizzazione dei modelli di machine learning
+4. Apprendimento profondo
+ 4.1 Introduzione all'apprendimento profondo
+ 4.2 Reti neurali feedforward
+ 4.3 Reti neurali convolutional
+ 4.4 Reti neurali ricorrenti
+ 4.5 Transfer learning
+5. NLP (Natural Language Processing)
+ 5.1 Introduzione al NLP
+ 5.2 Analisi del sentimento
+ 5.3 Part-of-speech tagging
+ 5.4 Named entity recognition
+ 5.5 Traduzione automatica
+6. Reinforcement learning
+ 6.1 Introduzione al reinforcement learning
+ 6.2 Ambienti di reinforcement learning
+ 6.3 Algoritmi di ricompensa positiva
+ 6.4 Algoritmi di ricompensa negativa
+ 6.5 Esempi di applicazione del reinforcement learning
+7. Ethical AI e responsabilità sociale dell'IA
+ 7.1 Ethical AI: principi e best practice
+ 7.2 Il ruolo delle istituzioni nella regolamentazione dell'IA
+ 7.3 La dimensione etica delle scelte di progettazione dell'IA
+ 7.4 Implicazioni dell'IA per la società e il lavoro
+8. Machine Learning Explainability
+ 8.1 Introduzione alla spiegabilità dei modelli di machine learning
+ 8.2 Perché la spiegabilità è importante
+ 8.2.1 Definizione di spiegabilità
+ 8.3 Metodi di spiegabilità per i modelli di regressione
+ 8.3.1 Spiegabilità attraverso le caratteristiche dei dati
+ 8.3.2 Plotting residuals
+ 8.3.3 Metodi di selezione delle caratteristiche
+ 8.4 Metodi di spiegabilità per i modelli di classificazione
+ 8.4.1 Plotting

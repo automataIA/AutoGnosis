@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2.1 Introduzione all&#39;AI  on Data Science &amp; Co.</title>
+    <link>https://example.com/2-appunti/2.1-introduzione-allintelligenza-artificiale/index.html</link>
+    <description>Recent content in 2.1 Introduzione all&#39;AI  on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/2-appunti/2.1-introduzione-allintelligenza-artificiale/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2.1.1 Storia dell&#39;IA </title>
+      <link>https://example.com/2-appunti/2.1-introduzione-allintelligenza-artificiale/2.1.1-storia-dellia/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.1-introduzione-allintelligenza-artificiale/2.1.1-storia-dellia/index.html</guid>
+      <description>Intelligenza Artificiale (IA) è un campo dell&amp;rsquo;informatica che si occupa dello studio e della creazione di sistemi in grado di svolgere compiti che richiedono intelligenza umana, come il riconoscimento delle parole o il ragionamento. L&amp;rsquo;idea di creare macchine in grado di &amp;ldquo;pensare&amp;rdquo; come gli esseri umani è antica e risale almeno all&amp;rsquo;antica Grecia, dove si parlava di automi meccanici in grado di eseguire compiti complessi. Tuttavia, l&amp;rsquo;IA come la conosciamo oggi ha avuto inizio solo nel 1956, quando un gruppo di scienziati e ingegneri si riunì per discutere l&amp;rsquo;idea di creare una macchina capace di svolgere compiti che richiedevano intelligenza umana.</description>
+    </item>
+    <item>
+      <title>2.1.2 Definizione di AI </title>
+      <link>https://example.com/2-appunti/2.1-introduzione-allintelligenza-artificiale/2.1.2-definizione-di-intelligenza-artificiale/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.1-introduzione-allintelligenza-artificiale/2.1.2-definizione-di-intelligenza-artificiale/index.html</guid>
+      <description>Partendo dalla parola &amp;ldquo;Intelligenza&amp;rdquo; recuperata dal latino intelligentia, derivato di intelligere ‘intendere, capire’, propriamente ‘trascegliere’ (composto di inter- e lègere). Intelligenza, dunque, è anzitutto capacità di cogliere i dati e operare correlazioni, selezioni e distinzioni tra essi(credit).
+L&amp;rsquo;intelligenza artificiale (AI) è una branca dell&amp;rsquo;informatica che si occupa della creazione di sistemi in grado di eseguire compiti che richiedono intelligenza umana, come il riconoscimento delle parole e delle immagini, il ragionamento e il problem solving.</description>
+    </item>
+    <item>
+      <title>2.1.3 Campi di applicazione della IA </title>
+      <link>https://example.com/2-appunti/2.1-introduzione-allintelligenza-artificiale/2.1.3-campi-di-applicazione-della-ia/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/2-appunti/2.1-introduzione-allintelligenza-artificiale/2.1.3-campi-di-applicazione-della-ia/index.html</guid>
+      <description>L&amp;rsquo;Intelligenza Artificiale (IA) è una tecnologia in rapido sviluppo che sta trovando applicazione in una vasta gamma di settori. In questo articolo, esploreremo alcuni dei campi in cui l&amp;rsquo;IA sta facendo la differenza.
+In primo luogo, l&amp;rsquo;IA sta trovando ampio impiego nell&amp;rsquo;ambito della medicina. Ad esempio, i sistemi di IA possono essere utilizzati per analizzare immagini mediche, come raggi X o tomografie, al fine di diagnosticare con maggiore precisione le patologie.</description>
+    </item>
+  </channel>
+</rss>
