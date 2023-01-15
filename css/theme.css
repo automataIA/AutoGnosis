@@ -352,21 +352,28 @@ dd {
 #body img.center,
 #body .video-container {
     display: block;
-    text-align: center;
     padding: 15px;
     margin: 0 auto;
     font-size: 20px;
+
 }
 h2 ~ table {
-    background-color: red !important;
-    overflow:auto;
-    table-layout: fixed;
-    width: auto !important;
-    overflow-x:auto;
+    table-layout:auto;
+    width: fit-content;
+    border-collapse: collapse;
     font-size: 9px;
-    padding: 0px !important;
+    margin:0 auto !important;
 }
-
+h2 ~ table td, h2 ~ table th{
+    padding: 3px !important;
+    margin:0px; 
+}
+h2 ~ table tr:nth-of-type(even) {
+    background-color: #f2f2f2;
+}
+h2 ~ table tr:nth-of-type(odd) {
+    background-color: #ffffff;
+}
 
 #body[data-url*="/3."]  {
     background-color: red;
