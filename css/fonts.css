@@ -39,21 +39,21 @@
 }
 @font-face {
     font-family: "Poppins SemiBold";
-    src: url("/fonts/Poppins-SemiBold.ttf") format("truetype"), url("/fonts/Poppins-SemiBold.woff") format("woff");
+    src: url("../fonts/Poppins-SemiBold.ttf") format("truetype"), url("../fonts/Poppins-SemiBold.woff") format("woff");
   }
   
   @font-face {
     font-family: "Poppins Bold";
-    src: url("/fonts/Poppins-Bold.ttf") format("truetype"), url("/fonts/Poppins-Bold.woff") format("woff");
+    src: url("../fonts/Poppins-Bold.ttf") format("truetype"), url("../fonts/Poppins-Bold.woff") format("woff");
   }
   
   @font-face {
     font-family: "Poppins Medium";
-    src: url("/fonts/Poppins-Medium.ttf") format("truetype"), url("/fonts/Poppins-Medium.woff") format("woff");
+    src: url("../fonts/Poppins-Medium.ttf") format("truetype"), url("../fonts/Poppins-Medium.woff") format("woff");
   }
   
   @font-face {
     font-family: "Poppins Regular";
-    src: url("/fonts/Poppins-Regular.ttf") format("truetype"), url("/fonts/Poppins-Regular.woff") format("woff");
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype"), url("../fonts/Poppins-Regular.woff") format("woff");
   }
   
