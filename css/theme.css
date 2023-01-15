@@ -913,6 +913,7 @@ a.nav.nav-next.highlight, a.github-link.highlight {
     background-color: white;
     height: 86%;
     position: relative;
+    padding: 45px;
 }
 #topbar > div::after {
     content: "";
