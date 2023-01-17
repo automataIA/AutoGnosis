@@ -413,11 +413,18 @@ var relearn_search_index = [
     "uri": "/2-appunti/2.8-etica-e-responsabilita-sociale-nellai/2.8.4-implicazioni-dellia-per-la-societ%C3%A0-e-il-lavoro/index.html"
   },
   {
-    "content": "3.1 Supervised learning 3.1.1 Regressione non-lineare 3.1.2 Classificatore di immagini(CNN) 3.2 Unsupervised Learning 3.2.1 Clustering 3.2.2 Raccomandation System 3.3 Classificazione NLP 3.3.1 Analisi del Sentimento 3.4 Reinforced Learning 3.1.1 Regressione non-lineare ",
+    "content": "",
     "description": "",
     "tags": null,
-    "title": "3  -  Progetti",
-    "uri": "/3-progetti/index.html"
+    "title": "3 - MLOps",
+    "uri": "/3-mlops/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.1 Ambiente di sviluppo",
+    "uri": "/3-mlops/3.1-ambiente-di-sviluppo/index.html"
   },
   {
     "content": "L’apprendimento automatico, conosciuto anche come machine learning, è una branca dell’intelligenza artificiale che si occupa di sviluppare algoritmi in grado di imparare dai dati. A differenza dell’apprendimento supervisionato, dove vengono forniti sia gli input che le etichette di output, nell’apprendimento non supervisionato l’algoritmo deve scoprire da solo le regole presenti nei dati. Un altro tipo di apprendimento automatico è l’apprendimento per rinforzo, dove un’agente interagisce con l’ambiente ricevendo ricompense o punizioni in base alle sue azioni.\nUn esempio di applicazione del machine learning è la predizione delle tendenze del mercato finanziario, dove un algoritmo viene addestrato su dati storici per fare previsioni sui prezzi delle azioni. Un altro esempio è l’analisi dei sentimenti sui social media, dove un algoritmo può essere addestrato a riconoscere il tono positivo o negativo di un determinato post.\nIl machine learning si basa sull’ottimizzazione di funzioni di perdita, dove si cerca di minimizzare l’errore tra le previsioni dell’algoritmo e i valori attesi. Esistono diverse tecniche di ottimizzazione, come l’algoritmo di gradiente discendente, che permettono di aggiustare i parametri del modello in modo da ridurre l’errore.\nUn aspetto importante del machine learning è la validazione dei modelli, ovvero il processo di verifica dell’accuratezza delle previsioni del modello su dati mai visti prima. La sovrapposizione, ovvero il fatto che il modello funzioni bene solo sui dati di training ma non su quelli di test, è un segno di sovrapposizione e indica la necessità di regolare i parametri o di scegliere un modello più generale.\nIn conclusione, il machine learning è una disciplina in continua evoluzione che offre moltissime opportunità per risolvere problemi complessi nei più svariati campi, dalla finanza alla medicina, dal marketing alla scienza dei dati.\n",
@@ -427,11 +434,95 @@ var relearn_search_index = [
     "uri": "/2-appunti/2.3-machine-learning/2.3.1-introduzione-al-machine-learning/index.html"
   },
   {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.1.1 Perchè un ambiente protetto",
+    "uri": "/3-mlops/3.1-ambiente-di-sviluppo/3.1.1-perch%C3%A8-un-ambiente-protetto/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.1.2 Template per il progetto",
+    "uri": "/3-mlops/3.1-ambiente-di-sviluppo/3.1.2-template-per-il-progetto/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.1.3 Gestione delle dipendenze",
+    "uri": "/3-mlops/3.1-ambiente-di-sviluppo/3.1.3-gestione-delle-dipendenze/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.1.4 Qualità del codice",
+    "uri": "/3-mlops/3.1-ambiente-di-sviluppo/3.1.4-qualit%C3%A0-del-codice/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.1.5 Versionamento del codice",
+    "uri": "/3-mlops/3.1-ambiente-di-sviluppo/3.1.5-versionamento-del-codice/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.1.6 Strumenti di testing",
+    "uri": "/3-mlops/3.1-ambiente-di-sviluppo/3.1.6-strumenti-di-testing/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.1.7 Debugging",
+    "uri": "/3-mlops/3.1-ambiente-di-sviluppo/3.1.7-debugging/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.1.8 Analisi delle prestazioni",
+    "uri": "/3-mlops/3.1-ambiente-di-sviluppo/3.1.8-analisi-delle-prestazioni/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.2 Fase di Addestramento",
+    "uri": "/3-mlops/3.2-fase-di-addestramento/index.html"
+  },
+  {
     "content": "I tipi di apprendimento automatico sono una delle aree più interessanti e in rapida crescita dell’intelligenza artificiale. Esistono diverse categorie di apprendimento automatico, ognuna delle quali viene utilizzata in modo leggermente diverso per risolvere problemi specifici. Di seguito sono elencati alcuni dei tipi più comuni di apprendimento automatico:\nApprendimento supervisionato: questo tipo di apprendimento richiede che il modello sia addestrato su un set di dati etichettati, in cui ogni esempio ha una label associata che indica l’output corretto. Il modello quindi fa previsioni su nuovi dati in base alle informazioni apprese durante l’addestramento.\nApprendimento non supervisionato: in questo caso, il modello viene addestrato su un set di dati non etichettati, senza alcuna indicazione sull’output corretto. L’obiettivo è quello di scoprire pattern nascosti all’interno dei dati.\nApprendimento semi-supervisionato: questo tipo di apprendimento combina elementi sia dell’apprendimento supervisionato che dell’apprendimento non supervisionato. Il modello viene addestrato su un set di dati parzialmente etichettati, con solo alcuni esempi che hanno una label associata.\nApprendimento rinforzato: in questo caso, il modello viene addestrato a prendere decisioni in un ambiente specifico, con l’obiettivo di massimizzare una determinata ricompensa. Ad esempio, un agente di apprendimento rinforzato potrebbe essere addestrato a navigare in un labirinto per trovare la via d’uscita, ricevendo una ricompensa ogni volta che fa una scelta corretta e una penalità ogni volta che fa una scelta sbagliata.\nApprendimento profondo: l’apprendimento profondo è una sottocategoria dell’apprendimento automatico che utilizza reti neurali molto profonde e complesse per apprendere rappresentazioni di dati ad alto livello. È stato utilizzato con successo in molti settori, come il riconoscimento delle immagini e del linguaggio naturale.\nin generale, l’apprendimento automatico sta trasformando il modo in cui le aziende e le organizzazioni affrontano i problemi e prendono decisioni. Grazie alla sua capacità di apprendere e migliorare nel tempo, l’apprendimento automatico può aiutare a automatizzare alcune attività che in passato richiedevano l’intervento umano, liberando così il tempo degli esseri umani per concentrarsi su compiti più impegnativi. Inoltre, l’apprendimento automatico può anche aiutare a scoprire nuove opportunità e pattern nascosti all’interno dei dati, che potrebbero essere sfruttati per prendere decisioni più informate.\nTuttavia, è importante notare che l’apprendimento automatico presenta anche alcune sfide e preoccupazioni, come la preoccupazione per la possibile sostituzione degli esseri umani nei lavori che possono essere automatizzati e la preoccupazione per l’eventuale discriminazione o bias nei modelli di apprendimento automatico. È quindi importante che le organizzazioni che utilizzano l’apprendimento automatico siano consapevoli di queste preoccupazioni e prendano misure per affrontarle in modo adeguato.\nIn conclusione, i tipi di apprendimento automatico offrono una vasta gamma di opportunità per risolvere problemi complessi e prendere decisioni informate. Con l’aumento della potenza di calcolo e della disponibilità di grandi quantità di dati, l’apprendimento automatico continuerà a espandersi e a diventare sempre più importante in molti settori. Tuttavia, è importante che le organizzazioni che utilizzano l’apprendimento automatico siano consapevoli delle sfide e delle preoccupazioni associate a questa tecnologia e prendano misure adeguate per affrontarle.\n",
     "description": "",
     "tags": null,
     "title": "3.2 Tipi di apprendimento automatico ",
     "uri": "/2-appunti/2.3-machine-learning/2.3.2-tipi-di-apprendimento-automatico/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.2.1 Automazione operazioni",
+    "uri": "/3-mlops/3.2-fase-di-addestramento/3.2.1-automazione-operazioni/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.2.2 Ottimizzazione del modello",
+    "uri": "/3-mlops/3.2-fase-di-addestramento/3.2.2-ottimizzazione-del-modello/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.2.3 Tracciamento delle modifiche",
+    "uri": "/3-mlops/3.2-fase-di-addestramento/3.2.3-tracciamento-delle-modifiche/index.html"
   },
   {
     "content": "Gli algoritmi di regressione ML sono una parte importante dell’apprendimento automatico, poiché consentono di prevedere una variabile continua in base alle caratteristiche di un insieme di dati. Ci sono diverse tipologie di algoritmi di regressione ML, ciascuno con i suoi vantaggi e svantaggi. Ecco una panoramica delle principali opzioni disponibili:\nRegressione lineare: questo tipo di algoritmo è utilizzato per modellare la relazione tra due variabili, dove una viene utilizzata per prevedere l’altra. La regressione lineare è semplice da implementare e offre buoni risultati in molti casi. Tuttavia, non è in grado di gestire modelli non lineari, quindi può essere meno efficace in alcuni scenari.\nRegressione logistica: questo algoritmo viene utilizzato per prevedere la probabilità di un evento binario, come ad esempio se un cliente effettuerà o meno un acquisto. La regressione logistica è efficace nel gestire modelli non lineari e offre buone prestazioni in molti casi. Tuttavia, richiede una distribuzione dei dati abbastanza regolare e può essere sensibile alla presenza di outlier.\nRegressione a più variabili: questo algoritmo viene utilizzato quando si desidera prevedere una variabile in base a più di due caratteristiche. Ad esempio, si potrebbe utilizzare una regressione a più variabili per prevedere il prezzo di una casa in base alla sua dimensione, alla sua posizione e al numero di stanze. La regressione a più variabili è uno strumento molto potente, ma richiede una quantità adeguata di dati e può essere difficile da interpretare.\nRegressione Lasso: questo algoritmo viene utilizzato per selezionare automaticamente le caratteristiche più importanti di un insieme di dati. La regressione Lasso è utile in scenari con un gran numero di caratteristiche, poiché consente di ridurre il rischio di sovrapposizione. Tuttavia, può essere meno precisa della regressione a più variabili in alcuni casi.\nRegressione Ridge: questo algoritmo viene utilizzato per prevenire il sovraccarico di dati e ridurre il rischio di overfitting. La regressione Ridge è particolarmente utile in scenari con un gran numero di caratteristiche, ma può essere meno precisa della regressione a più variabili in alcuni casi.\nIn conclusione, gli algoritmi di regressione ML sono una parte importante dell’apprendimento automatico che consentono di prevedere una variabile continua in base alle caratteristiche di un insieme di dati. Ci sono diverse opzioni disponibili, ognuna con i suoi vantaggi e svantaggi. La scelta dell’algoritmo di regressione più adeguato dipende dalle esigenze specifiche di ogni progetto. È importante considerare le caratteristiche dei dati, il numero di caratteristiche presenti e il tipo di modello desiderato. Utilizzando gli algoritmi di regressione ML in modo appropriato, è possibile ottenere risultati molto precisi e creare modelli di grande valore per diverse applicazioni.\n",
@@ -441,11 +532,53 @@ var relearn_search_index = [
     "uri": "/2-appunti/2.3-machine-learning/2.3.3-algoritmi-di-regressione/index.html"
   },
   {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.3 Monitoraggio in produzione",
+    "uri": "/3-mlops/3.3-monitoraggio-in-produzione/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.3.1 Monitoraggio metriche",
+    "uri": "/3-mlops/3.3-monitoraggio-in-produzione/3.3.1-monitoraggio-metriche/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.3.2 Deploy in diversi ambienti",
+    "uri": "/3-mlops/3.3-monitoraggio-in-produzione/3.3.2-deploy-in-diversi-ambienti/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.3.3 Verifica del modello",
+    "uri": "/3-mlops/3.3-monitoraggio-in-produzione/3.3.3-verifica-del-modello/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.3.4 Automatizzazione Rollback",
+    "uri": "/3-mlops/3.3-monitoraggio-in-produzione/3.3.4-automatizzazione-rollback/index.html"
+  },
+  {
     "content": "Gli algoritmi di classificazione sono una famiglia di metodi di machine learning utilizzati per assegnare una categoria ad un dato elemento, in base a una serie di caratteristiche prese in considerazione. Un esempio di utilizzo di questi algoritmi è la previsione del rischio di default di un prestito in base a una serie di informazioni relative al debitore, come il reddito, l’età e il numero di prestiti già in corso.\nEsistono diversi tipi di algoritmi di classificazione, che possono essere suddivisi in base al modo in cui vengono effettuate le previsioni. Gli algoritmi basati su decisioni utilizzano una serie di regole predefinite per prevedere la classe di appartenenza di un elemento, mentre gli algoritmi basati su modelli apprendono dai dati stessi e costruiscono un modello matematico in grado di effettuare le previsioni.\nUn esempio di algoritmo di classificazione basato su decisioni è l’albero di decisione, che rappresenta le scelte disponibili per arrivare ad una decisione finale in forma di albero. Ogni nodo dell’albero rappresenta una decisione da prendere, basata su una caratteristica del dato di input, mentre le foglie rappresentano le possibili categorie di appartenenza.\nGli algoritmi di classificazione basati su modelli, invece, possono essere di diversi tipi. Gli algoritmi di regressione, ad esempio, utilizzano un modello lineare per effettuare le previsioni, mentre gli algoritmi di supporto vettore utilizzano una funzione di separazione per dividere i dati in diverse categorie.\nUn altro tipo di algoritmo di classificazione basato su modelli è il k-nearest neighbors, che prevede la classe di appartenenza di un elemento in base alla classe di appartenenza dei k elementi più simili presenti nel dataset di training.\nGli algoritmi di classificazione sono ampiamente utilizzati in diverse applicazioni, come il filtraggio del spam, la previsione del prezzo delle azioni e la diagnosi medica. Tuttavia, è importante scegliere l’algoritmo più adeguato in base al problema da risolvere e alla struttura dei dati a disposizione.\n",
     "description": "",
     "tags": null,
     "title": "3.4 Algoritmi di classificazione ",
     "uri": "/2-appunti/2.3-machine-learning/2.3.4-algoritmi-di-classificazione/index.html"
+  },
+  {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.4.1 configurazione e provisioning",
+    "uri": "/3-mlops/3.4-configurazione-e-provisioning/index.html"
   },
   {
     "content": "Gli algoritmi di clustering sono una classe di algoritmi di machine learning utilizzati per raggruppare osservazioni simili in “cluster”. Questi algoritmi sono ampiamente utilizzati in diverse applicazioni, come la segmentazione del mercato, la scoperta di gruppi di prodotti correlati e la classificazione di documenti.\nI metodi di clustering più comunemente utilizzati sono l’algoritmo k-means e l’algoritmo hierarchical clustering. L’algoritmo k-means funziona dividendo il dataset in k cluster predefiniti, mentre l’algoritmo di clustering gerarchico crea una gerarchia di cluster a partire da una matrice di distanze tra le osservazioni.\nUn altro tipo di algoritmo di clustering è il density-based spatial clustering of applications with noise (DBSCAN). Questo algoritmo si basa sulla densità di osservazioni in un dato spazio e non richiede il numero predefinito di cluster. Invece, DBSCAN identifica i cluster come regioni ad alta densità di osservazioni circondate da regioni a bassa densità. Un fattore importante da considerare quando si utilizzano gli algoritmi di clustering è la scelta della funzione di distanza da utilizzare per misurare la somiglianza tra le osservazioni. La scelta dipende dal tipo di dati che si stanno analizzando e dallo scopo dell’analisi. Ad esempio, la distanza Euclidea è spesso utilizzata per dati numerici, mentre la distanza di Jaccard viene utilizzata per dati categorici o binari.\nUn altro aspetto importante da considerare è il metodo di valutazione dei risultati del clustering. Ci sono diversi modi per valutare l’efficacia di un modello di clustering, come il coefficiente di silhouette, l’indice di Davies-Bouldin e il punteggio di validità di Calinski-Harabasz.\nIn conclusione, gli algoritmi di clustering sono una potente tecnica di machine learning che consentono di raggruppare osservazioni simili in cluster. La scelta dell’algoritmo e della funzione di distanza adeguati dipende dal tipo di dati e dallo scopo dell’analisi, mentre il metodo di valutazione è importante per garantire che i risultati del clustering siano significativi e utili.\n",
@@ -455,6 +588,13 @@ var relearn_search_index = [
     "uri": "/2-appunti/2.3-machine-learning/2.3.5-algoritmi-di-clustering/index.html"
   },
   {
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "3.5.1 Documentazione del processo",
+    "uri": "/3-mlops/3.5-documentazione-del-processo/index.html"
+  },
+  {
     "content": "La valutazione e ottimizzazione dei modelli di machine learning sono due aspetti cruciali nella progettazione e nell’applicazione di qualsiasi sistema di apprendimento automatico. La valutazione dei modelli serve a determinare quanto accuratamente essi sono in grado di prevedere l’output desiderato su dati di test, mentre l’ottimizzazione mira a migliorare le prestazioni del modello sui dati di training.\nMetriche di valutazione come l’accuratezza, il recall e l’AUC (area sotto la curva) sono spesso utilizzate per misurare le prestazioni di un modello di machine learning. La scelta della metrica più appropriata dipende dal tipo di problema e dalle esigenze specifiche dell’applicazione. Ad esempio, in un problema di classificazione binaria, potrebbe essere più importante minimizzare il numero di falsi positivi piuttosto che il numero di falsi negativi, in cui caso il recall sarebbe la metrica più adeguata.\nPer ottimizzare i modelli di machine learning, è spesso necessario tunare i loro iperparametri. I iperparametri sono impostazioni del modello che non vengono imparare dai dati di training, come il learning rate in una rete neurale o il numero di alberi in una random forest. La grid search e il random search sono due metodi comunemente utilizzati per esplorare l’iperparameter space e trovare i valori ottimali per i modelli di machine learning.\nUn altro approccio all’ottimizzazione dei modelli di machine learning è quello di utilizzare modelli ensembles, ovvero combinazioni di più modelli di machine learning. I modelli ensembles spesso ottengono prestazioni migliori rispetto ai modelli singoli, poiché combinano le previsioni di più modelli in una sola. Ci sono diverse tecniche per creare modelli ensembles, come il bagging e il boosting.\nLa validazione incrociata è un altro strumento importante per la valutazione e l’ottimizzazione dei modelli di machine learning. La validazione incrociata consiste nel suddividere il dataset di training in diverse fold, allenare il modello sulla maggior parte delle fold e valutare le prestazioni sulla fold rimanente. Questo processo viene ripetuto diverse volte con fold diverse, in modo da ottenere una stima più accurata delle prestazioni del modello sui dati di training.\nIn conclusione, la valutazione e l’ottimizzazione dei modelli di machine learning sono processi essenziali per garantire che il sistema di apprendimento automatico funzioni in modo accurato e affidabile. Le metriche di valutazione aiutano a misurare le prestazioni del modello sui dati di test, mentre l’ottimizzazione dei iperparametri e l’utilizzo di modelli ensembles possono migliorare le prestazioni del modello sui dati di training. La validazione incrociata fornisce una stima più accurata delle prestazioni del modello sui dati di training, consentendo di evitare il surfacing bias. È importante considerare tutti questi aspetti durante lo sviluppo di qualsiasi sistema di apprendimento automatico.\n",
     "description": "",
     "tags": null,
@@ -462,11 +602,11 @@ var relearn_search_index = [
     "uri": "/2-appunti/2.3-machine-learning/2.3.6-valutazione-e-ottimizzazione-dei-modelli-di-machine-learning/index.html"
   },
   {
-    "content": "\rCertificazioni Professionali Google Data Analytics Professional Certificate\nGoogle IT Automation with Python Professional Certificate\nML Engineering for Production (MLOps) Specialization\nMachine Learning Specialization\nDeep Learning Specialization\nNatural Language Processing Specialization\nDataset Google Dataset Search\nEarth Data\nCERN Open Data Portal\nGlobal Health Observatory Data Repository\nWorld Bank Open Data\ndata.world\nDataHub\nUC Irvine Machine Learning Repository\nLibri Python for Data Analysis - William McKinney\nData Science Projects with Python - Stephen Klosterman\nData Science (MIT Knowledge series) - John D. Kelleher\nBetter Data Visualizations - Jonathan Schwabish\nLinear Algebra and ML Optimization - Charu C. Aggarwal\nModern Computer Vision with PyTorch - Yeshwant Reddy\nFoundations of Statistics for Data Scientists - A. Agresti\nStrumenti Scikit-learn - Questa è una libreria Python per l’apprendimento automatico che fornisce una vasta gamma di algoritmi di apprendimento supervisionato e non supervisionato.\nMatplotlib - Matplotlib è una libreria Python per la creazione di grafici e visualizzazioni di dati. E’ molto utile per la visualizzazione dei dati durante la fase di esplorazione.\nJupyterLab - JupyterLab è un ambiente di sviluppo interattivo (IDE) per Python che consente di eseguire il codice in celle separate, inserire commenti e visualizzare i risultati in modo organizzato.\nPlotly - Plotly è una libreria Python per la creazione di grafici interattivi e visualizzazioni di dati. E’ una valida alternativa rispetto a Matplotlib per la visualizzazione dei dati.\nPandas - Pandas è una libreria Python per l’elaborazione dei dati che fornisce strutture di dati efficienti e semplici da usare per la manipolazione e l’analisi dei dati.\nNumpy - Numpy è una libreria Python per il calcolo scientifico che fornisce funzioni avanzate per la manipolazione di array e matrici multidimensionali.\nSciPy - SciPy è una libreria Python per la scienza e l’ingegneria che fornisce funzioni avanzate per l’elaborazione dei dati, l’ottimizzazione, l’integrazione e l’analisi statistica.\nPandas Profiling - Questo tool genera un report automatico che fornisce una panoramica dettagliata dei dati, tra cui statistiche descrittive, relazioni tra variabili e problemi potenziali come valori mancanti.\nHyperopt - Questo è un tool di ottimizzazione dei parametri per l’apprendimento automatico che consente di trovare facilmente i parametri ottimali per i tuoi modelli.\nMLflow - MLflow è una piattaforma open-source per la gestione delle attività di machine learning, che consente di monitorare, riprodurre e governare i flussi di lavoro di apprendimento automatico.\nDVC - DVC è una piattaforma open-source per la gestione dei dati e del codice per il machine learning, che consente di monitorare e controllare facilmente i dati utilizzati per addestrare i modelli.\nAlibi - Alibi è una libreria Python per l’interpretazione del modello e la spiegazione delle decisioni, fornisce funzioni per visualizzare e analizzare come i modelli prendono decisioni.\n",
+    "content": "4.1 Supervised learning 4.1.1 Regressione non-lineare 3.1.2 Classificatore di immagini(CNN) 4.2 Unsupervised Learning 4.2.1 Clustering 4.2.2 Raccomandation System 4.3 Classificazione NLP 4.3.1 Analisi del Sentimento 4.4 Reinforced Learning 4.4.1 Regressione non-lineare ",
     "description": "",
     "tags": null,
-    "title": "4  -  Risorse",
-    "uri": "/4-risorse/index.html"
+    "title": "4  -  Progetti",
+    "uri": "/4-progetti/index.html"
   },
   {
     "content": "L’apprendimento profondo, o deep learning (DL), è un sottocampo dell’intelligenza artificiale (AI) che si concentra sulla creazione di modelli di intelligenza artificiale in grado di apprendere dai dati in modo simile a come lo farebbe un essere umano. I modelli di apprendimento profondo sono stati in grado di ottenere risultati sorprendenti in una vasta gamma di campi, dalla traduzione automatica alla diagnosi medica alla creazione di musica.\nUno dei principali vantaggi dell’apprendimento profondo è la sua capacità di apprendere automaticamente le caratteristiche rilevanti dei dati, eliminando la necessità di una selezione manuale delle caratteristiche da parte degli sviluppatori. Inoltre, i modelli di apprendimento profondo sono in grado di gestire grandi quantità di dati, rendendoli ideali per il machine learning di grandi set di dati.\nTuttavia, l’apprendimento profondo presenta anche alcune sfide. Richiede grandi quantità di dati etichettati per addestrare i modelli, il che può essere costoso e difficile da ottenere. Inoltre, i modelli di apprendimento profondo sono spesso difficili da comprendere e spiegare, rendendo difficile la loro adozione in alcuni settori regolamentati come la finanza e la sanità.\nNonostante queste sfide, l’apprendimento profondo sta diventando sempre più popolare e viene utilizzato in una vasta gamma di applicazioni. Un esempio di successo è l’utilizzo di modelli di apprendimento profondo per il riconoscimento delle immagini, dove i modelli sono stati in grado di superare gli esseri umani in diverse competizioni.\nL’apprendimento profondo viene spesso utilizzato insieme ad altre tecniche di intelligenza artificiale, come il machine learning e l’apprendimento automatico, per ottenere risultati ancora migliori. Ad esempio, il machine learning può essere utilizzato per selezionare le caratteristiche più importanti dei dati, mentre l’apprendimento profondo può essere utilizzato per elaborare i dati e fare previsioni.\nIn conclusione, l’apprendimento profondo è una tecnologia emergente che sta rapidamente guadagnando popolarità nell’intelligenza artificiale. Offre numerosi vantaggi rispetto ad altre tecniche di machine learning, come la capacità di apprendere automaticamente le caratteristiche rilevanti dei dati, ma presenta anche alcune sfide, come la necessità di grandi quantità di dati etichettati per l’addestramento dei modelli e la difficoltà di comprensione e spiegazione dei modelli stessi. Nonostante queste sfide, l’apprendimento profondo sta dimostrando di essere una tecnologia estremamente potente e promettente, e ci aspettiamo che continui a crescere e a evolversi in futuro.\n",
@@ -504,14 +644,14 @@ var relearn_search_index = [
     "uri": "/2-appunti/2.4-apprendimento-profondo/2.4.5-transfer-learning/index.html"
   },
   {
-    "content": "omde 12 ",
+    "content": "\rCertificazioni Professionali Google Data Analytics Professional Certificate\nGoogle IT Automation with Python Professional Certificate\nML Engineering for Production (MLOps) Specialization\nMachine Learning Specialization\nDeep Learning Specialization\nNatural Language Processing Specialization\nDataset Google Dataset Search\nEarth Data\nCERN Open Data Portal\nGlobal Health Observatory Data Repository\nWorld Bank Open Data\ndata.world\nDataHub\nUC Irvine Machine Learning Repository\nLibri Python for Data Analysis - William McKinney\nData Science Projects with Python - Stephen Klosterman\nData Science (MIT Knowledge series) - John D. Kelleher\nBetter Data Visualizations - Jonathan Schwabish\nLinear Algebra and ML Optimization - Charu C. Aggarwal\nModern Computer Vision with PyTorch - Yeshwant Reddy\nFoundations of Statistics for Data Scientists - A. Agresti\nStrumenti Scikit-learn - Questa è una libreria Python per l’apprendimento automatico che fornisce una vasta gamma di algoritmi di apprendimento supervisionato e non supervisionato.\nMatplotlib - Matplotlib è una libreria Python per la creazione di grafici e visualizzazioni di dati. E’ molto utile per la visualizzazione dei dati durante la fase di esplorazione.\nJupyterLab - JupyterLab è un ambiente di sviluppo interattivo (IDE) per Python che consente di eseguire il codice in celle separate, inserire commenti e visualizzare i risultati in modo organizzato.\nPlotly - Plotly è una libreria Python per la creazione di grafici interattivi e visualizzazioni di dati. E’ una valida alternativa rispetto a Matplotlib per la visualizzazione dei dati.\nPandas - Pandas è una libreria Python per l’elaborazione dei dati che fornisce strutture di dati efficienti e semplici da usare per la manipolazione e l’analisi dei dati.\nNumpy - Numpy è una libreria Python per il calcolo scientifico che fornisce funzioni avanzate per la manipolazione di array e matrici multidimensionali.\nSciPy - SciPy è una libreria Python per la scienza e l’ingegneria che fornisce funzioni avanzate per l’elaborazione dei dati, l’ottimizzazione, l’integrazione e l’analisi statistica.\nPandas Profiling - Questo tool genera un report automatico che fornisce una panoramica dettagliata dei dati, tra cui statistiche descrittive, relazioni tra variabili e problemi potenziali come valori mancanti.\nHyperopt - Questo è un tool di ottimizzazione dei parametri per l’apprendimento automatico che consente di trovare facilmente i parametri ottimali per i tuoi modelli.\nMLflow - MLflow è una piattaforma open-source per la gestione delle attività di machine learning, che consente di monitorare, riprodurre e governare i flussi di lavoro di apprendimento automatico.\nDVC - DVC è una piattaforma open-source per la gestione dei dati e del codice per il machine learning, che consente di monitorare e controllare facilmente i dati utilizzati per addestrare i modelli.\nAlibi - Alibi è una libreria Python per l’interpretazione del modello e la spiegazione delle decisioni, fornisce funzioni per visualizzare e analizzare come i modelli prendono decisioni.\n",
     "description": "",
     "tags": null,
-    "title": "5  -  Φιλοσοφία",
-    "uri": "/5-filosofia/index.html"
+    "title": "5  -  Risorse",
+    "uri": "/5-risorse/index.html"
   },
   {
-    "content": "════════════════════════════════════ 01 - ABOUT ME 02 - APPUNTI 03 - PROGETTI 04 - RISORSE 05 - FILOSOFIA ════════════════════════════════════ ",
+    "content": "════════════════════════════════════ 01 - ABOUT ME 02 - APPUNTI 03 - MLOPS 04 - PROGETTI 05 - RISORSE ════════════════════════════════════ | ",
     "description": "",
     "tags": null,
     "title": "AUTOGNOSIS",
@@ -521,85 +661,71 @@ var relearn_search_index = [
     "content": "intro ",
     "description": "",
     "tags": null,
-    "title": "3.1 Supervised learning",
-    "uri": "/3-progetti/3.1-supervised-learning/index.html"
+    "title": "4.1 Supervised learning",
+    "uri": "/4-progetti/4.1-supervised-learning/index.html"
   },
   {
     "content": "1. Introduzione al problema: Presentazione 2. Recupero e pulizia dei dati Gestione 2.1 Acquisizione dei dati 3. Analisi dei dati Visualizzazione e Analisi dei dati per individuare eventuali relazioni e tendenze 4. Costruzione del modello di regressione non-lineare: Processo di costruzione del modello, scelta variabili indipendenti e dipendenti, tuning parametri 5. Valutazione del modello Utilizzo di diverse misure di performance per valutare la qualità del modello costruito 6. Utilizzo del modello Modello finale e sue applicazioni pratiche per la previsione della fornitura energetica necessaria. ",
     "description": "",
     "tags": null,
-    "title": "3.1.1 Regressione non-lineare",
-    "uri": "/3-progetti/3.1-supervised-learning/3.1.1-regressione-non-lineare/index.html"
+    "title": "4.1.1 Regressione non-lineare",
+    "uri": "/4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/index.html"
   },
   {
     "content": "intro ",
     "description": "",
     "tags": null,
-    "title": "3.1.1 Regressione non-lineare",
-    "uri": "/3-progetti/3.4-reinforced-learning/3.1.1-regressione-non-lineare/index.html"
+    "title": "4.1.2 Classificatore CNN",
+    "uri": "/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/index.html"
   },
   {
     "content": "intro ",
     "description": "",
     "tags": null,
-    "title": "3.1.2 Classificatore CNN",
-    "uri": "/3-progetti/3.1-supervised-learning/3.1.2-classificatore-cnn/index.html"
+    "title": "4.2 Unsupervised Learning",
+    "uri": "/4-progetti/4.2-unsupervised-learning/index.html"
   },
   {
     "content": "intro ",
     "description": "",
     "tags": null,
-    "title": "3.2 Unsupervised Learning",
-    "uri": "/3-progetti/3.2-unsupervised-learning/index.html"
+    "title": "4.2.1 Clustering",
+    "uri": "/4-progetti/4.2-unsupervised-learning/4.2.1-clustering/index.html"
   },
   {
     "content": "intro ",
     "description": "",
     "tags": null,
-    "title": "3.2.1 Clustering",
-    "uri": "/3-progetti/3.2-unsupervised-learning/3.2.1-clustering/index.html"
+    "title": "4.2.2 Raccomandation System",
+    "uri": "/4-progetti/4.2-unsupervised-learning/4.2.2-sistemi-di-raccomandazione/index.html"
   },
   {
     "content": "intro ",
     "description": "",
     "tags": null,
-    "title": "3.2.2 Raccomandation System",
-    "uri": "/3-progetti/3.2-unsupervised-learning/3.2.2-sistemi-di-raccomandazione/index.html"
+    "title": "4.3 Classificazione NLP",
+    "uri": "/4-progetti/4.3-classificazione-nlp/index.html"
   },
   {
     "content": "intro ",
     "description": "",
     "tags": null,
-    "title": "3.3 Classificazione NLP",
-    "uri": "/3-progetti/3.3-classificazione-nlp/index.html"
+    "title": "4.3.1 Analisi del Sentimento",
+    "uri": "/4-progetti/4.3-classificazione-nlp/4.3.1-analisi-del-sentimento/index.html"
   },
   {
     "content": "intro ",
     "description": "",
     "tags": null,
-    "title": "3.3.1 Analisi del Sentimento",
-    "uri": "/3-progetti/3.3-classificazione-nlp/3.3.1-analisi-del-sentimento/index.html"
+    "title": "4.4 Reinforced Learning",
+    "uri": "/4-progetti/4.4-reinforced-learning/index.html"
   },
   {
     "content": "intro ",
     "description": "",
     "tags": null,
-    "title": "3.4 Reinforced Learning",
-    "uri": "/3-progetti/3.4-reinforced-learning/index.html"
-  },
-  {
-    "content": "ggfhhfghyjg ",
-    "description": "",
-    "tags": null,
-    "title": "5.1 Platone",
-    "uri": "/5-filosofia/5.1-platone/index.html"
-  },
-  {
-    "content": "asdasdasd ",
-    "description": "",
-    "tags": null,
-    "title": "5.2 Aristotele",
-    "uri": "/5-filosofia/5.2-aristotele/index.html"
+    "title": "4.4.1 Regressione non-lineare",
+    "uri": "/4-progetti/4.4-reinforced-learning/4.4.1-regressione-non-lineare/index.html"
   },
   {
     "content": "",

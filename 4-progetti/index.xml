@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4  -  Progetti on Data Science &amp; Co.</title>
+    <link>https://example.com/4-progetti/index.html</link>
+    <description>Recent content in 4  -  Progetti on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/4-progetti/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4.1 Supervised learning</title>
+      <link>https://example.com/4-progetti/4.1-supervised-learning/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
+      <guid>https://example.com/4-progetti/4.1-supervised-learning/index.html</guid>
+      <description>intro </description>
+    </item>
+    <item>
+      <title>4.2 Unsupervised Learning</title>
+      <link>https://example.com/4-progetti/4.2-unsupervised-learning/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
+      <guid>https://example.com/4-progetti/4.2-unsupervised-learning/index.html</guid>
+      <description>intro </description>
+    </item>
+    <item>
+      <title>4.3 Classificazione NLP</title>
+      <link>https://example.com/4-progetti/4.3-classificazione-nlp/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
+      <guid>https://example.com/4-progetti/4.3-classificazione-nlp/index.html</guid>
+      <description>intro </description>
+    </item>
+    <item>
+      <title>4.4 Reinforced Learning</title>
+      <link>https://example.com/4-progetti/4.4-reinforced-learning/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
+      <guid>https://example.com/4-progetti/4.4-reinforced-learning/index.html</guid>
+      <description>intro </description>
+    </item>
+  </channel>
+</rss>

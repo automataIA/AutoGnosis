@@ -237,7 +237,11 @@
     <lastmod>2022-12-28T18:27:41+01:00</lastmod>
   </url>
   <url>
-    <loc>https://example.com/3-progetti/index.html</loc>
+    <loc>https://example.com/3-mlops/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/index.html</loc>
     <lastmod>2022-12-28T18:27:41+01:00</lastmod>
   </url>
   <url>
@@ -245,7 +249,55 @@
     <lastmod>2022-12-28T18:27:41+01:00</lastmod>
   </url>
   <url>
+    <loc>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.1-perch%C3%A8-un-ambiente-protetto/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.2-template-per-il-progetto/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.3-gestione-delle-dipendenze/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.4-qualit%C3%A0-del-codice/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.5-versionamento-del-codice/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.6-strumenti-di-testing/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.7-debugging/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.8-analisi-delle-prestazioni/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.2-fase-di-addestramento/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
     <loc>https://example.com/2-appunti/2.3-machine-learning/2.3.2-tipi-di-apprendimento-automatico/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.2-fase-di-addestramento/3.2.1-automazione-operazioni/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.2-fase-di-addestramento/3.2.2-ottimizzazione-del-modello/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.2-fase-di-addestramento/3.2.3-tracciamento-delle-modifiche/index.html</loc>
     <lastmod>2022-12-28T18:27:41+01:00</lastmod>
   </url>
   <url>
@@ -253,7 +305,31 @@
     <lastmod>2022-12-28T18:27:41+01:00</lastmod>
   </url>
   <url>
+    <loc>https://example.com/3-mlops/3.3-monitoraggio-in-produzione/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.3-monitoraggio-in-produzione/3.3.1-monitoraggio-metriche/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.3-monitoraggio-in-produzione/3.3.2-deploy-in-diversi-ambienti/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.3-monitoraggio-in-produzione/3.3.3-verifica-del-modello/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.3-monitoraggio-in-produzione/3.3.4-automatizzazione-rollback/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
     <loc>https://example.com/2-appunti/2.3-machine-learning/2.3.4-algoritmi-di-classificazione/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/3-mlops/3.4-configurazione-e-provisioning/index.html</loc>
     <lastmod>2022-12-28T18:27:41+01:00</lastmod>
   </url>
   <url>
@@ -261,11 +337,15 @@
     <lastmod>2022-12-28T18:27:41+01:00</lastmod>
   </url>
   <url>
+    <loc>https://example.com/3-mlops/3.5-documentazione-del-processo/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
     <loc>https://example.com/2-appunti/2.3-machine-learning/2.3.6-valutazione-e-ottimizzazione-dei-modelli-di-machine-learning/index.html</loc>
     <lastmod>2022-12-28T18:27:41+01:00</lastmod>
   </url>
   <url>
-    <loc>https://example.com/4-risorse/index.html</loc>
+    <loc>https://example.com/4-progetti/index.html</loc>
     <lastmod>2022-12-28T18:27:41+01:00</lastmod>
   </url>
   <url>
@@ -289,7 +369,7 @@
     <lastmod>2022-12-28T18:27:41+01:00</lastmod>
   </url>
   <url>
-    <loc>https://example.com/5-filosofia/index.html</loc>
+    <loc>https://example.com/5-risorse/index.html</loc>
     <lastmod>2022-12-28T18:27:41+01:00</lastmod>
   </url>
   <url>
@@ -297,52 +377,44 @@
     <lastmod>2022-12-28T18:27:41+01:00</lastmod>
   </url>
   <url>
-    <loc>https://example.com/3-progetti/3.1-supervised-learning/index.html</loc>
+    <loc>https://example.com/4-progetti/4.1-supervised-learning/index.html</loc>
     <lastmod>2022-12-28T18:27:18+01:00</lastmod>
   </url>
   <url>
-    <loc>https://example.com/3-progetti/3.1-supervised-learning/3.1.1-regressione-non-lineare/index.html</loc>
+    <loc>https://example.com/4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/index.html</loc>
     <lastmod>2022-12-28T18:27:18+01:00</lastmod>
   </url>
   <url>
-    <loc>https://example.com/3-progetti/3.4-reinforced-learning/3.1.1-regressione-non-lineare/index.html</loc>
+    <loc>https://example.com/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/index.html</loc>
     <lastmod>2022-12-28T18:27:18+01:00</lastmod>
   </url>
   <url>
-    <loc>https://example.com/3-progetti/3.1-supervised-learning/3.1.2-classificatore-cnn/index.html</loc>
+    <loc>https://example.com/4-progetti/4.2-unsupervised-learning/index.html</loc>
     <lastmod>2022-12-28T18:27:18+01:00</lastmod>
   </url>
   <url>
-    <loc>https://example.com/3-progetti/3.2-unsupervised-learning/index.html</loc>
+    <loc>https://example.com/4-progetti/4.2-unsupervised-learning/4.2.1-clustering/index.html</loc>
     <lastmod>2022-12-28T18:27:18+01:00</lastmod>
   </url>
   <url>
-    <loc>https://example.com/3-progetti/3.2-unsupervised-learning/3.2.1-clustering/index.html</loc>
+    <loc>https://example.com/4-progetti/4.2-unsupervised-learning/4.2.2-sistemi-di-raccomandazione/index.html</loc>
     <lastmod>2022-12-28T18:27:18+01:00</lastmod>
   </url>
   <url>
-    <loc>https://example.com/3-progetti/3.2-unsupervised-learning/3.2.2-sistemi-di-raccomandazione/index.html</loc>
+    <loc>https://example.com/4-progetti/4.3-classificazione-nlp/index.html</loc>
     <lastmod>2022-12-28T18:27:18+01:00</lastmod>
   </url>
   <url>
-    <loc>https://example.com/3-progetti/3.3-classificazione-nlp/index.html</loc>
+    <loc>https://example.com/4-progetti/4.3-classificazione-nlp/4.3.1-analisi-del-sentimento/index.html</loc>
     <lastmod>2022-12-28T18:27:18+01:00</lastmod>
   </url>
   <url>
-    <loc>https://example.com/3-progetti/3.3-classificazione-nlp/3.3.1-analisi-del-sentimento/index.html</loc>
+    <loc>https://example.com/4-progetti/4.4-reinforced-learning/index.html</loc>
     <lastmod>2022-12-28T18:27:18+01:00</lastmod>
   </url>
   <url>
-    <loc>https://example.com/3-progetti/3.4-reinforced-learning/index.html</loc>
+    <loc>https://example.com/4-progetti/4.4-reinforced-learning/4.4.1-regressione-non-lineare/index.html</loc>
     <lastmod>2022-12-28T18:27:18+01:00</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/5-filosofia/5.1-platone/index.html</loc>
-    <lastmod>2022-12-28T18:27:18+01:00</lastmod>
-  </url>
-  <url>
-    <loc>https://example.com/5-filosofia/5.2-aristotele/index.html</loc>
-    <lastmod>2022-12-28T18:26:48+01:00</lastmod>
   </url>
   <url>
     <loc>https://example.com/categories/index.html</loc>

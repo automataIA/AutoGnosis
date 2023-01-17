@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3.2 Fase di Addestramento on Data Science &amp; Co.</title>
+    <link>https://example.com/3-mlops/3.2-fase-di-addestramento/index.html</link>
+    <description>Recent content in 3.2 Fase di Addestramento on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/3-mlops/3.2-fase-di-addestramento/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3.2.1 Automazione operazioni</title>
+      <link>https://example.com/3-mlops/3.2-fase-di-addestramento/3.2.1-automazione-operazioni/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/3-mlops/3.2-fase-di-addestramento/3.2.1-automazione-operazioni/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3.2.2 Ottimizzazione del modello</title>
+      <link>https://example.com/3-mlops/3.2-fase-di-addestramento/3.2.2-ottimizzazione-del-modello/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/3-mlops/3.2-fase-di-addestramento/3.2.2-ottimizzazione-del-modello/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3.2.3 Tracciamento delle modifiche</title>
+      <link>https://example.com/3-mlops/3.2-fase-di-addestramento/3.2.3-tracciamento-delle-modifiche/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/3-mlops/3.2-fase-di-addestramento/3.2.3-tracciamento-delle-modifiche/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

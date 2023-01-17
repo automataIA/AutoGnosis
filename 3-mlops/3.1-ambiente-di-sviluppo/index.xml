@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3.1 Ambiente di sviluppo on Data Science &amp; Co.</title>
+    <link>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/index.html</link>
+    <description>Recent content in 3.1 Ambiente di sviluppo on Data Science &amp; Co.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it</language>
+    <lastBuildDate>Wed, 28 Dec 2022 18:27:41 +0100</lastBuildDate><atom:link href="https://example.com/3-mlops/3.1-ambiente-di-sviluppo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3.1.1 Perchè un ambiente protetto</title>
+      <link>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.1-perch%C3%A8-un-ambiente-protetto/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.1-perch%C3%A8-un-ambiente-protetto/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3.1.2 Template per il progetto</title>
+      <link>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.2-template-per-il-progetto/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.2-template-per-il-progetto/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3.1.3 Gestione delle dipendenze</title>
+      <link>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.3-gestione-delle-dipendenze/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.3-gestione-delle-dipendenze/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3.1.4 Qualità del codice</title>
+      <link>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.4-qualit%C3%A0-del-codice/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.4-qualit%C3%A0-del-codice/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3.1.5 Versionamento del codice</title>
+      <link>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.5-versionamento-del-codice/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.5-versionamento-del-codice/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3.1.6 Strumenti di testing</title>
+      <link>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.6-strumenti-di-testing/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.6-strumenti-di-testing/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3.1.7 Debugging</title>
+      <link>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.7-debugging/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.7-debugging/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3.1.8 Analisi delle prestazioni</title>
+      <link>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.8-analisi-delle-prestazioni/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/3-mlops/3.1-ambiente-di-sviluppo/3.1.8-analisi-delle-prestazioni/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
