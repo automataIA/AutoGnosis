@@ -9,21 +9,21 @@
     <meta name="author" content="Sören Weber">
     <title>3.1.1 Perchè un ambiente protetto  -  Data Science &amp; Co.</title>
     <link href="../../../3-mlops/3.1-ambiente-di-sviluppo/3.1.1-perch%C3%A8-un-ambiente-protetto/index.xml" rel="alternate" type="application/rss+xml" title="3.1.1 Perchè un ambiente protetto  -  Data Science &amp; Co.">
-    <link href="../../../images/favicon.svg?1674048670" rel="icon" type="image/svg+xml">
+    <link href="../../../images/favicon.svg?1674205354" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../../../css/fontawesome-all.min.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/featherlight.min.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/featherlight.min.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/auto-complete.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/perfect-scrollbar.min.css?1674048670" rel="stylesheet">
-    <link href="../../../css/nucleus.css?1674048670" rel="stylesheet">
-    <link href="../../../css/fonts.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/theme.css?1674048670" rel="stylesheet">
-    <link href="../../../css/theme-relearn-light.css?1674048670" rel="stylesheet" id="variant-style">
-    <link href="../../../css/ie.css?1674048670" rel="stylesheet">
-    <link href="../../../css/variant.css?1674048670" rel="stylesheet">
-    <link href="../../../css/print.css?1674048670" rel="stylesheet" media="print">
-    <script src="../../../js/url.js?1674048670"></script>
-    <script src="../../../js/variant.js?1674048670"></script>
+    <link href="../../../css/fontawesome-all.min.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/featherlight.min.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/featherlight.min.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/auto-complete.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/perfect-scrollbar.min.css?1674205354" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1674205354" rel="stylesheet">
+    <link href="../../../css/fonts.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/theme.css?1674205354" rel="stylesheet">
+    <link href="../../../css/theme-relearn-light.css?1674205354" rel="stylesheet" id="variant-style">
+    <link href="../../../css/ie.css?1674205354" rel="stylesheet">
+    <link href="../../../css/variant.css?1674205354" rel="stylesheet">
+    <link href="../../../css/print.css?1674205354" rel="stylesheet" media="print">
+    <script src="../../../js/url.js?1674205354"></script>
+    <script src="../../../js/variant.js?1674205354"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/example.com/';
       window.variants && variants.init( [ 'relearn-light' ] );
     </script>
-    <script src="../../../js/jquery.min.js?1674048670" defer></script>
+    <script src="../../../js/jquery.min.js?1674205354" defer></script>
     <style>
       #body img.bg-white {
         background-color: white;
@@ -85,6 +85,12 @@
           <article class="default">
 <h1 id="3.1.1-perch%C3%A8-un-ambiente-protetto">3.1.1 Perchè un ambiente protetto</h1>
 
+<p>L&rsquo;utilizzo di un ambiente virtuale protetto (ML, python) è diventato sempre più importante negli ultimi anni a causa della crescente quantità di dati sensibili e dell&rsquo;aumento della complessità delle tecnologie di apprendimento automatico (<strong>machine learning</strong>, <strong>deep learning</strong>).</p>
+<p>Un ambiente virtuale protetto offre una serie di vantaggi per garantire la sicurezza dei dati e delle infrastrutture. In primo luogo, permette di isolare le risorse informatiche e i dati sensibili in un ambiente separato, riducendo il rischio di violazioni della sicurezza. In secondo luogo, consente di gestire e monitorare in modo efficace l&rsquo;accesso alle risorse informatiche e ai dati sensibili, garantendo che solo gli utenti autorizzati abbiano accesso a queste risorse.</p>
+<p>Un ambiente virtuale protetto può essere creato utilizzando strumenti come <strong>VirtualBox</strong>, <strong>VMWare</strong> o <strong>Docker</strong>. Questi strumenti consentono di creare un ambiente virtuale isolato all&rsquo;interno del sistema operativo host, in cui è possibile installare e configurare le risorse informatiche e i dati sensibili. In questo modo, è possibile proteggere i dati sensibili da eventuali violazioni della sicurezza o attacchi informatici.</p>
+<p>Per quanto riguarda l&rsquo;utilizzo dell&rsquo;ambiente virtuale protetto per il <strong>machine learning</strong> e il <strong>deep learning</strong>, ci sono molti vantaggi. Ad esempio, permette di testare e sviluppare modelli di apprendimento automatico in un ambiente isolato e controllato, senza il rischio di danneggiare il sistema operativo host o di compromettere i dati sensibili. Inoltre, consente di eseguire facilmente il <strong>debugging</strong> e il <strong>testing</strong> dei modelli di apprendimento automatico, in modo da poterli migliorare e ottimizzare.</p>
+<p>Infine, l&rsquo;utilizzo di un ambiente virtuale protetto per il <strong>machine learning</strong> e il <strong>deep learning</strong> consente di utilizzare facilmente diverse versioni di librerie e framework di apprendimento automatico, come <strong>TensorFlow</strong>, <strong>Keras</strong> o <strong>PyTorch</strong>, senza il rischio di causare conflitti con le versioni già installate sul sistema operativo host.</p>
+<p>In conclusione, l&rsquo;utilizzo di un ambiente virtuale protetto (ML, python) è essenziale per garantire la sicurezza dei dati e delle infrastrutture, nonché per sviluppare e testare modelli di apprendimento automatico in modo efficace. L&rsquo;utilizzo di strumenti come <strong>VirtualBox</strong>, <strong>VMWare</strong></p>
 
             <footer class="footline">
             </footer>
@@ -181,12 +187,12 @@
         <script>
           var contentLangs=['it'];
         </script>
-        <script src="../../../js/auto-complete.js?1674048672" defer></script>
-        <script src="../../../js/lunr/lunr.min.js?1674048672" defer></script>
-        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1674048672" defer></script>
-        <script src="../../../js/lunr/lunr.multi.min.js?1674048672" defer></script>
-        <script src="../../../js/lunr/lunr.it.min.js?1674048672" defer></script>
-        <script src="../../../js/search.js?1674048672" defer></script>
+        <script src="../../../js/auto-complete.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.multi.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.it.min.js?1674205356" defer></script>
+        <script src="../../../js/search.js?1674205356" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -347,9 +353,9 @@
         </div>
       </div>
     </aside>
-    <script src="../../../js/clipboard.min.js?1674048673" defer></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1674048673" defer></script>
-    <script src="../../../js/featherlight.min.js?1674048673" defer></script>
-    <script src="../../../js/theme.js?1674048673" defer></script>
+    <script src="../../../js/clipboard.min.js?1674205356" defer></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1674205356" defer></script>
+    <script src="../../../js/featherlight.min.js?1674205356" defer></script>
+    <script src="../../../js/theme.js?1674205356" defer></script>
   </body>
 </html>

@@ -9,21 +9,21 @@
     <meta name="author" content="Sören Weber">
     <title>3.2 Fase di Addestramento  -  Data Science &amp; Co.</title>
     <link href="../../3-mlops/3.2-fase-di-addestramento/index.xml" rel="alternate" type="application/rss+xml" title="3.2 Fase di Addestramento  -  Data Science &amp; Co.">
-    <link href="../../images/favicon.svg?1674048670" rel="icon" type="image/svg+xml">
+    <link href="../../images/favicon.svg?1674205354" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../../css/fontawesome-all.min.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../css/featherlight.min.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/featherlight.min.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../css/auto-complete.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../css/perfect-scrollbar.min.css?1674048670" rel="stylesheet">
-    <link href="../../css/nucleus.css?1674048670" rel="stylesheet">
-    <link href="../../css/fonts.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../css/theme.css?1674048670" rel="stylesheet">
-    <link href="../../css/theme-relearn-light.css?1674048670" rel="stylesheet" id="variant-style">
-    <link href="../../css/ie.css?1674048670" rel="stylesheet">
-    <link href="../../css/variant.css?1674048670" rel="stylesheet">
-    <link href="../../css/print.css?1674048670" rel="stylesheet" media="print">
-    <script src="../../js/url.js?1674048670"></script>
-    <script src="../../js/variant.js?1674048670"></script>
+    <link href="../../css/fontawesome-all.min.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../css/featherlight.min.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/featherlight.min.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../css/auto-complete.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1674205354" rel="stylesheet">
+    <link href="../../css/nucleus.css?1674205354" rel="stylesheet">
+    <link href="../../css/fonts.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1674205354" rel="stylesheet">
+    <link href="../../css/theme-relearn-light.css?1674205354" rel="stylesheet" id="variant-style">
+    <link href="../../css/ie.css?1674205354" rel="stylesheet">
+    <link href="../../css/variant.css?1674205354" rel="stylesheet">
+    <link href="../../css/print.css?1674205354" rel="stylesheet" media="print">
+    <script src="../../js/url.js?1674205354"></script>
+    <script src="../../js/variant.js?1674205354"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/example.com/';
       window.variants && variants.init( [ 'relearn-light' ] );
     </script>
-    <script src="../../js/jquery.min.js?1674048670" defer></script>
+    <script src="../../js/jquery.min.js?1674205354" defer></script>
     <style>
       #body img.bg-white {
         background-color: white;
@@ -84,6 +84,16 @@
           <article class="default">
 <h1 id="3.2-fase-di-addestramento">3.2 Fase di Addestramento</h1>
 
+<p>La fase di addestramento in un progetto di machine learning è un passo cruciale per ottenere un modello preciso e affidabile. <strong>Python</strong> è uno dei linguaggi più popolari per lo sviluppo di progetti di <strong>machine learning</strong>, in quanto offre un&rsquo;ampia gamma di librerie e framework per la creazione di modelli.</p>
+<p>Durante la fase di addestramento, un modello di <strong>machine learning</strong> utilizza un set di dati di addestramento per &ldquo;imparare&rdquo; e &ldquo;generalizzare&rdquo; le informazioni presenti nei dati. Il modello utilizza un algoritmo di <strong>ottimizzazione</strong> per adattare i suoi parametri in modo da minimizzare l&rsquo;errore sui dati di addestramento. Un esempio di algoritmo di ottimizzazione comunemente utilizzato è <strong>gradient descent</strong>.</p>
+<p>Il set di dati di addestramento è diviso in due parti: il set di dati di <strong>addestramento</strong> vero e proprio e il set di <strong>validazione</strong>. Il set di dati di addestramento viene utilizzato per addestrare il modello, mentre il set di validazione viene utilizzato per valutare la performance del modello e prevenire il <strong>sovrapprendimento</strong>, un fenomeno in cui il modello &ldquo;memorizza&rdquo; troppo bene i dati di addestramento e non è in grado di generalizzare bene su dati nuovi.</p>
+<p>Una volta che il modello è stato addestrato e ottimizzato utilizzando i dati di addestramento e validazione, viene utilizzato un set di dati di <strong>test</strong> per valutare la sua performance su dati mai visti prima dal modello. La <strong>bontà del modello</strong> viene valutata utilizzando metriche come <strong>accuratezza</strong>, <strong>precisione</strong>, e <strong>recall</strong>.</p>
+<p>In generale, la fase di addestramento in un progetto di <strong>machine learning</strong> è un processo iterativo in cui si provano diverse configurazioni di modello e di algoritmi di ottimizzazione per ottenere il miglior risultato possibile. Utilizzando librerie come <strong>TensorFlow</strong> e <strong>Scikit-learn</strong> in Python, è possibile automatizzare e semplificare molte delle attività coinvolte nella fase di addestramento.</p>
+<p>In sintesi, la fase di addestramento in un progetto di machine learning è un passo fondamentale per ottenere un modello preciso e affidabile. Utilizzando Python e librerie specifiche, è possibile automatizzare e semplificare molte delle attività coinvolte nel processo di addestramento. La qualità del modello dipende dalla qualità dei dati di addestramento e dalla scelta degli algoritmi di otimizzazione. Inoltre, è importante utilizzare tecniche come il <strong>validation set</strong> per prevenire il sovrapprendimento e assicurarsi che il modello sia in grado di generalizzare bene su dati nuovi.</p>
+<p>In alcuni casi, è possibile utilizzare tecniche avanzate come la <strong>regolarizzazione</strong> per controllare la complessità del modello e prevenire il sovrapprendimento. La <strong>regolarizzazione L1</strong> e la <strong>regolarizzazione L2</strong> sono due esempi di queste tecniche che possono essere utilizzate per ridurre la complessità del modello.</p>
+<p>La fase di addestramento è anche l&rsquo;occasione per esplorare e pre-elaborare i dati. Ad esempio, la <strong>normalizzazione</strong> dei dati può essere utile per evitare che una feature con valori molto grandi sovrasti gli altri durante l&rsquo;addestramento. Inoltre, la <strong>selezione delle caratteristiche</strong> può essere utilizzata per rimuovere le feature meno informative e migliorare la performance del modello.</p>
+<p>Infine, è importante notare che la fase di addestramento non è sempre una attività univoca. In alcuni casi può essere necessario ripetere più volte il processo di addestramento utilizzando diverse configurazioni di modello e algoritmi di ottimizzazione per ottenere il miglior risultato possibile.</p>
+<p>In sintesi, la fase di addestramento è un passo cruciale per ottenere un modello preciso e affidabile in un progetto di Machine Learning. Utilizzando Python e librerie specifiche, è possibile automatizzare e semplificare molte delle attività coinvolte nel processo di addestramento. Inoltre, è importante utilizzare tecniche come la regolarizzazione e la selezione delle caratteristiche per migliorare la performance del modello e prevenire il sovrapprendimento.</p>
 
             <footer class="footline">
             </footer>
@@ -180,12 +190,12 @@
         <script>
           var contentLangs=['it'];
         </script>
-        <script src="../../js/auto-complete.js?1674048673" defer></script>
-        <script src="../../js/lunr/lunr.min.js?1674048673" defer></script>
-        <script src="../../js/lunr/lunr.stemmer.support.min.js?1674048673" defer></script>
-        <script src="../../js/lunr/lunr.multi.min.js?1674048673" defer></script>
-        <script src="../../js/lunr/lunr.it.min.js?1674048673" defer></script>
-        <script src="../../js/search.js?1674048673" defer></script>
+        <script src="../../js/auto-complete.js?1674205356" defer></script>
+        <script src="../../js/lunr/lunr.min.js?1674205356" defer></script>
+        <script src="../../js/lunr/lunr.stemmer.support.min.js?1674205356" defer></script>
+        <script src="../../js/lunr/lunr.multi.min.js?1674205356" defer></script>
+        <script src="../../js/lunr/lunr.it.min.js?1674205356" defer></script>
+        <script src="../../js/search.js?1674205356" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -346,9 +356,9 @@
         </div>
       </div>
     </aside>
-    <script src="../../js/clipboard.min.js?1674048673" defer></script>
-    <script src="../../js/perfect-scrollbar.min.js?1674048673" defer></script>
-    <script src="../../js/featherlight.min.js?1674048673" defer></script>
-    <script src="../../js/theme.js?1674048673" defer></script>
+    <script src="../../js/clipboard.min.js?1674205356" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1674205356" defer></script>
+    <script src="../../js/featherlight.min.js?1674205356" defer></script>
+    <script src="../../js/theme.js?1674205356" defer></script>
   </body>
 </html>

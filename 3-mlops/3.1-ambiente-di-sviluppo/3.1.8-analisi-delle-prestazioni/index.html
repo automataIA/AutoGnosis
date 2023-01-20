@@ -9,21 +9,21 @@
     <meta name="author" content="Sören Weber">
     <title>3.1.8 Analisi delle prestazioni  -  Data Science &amp; Co.</title>
     <link href="../../../3-mlops/3.1-ambiente-di-sviluppo/3.1.8-analisi-delle-prestazioni/index.xml" rel="alternate" type="application/rss+xml" title="3.1.8 Analisi delle prestazioni  -  Data Science &amp; Co.">
-    <link href="../../../images/favicon.svg?1674048670" rel="icon" type="image/svg+xml">
+    <link href="../../../images/favicon.svg?1674205354" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../../../css/fontawesome-all.min.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/featherlight.min.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/featherlight.min.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/auto-complete.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/perfect-scrollbar.min.css?1674048670" rel="stylesheet">
-    <link href="../../../css/nucleus.css?1674048670" rel="stylesheet">
-    <link href="../../../css/fonts.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/theme.css?1674048670" rel="stylesheet">
-    <link href="../../../css/theme-relearn-light.css?1674048670" rel="stylesheet" id="variant-style">
-    <link href="../../../css/ie.css?1674048670" rel="stylesheet">
-    <link href="../../../css/variant.css?1674048670" rel="stylesheet">
-    <link href="../../../css/print.css?1674048670" rel="stylesheet" media="print">
-    <script src="../../../js/url.js?1674048670"></script>
-    <script src="../../../js/variant.js?1674048670"></script>
+    <link href="../../../css/fontawesome-all.min.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/featherlight.min.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/featherlight.min.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/auto-complete.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/perfect-scrollbar.min.css?1674205354" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1674205354" rel="stylesheet">
+    <link href="../../../css/fonts.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/theme.css?1674205354" rel="stylesheet">
+    <link href="../../../css/theme-relearn-light.css?1674205354" rel="stylesheet" id="variant-style">
+    <link href="../../../css/ie.css?1674205354" rel="stylesheet">
+    <link href="../../../css/variant.css?1674205354" rel="stylesheet">
+    <link href="../../../css/print.css?1674205354" rel="stylesheet" media="print">
+    <script src="../../../js/url.js?1674205354"></script>
+    <script src="../../../js/variant.js?1674205354"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/example.com/';
       window.variants && variants.init( [ 'relearn-light' ] );
     </script>
-    <script src="../../../js/jquery.min.js?1674048670" defer></script>
+    <script src="../../../js/jquery.min.js?1674205354" defer></script>
     <style>
       #body img.bg-white {
         background-color: white;
@@ -85,6 +85,14 @@
           <article class="default">
 <h1 id="3.1.8-analisi-delle-prestazioni">3.1.8 Analisi delle prestazioni</h1>
 
+<p>L&rsquo;analisi delle prestazioni dei modelli di apprendimento automatico (<strong>ML</strong>) è un passo cruciale nello sviluppo di qualsiasi progetto di <strong>machine learning</strong>. A volte, anche piccoli miglioramenti nella velocità di esecuzione possono avere un impatto significativo sulla qualità delle previsioni e sull&rsquo;efficienza del processo di apprendimento.</p>
+<p>In <strong>Python</strong>, ci sono diversi strumenti che possono essere utilizzati per analizzare le prestazioni dei modelli ML. Uno dei più comuni è <strong>cProfile</strong>, che fornisce una panoramica generale delle chiamate di funzione e dei tempi di esecuzione. Un altro strumento utile è <strong>line_profiler</strong>, che fornisce informazioni dettagliate sui tempi di esecuzione delle singole linee di codice.</p>
+<p>Per utilizzare cProfile, è necessario importare il modulo e avviare la registrazione delle prestazioni utilizzando il comando &ldquo;cProfile.run()&rdquo;. Ad esempio, per analizzare le prestazioni di una funzione di addestramento chiamata &ldquo;train_model()&rdquo;, è possibile utilizzare il seguente codice:</p>
+<p><code>import cProfile cProfile.run(&quot;train_model()&quot;)</code></p>
+<p>Per utilizzare line_profiler, è necessario installare il pacchetto e utilizzare il comando &ldquo;kernprof&rdquo; per eseguire il codice. Ad esempio, per analizzare le prestazioni della funzione &ldquo;train_model()&rdquo;, è possibile utilizzare il seguente codice:</p>
+<p><code>!pip install line_profiler %load_ext line_profiler %lprun -f train_model train_model()</code></p>
+<p>Entrambi gli strumenti forniscono informazioni utili sui tempi di esecuzione delle singole funzioni e delle singole linee di codice, che possono essere utilizzate per identificare le aree del codice che richiedono ottimizzazione.</p>
+<p>In generale, l&rsquo;analisi delle prestazioni dei modelli ML è un processo continuo che richiede una combinazione di strumenti e metodi per ottenere risultati ottimali. Utilizzando cProfile e line_profiler in combinazione con altri strumenti come la <strong>matematica</strong> e la <strong>ottimizzazione del codice</strong>, è possibile migliorare significativamente la velocità e la qualità dei modelli di apprendimento automatico.</p>
 
             <footer class="footline">
             </footer>
@@ -181,12 +189,12 @@
         <script>
           var contentLangs=['it'];
         </script>
-        <script src="../../../js/auto-complete.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.min.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.multi.min.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.it.min.js?1674048673" defer></script>
-        <script src="../../../js/search.js?1674048673" defer></script>
+        <script src="../../../js/auto-complete.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.multi.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.it.min.js?1674205356" defer></script>
+        <script src="../../../js/search.js?1674205356" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -347,9 +355,9 @@
         </div>
       </div>
     </aside>
-    <script src="../../../js/clipboard.min.js?1674048673" defer></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1674048673" defer></script>
-    <script src="../../../js/featherlight.min.js?1674048673" defer></script>
-    <script src="../../../js/theme.js?1674048673" defer></script>
+    <script src="../../../js/clipboard.min.js?1674205356" defer></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1674205356" defer></script>
+    <script src="../../../js/featherlight.min.js?1674205356" defer></script>
+    <script src="../../../js/theme.js?1674205356" defer></script>
   </body>
 </html>

@@ -9,21 +9,21 @@
     <meta name="author" content="Sören Weber">
     <title>3.5.1 Documentazione del processo  -  Data Science &amp; Co.</title>
     <link href="../../3-mlops/3.5-documentazione-del-processo/index.xml" rel="alternate" type="application/rss+xml" title="3.5.1 Documentazione del processo  -  Data Science &amp; Co.">
-    <link href="../../images/favicon.svg?1674048670" rel="icon" type="image/svg+xml">
+    <link href="../../images/favicon.svg?1674205354" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../../css/fontawesome-all.min.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../css/featherlight.min.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/featherlight.min.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../css/auto-complete.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../css/perfect-scrollbar.min.css?1674048670" rel="stylesheet">
-    <link href="../../css/nucleus.css?1674048670" rel="stylesheet">
-    <link href="../../css/fonts.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../css/theme.css?1674048670" rel="stylesheet">
-    <link href="../../css/theme-relearn-light.css?1674048670" rel="stylesheet" id="variant-style">
-    <link href="../../css/ie.css?1674048670" rel="stylesheet">
-    <link href="../../css/variant.css?1674048670" rel="stylesheet">
-    <link href="../../css/print.css?1674048670" rel="stylesheet" media="print">
-    <script src="../../js/url.js?1674048670"></script>
-    <script src="../../js/variant.js?1674048670"></script>
+    <link href="../../css/fontawesome-all.min.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../css/featherlight.min.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/featherlight.min.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../css/auto-complete.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1674205354" rel="stylesheet">
+    <link href="../../css/nucleus.css?1674205354" rel="stylesheet">
+    <link href="../../css/fonts.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fonts.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../css/theme.css?1674205354" rel="stylesheet">
+    <link href="../../css/theme-relearn-light.css?1674205354" rel="stylesheet" id="variant-style">
+    <link href="../../css/ie.css?1674205354" rel="stylesheet">
+    <link href="../../css/variant.css?1674205354" rel="stylesheet">
+    <link href="../../css/print.css?1674205354" rel="stylesheet" media="print">
+    <script src="../../js/url.js?1674205354"></script>
+    <script src="../../js/variant.js?1674205354"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/example.com/';
       window.variants && variants.init( [ 'relearn-light' ] );
     </script>
-    <script src="../../js/jquery.min.js?1674048670" defer></script>
+    <script src="../../js/jquery.min.js?1674205354" defer></script>
     <style>
       #body img.bg-white {
         background-color: white;
@@ -84,6 +84,17 @@
           <article class="default">
 <h1 id="3.5.1-documentazione-del-processo">3.5.1 Documentazione del processo</h1>
 
+<p>La creazione di un processo di documentazione per documentare il modello, i dati utilizzati per addestrarlo e le decisioni prese durante il processo di sviluppo è fondamentale per garantire la trasparenza e la riproducibilità del lavoro svolto. Una libreria comune utilizzata per la creazione di documentazione è <strong>mkdocs</strong>.</p>
+<p><strong>Mkdocs</strong> è una libreria open source che consente di creare documentazione in formato Markdown e di generare un sito web statico. È facile da usare e offre una vasta gamma di modelli e plugin per personalizzare il sito web della documentazione. Inoltre, <strong>mkdocs</strong> supporta anche la creazione di documentazione in più lingue.</p>
+<p>Per creare un processo di documentazione utilizzando <strong>mkdocs</strong>, è necessario seguire alcuni passaggi. In primo luogo, è necessario creare una struttura di cartelle per i documenti, utilizzando <strong>mkdocs new</strong> per creare un nuovo progetto. Successivamente, è possibile utilizzare <strong>mkdocs serve</strong> per visualizzare la documentazione in anteprima e apportare eventuali modifiche. Infine, è possibile utilizzare <strong>mkdocs build</strong> per generare il sito web statico della documentazione.</p>
+<p>Nel processo di documentazione del modello, è importante descrivere il modello utilizzato, i dati utilizzati per addestrarlo e le decisioni prese durante il processo di sviluppo. Ad esempio, è possibile utilizzare una formula matematica come
+
+<span class="math align-center">$$\text{loss} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$$</span>
+per descrivere la funzione di perdita utilizzata per addestrare il modello, dove 
+<span class="math align-center">$y_i$</span> è la label vera e 
+<span class="math align-center">$\hat{y}_i$</span> è la label prevista.</p>
+<p>Inoltre, è importante descrivere la metodologia utilizzata per la selezione dei dati, le operazioni di pulizia dei dati e qualsiasi pre-elaborazione eseguita sui dati. Inoltre, è importante descrivere le decisioni prese durante il processo di sviluppo, ad esempio le scelte riguardanti l&rsquo;architettura del modello e i parametri di addestramento.</p>
+<p>In conclusione, la creazione di un processo di documentazione per documentare il modello, i dati utilizzati per addestrarlo e le decisioni prese durante il processo di sviluppo è fondamentale per garantire la trasparenza e la riproducibilità del lavoro svolto. La libreria <strong>mkdocs</strong> offre una soluzione semplice e flessibile per la creazione di documentazione professionale.</p>
 
             <footer class="footline">
             </footer>
@@ -180,12 +191,12 @@
         <script>
           var contentLangs=['it'];
         </script>
-        <script src="../../js/auto-complete.js?1674048673" defer></script>
-        <script src="../../js/lunr/lunr.min.js?1674048673" defer></script>
-        <script src="../../js/lunr/lunr.stemmer.support.min.js?1674048673" defer></script>
-        <script src="../../js/lunr/lunr.multi.min.js?1674048673" defer></script>
-        <script src="../../js/lunr/lunr.it.min.js?1674048673" defer></script>
-        <script src="../../js/search.js?1674048673" defer></script>
+        <script src="../../js/auto-complete.js?1674205356" defer></script>
+        <script src="../../js/lunr/lunr.min.js?1674205356" defer></script>
+        <script src="../../js/lunr/lunr.stemmer.support.min.js?1674205356" defer></script>
+        <script src="../../js/lunr/lunr.multi.min.js?1674205356" defer></script>
+        <script src="../../js/lunr/lunr.it.min.js?1674205356" defer></script>
+        <script src="../../js/search.js?1674205356" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -346,9 +357,38 @@
         </div>
       </div>
     </aside>
-    <script src="../../js/clipboard.min.js?1674048673" defer></script>
-    <script src="../../js/perfect-scrollbar.min.js?1674048673" defer></script>
-    <script src="../../js/featherlight.min.js?1674048673" defer></script>
-    <script src="../../js/theme.js?1674048673" defer></script>
+    <script src="../../js/clipboard.min.js?1674205357" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1674205357" defer></script>
+    <script src="../../js/featherlight.min.js?1674205357" defer></script>
+    <script>
+      function useMathJax( config ){
+        if( !Object.assign ){
+          
+          return;
+        }
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          loader: {
+            load: ['[tex]/mhchem']
+          },
+          startup: {
+            elements: [
+              '.math'
+            ]
+          },
+          tex: {
+            inlineMath: [
+              ['$', '$'], 
+              ['\\(', '\\)']
+            ]
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{ \"chtml\": { \"displayAlign\": \"left\" } }") );
+    </script>
+    <script id="MathJax-script" async src="../../js/mathjax/tex-mml-chtml.js?1674205357"></script>
+    <script src="../../js/theme.js?1674205357" defer></script>
   </body>
 </html>

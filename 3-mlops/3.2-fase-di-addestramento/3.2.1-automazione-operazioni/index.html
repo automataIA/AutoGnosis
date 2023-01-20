@@ -9,21 +9,21 @@
     <meta name="author" content="Sören Weber">
     <title>3.2.1 Automazione operazioni  -  Data Science &amp; Co.</title>
     <link href="../../../3-mlops/3.2-fase-di-addestramento/3.2.1-automazione-operazioni/index.xml" rel="alternate" type="application/rss+xml" title="3.2.1 Automazione operazioni  -  Data Science &amp; Co.">
-    <link href="../../../images/favicon.svg?1674048670" rel="icon" type="image/svg+xml">
+    <link href="../../../images/favicon.svg?1674205354" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../../../css/fontawesome-all.min.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/featherlight.min.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/featherlight.min.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/auto-complete.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/perfect-scrollbar.min.css?1674048670" rel="stylesheet">
-    <link href="../../../css/nucleus.css?1674048670" rel="stylesheet">
-    <link href="../../../css/fonts.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/theme.css?1674048670" rel="stylesheet">
-    <link href="../../../css/theme-relearn-light.css?1674048670" rel="stylesheet" id="variant-style">
-    <link href="../../../css/ie.css?1674048670" rel="stylesheet">
-    <link href="../../../css/variant.css?1674048670" rel="stylesheet">
-    <link href="../../../css/print.css?1674048670" rel="stylesheet" media="print">
-    <script src="../../../js/url.js?1674048670"></script>
-    <script src="../../../js/variant.js?1674048670"></script>
+    <link href="../../../css/fontawesome-all.min.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/featherlight.min.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/featherlight.min.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/auto-complete.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/perfect-scrollbar.min.css?1674205354" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1674205354" rel="stylesheet">
+    <link href="../../../css/fonts.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/theme.css?1674205354" rel="stylesheet">
+    <link href="../../../css/theme-relearn-light.css?1674205354" rel="stylesheet" id="variant-style">
+    <link href="../../../css/ie.css?1674205354" rel="stylesheet">
+    <link href="../../../css/variant.css?1674205354" rel="stylesheet">
+    <link href="../../../css/print.css?1674205354" rel="stylesheet" media="print">
+    <script src="../../../js/url.js?1674205354"></script>
+    <script src="../../../js/variant.js?1674205354"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/example.com/';
       window.variants && variants.init( [ 'relearn-light' ] );
     </script>
-    <script src="../../../js/jquery.min.js?1674048670" defer></script>
+    <script src="../../../js/jquery.min.js?1674205354" defer></script>
     <style>
       #body img.bg-white {
         background-color: white;
@@ -85,6 +85,12 @@
           <article class="default">
 <h1 id="3.2.1-automazione-operazioni">3.2.1 Automazione operazioni</h1>
 
+<p>L&rsquo;automazione delle operazioni in fase di addestramento del modello di apprendimento automatico (ML) è una pratica sempre più comune nell&rsquo;ambiente dell&rsquo;apprendimento automatico. Utilizzando <strong>Python</strong> e strumenti come <strong>MLflow</strong>, è possibile semplificare e velocizzare il processo di addestramento dei modelli di ML.</p>
+<p>In primo luogo, l&rsquo;utilizzo di Python per l&rsquo;addestramento dei modelli di ML è diventato una pratica standard. Python offre una vasta gamma di librerie per l&rsquo;apprendimento automatico, come <strong>TensorFlow</strong> e <strong>PyTorch</strong>, che rendono facile la creazione e l&rsquo;addestramento dei modelli di ML.</p>
+<p>In secondo luogo, <strong>MLflow</strong> è un framework open source che semplifica il processo di addestramento dei modelli di ML. Con MLflow, è possibile tenere traccia dei parametri del modello, delle metriche di valutazione e dei dati di addestramento. Inoltre, MLflow consente di eseguire facilmente il <strong>debugging</strong> e il <strong>ottimizzazione</strong> dei modelli di ML.</p>
+<p>In terzo luogo, l&rsquo;automazione delle operazioni in fase di addestramento consente di risparmiare tempo e ridurre gli errori. Ad esempio, utilizzando <strong>pipeline di apprendimento automatico</strong>, è possibile automatizzare il processo di pulizia dei dati, la selezione delle caratteristiche e la valutazione dei modelli.</p>
+<p>In quarto luogo, l&rsquo;automazione delle operazioni in fase di addestramento consente di esplorare più facilmente i modelli di ML. Ad esempio, utilizzando <strong>algoritmi di ottimizzazione</strong>, è possibile automatizzare la ricerca dei migliori parametri per un modello di ML.</p>
+<p>Infine, l&rsquo;automazione delle operazioni in fase di addestramento è importante per la creazione di modelli di ML di alta qualità. Utilizzando Python, MLflow e altri strumenti, è possibile velocizzare il processo di addestramento dei modelli di ML e migliorare la loro accuratezza.</p>
 
             <footer class="footline">
             </footer>
@@ -181,12 +187,12 @@
         <script>
           var contentLangs=['it'];
         </script>
-        <script src="../../../js/auto-complete.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.min.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.multi.min.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.it.min.js?1674048673" defer></script>
-        <script src="../../../js/search.js?1674048673" defer></script>
+        <script src="../../../js/auto-complete.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.multi.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.it.min.js?1674205356" defer></script>
+        <script src="../../../js/search.js?1674205356" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -347,9 +353,9 @@
         </div>
       </div>
     </aside>
-    <script src="../../../js/clipboard.min.js?1674048673" defer></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1674048673" defer></script>
-    <script src="../../../js/featherlight.min.js?1674048673" defer></script>
-    <script src="../../../js/theme.js?1674048673" defer></script>
+    <script src="../../../js/clipboard.min.js?1674205356" defer></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1674205356" defer></script>
+    <script src="../../../js/featherlight.min.js?1674205356" defer></script>
+    <script src="../../../js/theme.js?1674205356" defer></script>
   </body>
 </html>

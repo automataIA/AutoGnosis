@@ -9,21 +9,21 @@
     <meta name="author" content="Sören Weber">
     <title>3.1.4 Qualità del codice  -  Data Science &amp; Co.</title>
     <link href="../../../3-mlops/3.1-ambiente-di-sviluppo/3.1.4-qualit%C3%A0-del-codice/index.xml" rel="alternate" type="application/rss+xml" title="3.1.4 Qualità del codice  -  Data Science &amp; Co.">
-    <link href="../../../images/favicon.svg?1674048670" rel="icon" type="image/svg+xml">
+    <link href="../../../images/favicon.svg?1674205354" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../../../css/fontawesome-all.min.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/featherlight.min.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/featherlight.min.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/auto-complete.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/perfect-scrollbar.min.css?1674048670" rel="stylesheet">
-    <link href="../../../css/nucleus.css?1674048670" rel="stylesheet">
-    <link href="../../../css/fonts.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/theme.css?1674048670" rel="stylesheet">
-    <link href="../../../css/theme-relearn-light.css?1674048670" rel="stylesheet" id="variant-style">
-    <link href="../../../css/ie.css?1674048670" rel="stylesheet">
-    <link href="../../../css/variant.css?1674048670" rel="stylesheet">
-    <link href="../../../css/print.css?1674048670" rel="stylesheet" media="print">
-    <script src="../../../js/url.js?1674048670"></script>
-    <script src="../../../js/variant.js?1674048670"></script>
+    <link href="../../../css/fontawesome-all.min.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/featherlight.min.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/featherlight.min.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/auto-complete.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/perfect-scrollbar.min.css?1674205354" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1674205354" rel="stylesheet">
+    <link href="../../../css/fonts.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/theme.css?1674205354" rel="stylesheet">
+    <link href="../../../css/theme-relearn-light.css?1674205354" rel="stylesheet" id="variant-style">
+    <link href="../../../css/ie.css?1674205354" rel="stylesheet">
+    <link href="../../../css/variant.css?1674205354" rel="stylesheet">
+    <link href="../../../css/print.css?1674205354" rel="stylesheet" media="print">
+    <script src="../../../js/url.js?1674205354"></script>
+    <script src="../../../js/variant.js?1674205354"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/example.com/';
       window.variants && variants.init( [ 'relearn-light' ] );
     </script>
-    <script src="../../../js/jquery.min.js?1674048670" defer></script>
+    <script src="../../../js/jquery.min.js?1674205354" defer></script>
     <style>
       #body img.bg-white {
         background-color: white;
@@ -85,6 +85,13 @@
           <article class="default">
 <h1 id="3.1.4-qualit%C3%A0-del-codice">3.1.4 Qualità del codice</h1>
 
+<p>La qualità del codice è un aspetto fondamentale per ottenere modelli di apprendimento automatico <strong>affidabili</strong> e <strong>scalabili</strong>. In questo articolo esploreremo alcune delle principali pratiche e strumenti utilizzati per migliorare la qualità del codice in Python, in particolare per quanto riguarda il <strong>machine learning</strong>.</p>
+<p>In primo luogo, è importante utilizzare un <strong>stile di codifica coerente</strong>. Questo può essere ottenuto tramite l&rsquo;utilizzo di un formattatore automatico come <strong>autopep8</strong>. Questo strumento consente di uniformare automaticamente lo stile del codice in base alle linee guida PEP8, che sono le linee guida ufficiali per la codifica in Python.</p>
+<p>In secondo luogo, è fondamentale utilizzare <strong>test automatici</strong> per verificare che il codice funzioni come previsto. Ciò garantisce che le modifiche future non causino problemi imprevisti e rende il codice più <strong>mantenibile</strong>. Utilizzando librerie come <strong>pytest</strong> o <strong>unittest</strong>, è possibile scrivere e eseguire facilmente test automatici per il proprio codice.</p>
+<p>In terzo luogo, è importante utilizzare <strong>documentazione</strong> adeguata per il proprio codice. La documentazione consente a chi legge il codice di comprenderne il funzionamento e facilita la <strong>condivisione</strong> e la <strong>collaborazione</strong> con altri sviluppatori. Utilizzando strumenti come <strong>sphinx</strong> o <strong>numpy docstring</strong>, è possibile generare automaticamente la documentazione del proprio codice.</p>
+<p>In quarto luogo, è importante utilizzare <strong>code review</strong> per verificare che il codice sia <strong>sicuro</strong> e <strong>performante</strong>. Il code review consente di identificare eventuali problemi di sicurezza o problemi di performance prima che il codice venga rilasciato.</p>
+<p>Infine, è importante utilizzare <strong>strumenti di analisi del codice</strong> per verificare che il codice sia <strong>scalabile</strong> e <strong>mantenibile</strong>. Gli strumenti di analisi del codice possono identificare problemi come la duplicazione del codice o la mancanza di commenti, e possono fornire una valutazione della qualità del codice.</p>
+<p>In sintesi, utilizzando pratiche e strumenti come formattazione automatica, test automatici, documentazione, code review e analisi del codice, è possibile migliorare la qualità del proprio codice e garantire modelli di apprendimento automatico affidabili e scalabili.</p>
 
             <footer class="footline">
             </footer>
@@ -181,12 +188,12 @@
         <script>
           var contentLangs=['it'];
         </script>
-        <script src="../../../js/auto-complete.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.min.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.multi.min.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.it.min.js?1674048673" defer></script>
-        <script src="../../../js/search.js?1674048673" defer></script>
+        <script src="../../../js/auto-complete.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.multi.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.it.min.js?1674205356" defer></script>
+        <script src="../../../js/search.js?1674205356" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -347,9 +354,9 @@
         </div>
       </div>
     </aside>
-    <script src="../../../js/clipboard.min.js?1674048673" defer></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1674048673" defer></script>
-    <script src="../../../js/featherlight.min.js?1674048673" defer></script>
-    <script src="../../../js/theme.js?1674048673" defer></script>
+    <script src="../../../js/clipboard.min.js?1674205356" defer></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1674205356" defer></script>
+    <script src="../../../js/featherlight.min.js?1674205356" defer></script>
+    <script src="../../../js/theme.js?1674205356" defer></script>
   </body>
 </html>

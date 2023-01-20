@@ -27,7 +27,8 @@ Organizzare il contenuto in capitoli e sottocapitoli aiuta a suddividere il mate
       <link>https://example.com/3-mlops/index.html</link>
       <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
       <guid>https://example.com/3-mlops/index.html</guid>
-      <description></description>
+      <description>Il Machine Learning Operations (MLOps) è un processo che combina la pratica del DevOps con il Machine Learning. Il suo scopo è quello di rendere più efficiente e scalabile la produzione e il deployment di modelli di apprendimento automatico.
+Il MLOps inizia con la creazione di un ambiente di sviluppo sicuro e controllato per la progettazione e l&amp;rsquo;addestramento dei modelli. Questo include la configurazione di un ambiente di sviluppo locale, l&amp;rsquo;utilizzo di un sistema di controllo del codice sorgente e la creazione di una pipeline di addestramento automatizzata.</description>
     </item>
     <item>
       <title>4  -  Progetti</title>

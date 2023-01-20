@@ -9,21 +9,21 @@
     <meta name="author" content="Sören Weber">
     <title>3.1.7 Debugging  -  Data Science &amp; Co.</title>
     <link href="../../../3-mlops/3.1-ambiente-di-sviluppo/3.1.7-debugging/index.xml" rel="alternate" type="application/rss+xml" title="3.1.7 Debugging  -  Data Science &amp; Co.">
-    <link href="../../../images/favicon.svg?1674048670" rel="icon" type="image/svg+xml">
+    <link href="../../../images/favicon.svg?1674205354" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../../../css/fontawesome-all.min.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/featherlight.min.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/featherlight.min.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/auto-complete.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/perfect-scrollbar.min.css?1674048670" rel="stylesheet">
-    <link href="../../../css/nucleus.css?1674048670" rel="stylesheet">
-    <link href="../../../css/fonts.css?1674048670" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1674048670" rel="stylesheet"></noscript>
-    <link href="../../../css/theme.css?1674048670" rel="stylesheet">
-    <link href="../../../css/theme-relearn-light.css?1674048670" rel="stylesheet" id="variant-style">
-    <link href="../../../css/ie.css?1674048670" rel="stylesheet">
-    <link href="../../../css/variant.css?1674048670" rel="stylesheet">
-    <link href="../../../css/print.css?1674048670" rel="stylesheet" media="print">
-    <script src="../../../js/url.js?1674048670"></script>
-    <script src="../../../js/variant.js?1674048670"></script>
+    <link href="../../../css/fontawesome-all.min.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/featherlight.min.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/featherlight.min.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/auto-complete.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/perfect-scrollbar.min.css?1674205354" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1674205354" rel="stylesheet">
+    <link href="../../../css/fonts.css?1674205354" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1674205354" rel="stylesheet"></noscript>
+    <link href="../../../css/theme.css?1674205354" rel="stylesheet">
+    <link href="../../../css/theme-relearn-light.css?1674205354" rel="stylesheet" id="variant-style">
+    <link href="../../../css/ie.css?1674205354" rel="stylesheet">
+    <link href="../../../css/variant.css?1674205354" rel="stylesheet">
+    <link href="../../../css/print.css?1674205354" rel="stylesheet" media="print">
+    <script src="../../../js/url.js?1674205354"></script>
+    <script src="../../../js/variant.js?1674205354"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/example.com/';
       window.variants && variants.init( [ 'relearn-light' ] );
     </script>
-    <script src="../../../js/jquery.min.js?1674048670" defer></script>
+    <script src="../../../js/jquery.min.js?1674205354" defer></script>
     <style>
       #body img.bg-white {
         background-color: white;
@@ -85,6 +85,13 @@
           <article class="default">
 <h1 id="3.1.7-debugging">3.1.7 Debugging</h1>
 
+<p>Il debugging è una delle attività più importanti nello sviluppo di qualsiasi software, soprattutto quando si lavora con i <strong>modelli di apprendimento automatico</strong> (ML). In questo articolo, esploreremo alcuni strumenti e tecniche comuni per il debugging di ML in <strong>Python</strong>, sia in <strong>VSCode</strong> che in <strong>JupyterLab</strong>.</p>
+<p>Il primo passo per il debugging di un modello ML è quello di <strong>analizzare i dati</strong>. È importante assicurarsi che i dati siano puliti, completi e rappresentativi dei casi d&rsquo;uso previsti. In caso contrario, il modello potrebbe non funzionare correttamente o addirittura generare risultati errati. È possibile utilizzare strumenti come <strong>Pandas</strong> e <strong>Numpy</strong> per esplorare e manipolare i dati.</p>
+<p>Una volta che i dati sono stati analizzati e puliti, è possibile <strong>addestrare</strong> il modello. È importante monitorare <strong>loss e metriche</strong> durante l&rsquo;addestramento per assicurarsi che il modello stia imparando correttamente. In caso contrario, potrebbe essere necessario apportare modifiche al modello o ai dati. In VSCode, è possibile utilizzare l&rsquo;estensione <strong>Python</strong> per visualizzare i risultati dell&rsquo;addestramento in un grafico.</p>
+<p>Il prossimo passo è <strong>testare</strong> il modello. È importante verificare che il modello generi risultati precisi e coerenti rispetto alle aspettative. In JupyterLab, è possibile utilizzare <strong>matplotlib</strong> per visualizzare i risultati dei test in un grafico. Inoltre, è possibile utilizzare la funzione <strong>sklearn.metrics.classification_report</strong> per generare una relazione dettagliata delle prestazioni del modello.</p>
+<p><strong>Debugging del codice</strong> è un&rsquo;altra attività importante nello sviluppo di modelli ML. È possibile utilizzare il <strong>debugger</strong> integrato in VSCode o JupyterLab per esaminare il codice e identificare eventuali bug. Inoltre, è possibile utilizzare <strong>logging</strong> per registrare informazioni sulle attività del modello, come i valori delle variabili o i risultati intermedi.</p>
+<p>Infine, è importante <strong>documentare</strong> il proprio lavoro. In questo modo, sarà possibile riprodurre i risultati in futuro e condividere il proprio lavoro con altri sviluppatori. In VSCode, è possibile utilizzare l&rsquo;estensione <strong>Python</strong> per generare la documentazione in formato <strong>docstring</strong>, mentre in JupyterLab è possibile utilizzare <strong>Markdown</strong> per creare note e commenti nel notebook.</p>
+<p>In sintesi, il debugging di un modello ML è un processo complesso che richiede l&rsquo;utilizzo di diverse tecniche e strumenti. Analizzare i dati, monitorare i risultati dell&rsquo;addestramento, testare il modello, debuggare il codice e documentare il proprio lavoro sono tutte attività importanti per garantire che il modello funzioni correttamente e generi risultati precisi. Utilizzando gli strumenti integrati in VSCode e JupyterLab, è possibile rendere questo processo più semplice e efficiente.</p>
 
             <footer class="footline">
             </footer>
@@ -181,12 +188,12 @@
         <script>
           var contentLangs=['it'];
         </script>
-        <script src="../../../js/auto-complete.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.min.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.multi.min.js?1674048673" defer></script>
-        <script src="../../../js/lunr/lunr.it.min.js?1674048673" defer></script>
-        <script src="../../../js/search.js?1674048673" defer></script>
+        <script src="../../../js/auto-complete.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.multi.min.js?1674205356" defer></script>
+        <script src="../../../js/lunr/lunr.it.min.js?1674205356" defer></script>
+        <script src="../../../js/search.js?1674205356" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -347,9 +354,9 @@
         </div>
       </div>
     </aside>
-    <script src="../../../js/clipboard.min.js?1674048673" defer></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1674048673" defer></script>
-    <script src="../../../js/featherlight.min.js?1674048673" defer></script>
-    <script src="../../../js/theme.js?1674048673" defer></script>
+    <script src="../../../js/clipboard.min.js?1674205356" defer></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1674205356" defer></script>
+    <script src="../../../js/featherlight.min.js?1674205356" defer></script>
+    <script src="../../../js/theme.js?1674205356" defer></script>
   </body>
 </html>
