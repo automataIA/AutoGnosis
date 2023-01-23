@@ -7,5 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
     <lastBuildDate>Wed, 28 Dec 2022 18:27:18 +0100</lastBuildDate><atom:link href="https://example.com/4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4.1.1 Notebook-di-lavoro</title>
+      <link>https://example.com/4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/notebook-di-lavoro/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
+      <guid>https://example.com/4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/notebook-di-lavoro/index.html</guid>
+      <description>2. Raccolta dati ► 2.1. Identificazione delle fonti dati ► 2.2. Selezione delle fonti dati # installo il pachetto per aprire il file xlsx !pip install openpyxl import pandas as pd # Adatto l&amp;#39;output stampato a schermo alla larghezza attuale della finestra from IPython.display import display, HTML display(HTML(&amp;#34;&amp;lt;style&amp;gt;.container { width:100% !important; }&amp;lt;/style&amp;gt;&amp;#34;)) pd.set_option(&amp;#34;display.width&amp;#34;, 1000) # Cambio la palette dei colori standard per adattarli alla palette del sito import matplotlib # definire i colori specificati dall&amp;#39;utente colors = [&amp;#34;#0077b5&amp;#34;, &amp;#34;#7cb82f&amp;#34;, &amp;#34;#dd5143&amp;#34;, &amp;#34;#00aeb3&amp;#34;, &amp;#34;#8d6cab&amp;#34;, &amp;#34;#edb220&amp;#34;, &amp;#34;#262626&amp;#34;] # cambiare la palette di colori di default matplotlib.</description>
+    </item>
+    <item>
+      <title>4.1.1 Regressione non-lineare</title>
+      <link>https://example.com/4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/showcase/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
+      <guid>https://example.com/4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/showcase/index.html</guid>
+      <description>1. Introduzione al problema: Presentazione 2. Recupero e pulizia dei dati Gestione 2.1 Acquisizione dei dati 3. Analisi dei dati Visualizzazione e Analisi dei dati per individuare eventuali relazioni e tendenze 4. Costruzione del modello di regressione non-lineare: Processo di costruzione del modello, scelta variabili indipendenti e dipendenti, tuning parametri 5. Valutazione del modello Utilizzo di diverse misure di performance per valutare la qualità del modello costruito 6. Utilizzo del modello Modello finale e sue applicazioni pratiche per la previsione della fornitura energetica necessaria.</description>
+    </item>
   </channel>
 </rss>
