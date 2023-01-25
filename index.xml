@@ -35,8 +35,8 @@ Il MLOps inizia con la creazione di un ambiente di sviluppo sicuro e controllato
       <link>https://example.com/4-progetti/index.html</link>
       <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
       <guid>https://example.com/4-progetti/index.html</guid>
-      <description>La procedura in 7 punti che ho elencato è una guida generale per condurre un&amp;rsquo;analisi di data science per poter risolvere le varie problematiche che si possono incontrare. Ciascun punto descrive una fase importante del processo di analisi, dalla definizione del problema alla comunicazione dei risultati.
-E&amp;rsquo; importante notare che questa procedura deve essere utilizzata &amp;ldquo;cum grano salis&amp;rdquo; cioè con buon senso. Ogni problema di data science è unico e può richiedere un adattamento dei passaggi descritti per adattarsi alle esigenze specifiche del problema.</description>
+      <description>La sezione è divisa per sezioni tematiche, al cui interno sono presenti due pagine per ciascun progetto:
+Una dedicata alla visualizzazione cruda del notebook di lavoro, in cui è presente il codice e l&amp;rsquo;output corrispondente. Il secondo è la presentazione del lavoro sottoforma di showcase, in foma discorsiva. Procedura di analisi La procedura in 7 punti che ho elencato è una guida generale per condurre un&amp;rsquo;analisi di data science per poter risolvere le varie problematiche che si possono incontrare.</description>
     </item>
     <item>
       <title>5  -  Risorse</title>
