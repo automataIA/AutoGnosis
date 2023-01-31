@@ -8,14 +8,14 @@
     <language>it</language>
     <lastBuildDate>Wed, 28 Dec 2022 18:27:18 +0100</lastBuildDate><atom:link href="https://example.com/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>4.1.1 Notebook-di-lavoro</title>
+      <title>4.1.2 Notebook-di-lavoro</title>
       <link>https://example.com/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/index.html</link>
       <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
       <guid>https://example.com/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/index.html</guid>
-      <description>2. Raccolta dati ► 2.1. Identificazione delle fonti dati ► 2.2. Selezione delle fonti dati # installo il pachetto per aprire il file xlsx !pip install openpyxl import pandas as pd # Adatto l&amp;#39;output stampato a schermo alla larghezza attuale della finestra from IPython.display import display, HTML display(HTML(&amp;#34;&amp;lt;style&amp;gt;.container { width:100% !important; }&amp;lt;/style&amp;gt;&amp;#34;)) pd.set_option(&amp;#34;display.width&amp;#34;, 1000) # Cambio la palette dei colori standard per adattarli alla palette del sito import matplotlib # definire i colori specificati dall&amp;#39;utente colors = [&amp;#34;#0077b5&amp;#34;, &amp;#34;#7cb82f&amp;#34;, &amp;#34;#dd5143&amp;#34;, &amp;#34;#00aeb3&amp;#34;, &amp;#34;#8d6cab&amp;#34;, &amp;#34;#edb220&amp;#34;, &amp;#34;#262626&amp;#34;] # cambiare la palette di colori di default matplotlib.</description>
+      <description>import torchvision.transforms as transforms import torchvision import torch import torch.optim as optim import torch.nn.functional as F import matplotlib.pyplot as plt from IPython.display import clear_output transform = transforms.Compose([ transforms.RandomHorizontalFlip(), transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,)) ]) train_dataset = torchvision.datasets.FashionMNIST(root=&amp;#39;data/&amp;#39;, train=True, download=True, transform=transform) test_dataset = torchvision.datasets.FashionMNIST(root=&amp;#39;data/&amp;#39;, train=False, download=True, transform=transform) val_ratio = 0.2 val_size = int(val_ratio * len(train_dataset)) train_size = len(train_dataset) - val_size train_dataset, val_dataset = torch.utils.data.random_split(train_dataset, [train_size, val_size]) import torch.nn as nn class GrayScaleCNN(nn.Module): def __init__(self): super(GrayScaleCNN, self).</description>
     </item>
     <item>
-      <title>4.1.1 ShowCase</title>
+      <title>4.1.2 ShowCase</title>
       <link>https://example.com/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/showcase/index.html</link>
       <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
       <guid>https://example.com/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/showcase/index.html</guid>
