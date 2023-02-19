@@ -602,7 +602,7 @@ var relearn_search_index = [
     "uri": "/2-appunti/2.3-machine-learning/2.3.6-valutazione-e-ottimizzazione-dei-modelli-di-machine-learning/index.html"
   },
   {
-    "content": "I vari progetti sono divisi per aree tematiche:\n4.1-Supervised-Learning Predizione del Costo unitario degli Immobili in New Taipei Rinconoscimento immagini a bassa risoluzione di vestiti e accessori 4.2-Unsupervised-Learning 4.2.1-Clustering 4.2.2-Sistemi-di-raccomandazione 4.3-NLP 4.3.1-Analisi-del-Sentimento 4.4-Reinforced-Learning 4.4.1-Regressione-non-lineare Ogni sezione contiene\nNotebook di lavoro: È presente il codice e l’output relativa all’analisi. Presentazione: in foma di slides e più discorsiva, per capire e risolvere il problema. ",
+    "content": "I vari progetti sono divisi per aree tematiche:\n4.1-Supervised-Learning Predizione del Costo unitario degli Immobili in New Taipei Rinconoscimento immagini a bassa risoluzione di vestiti e accessori 4.2-Unsupervised-Learning 4.2.1-Classificazione dei clienti di una Banca 4.2.2-Sistemi-di-raccomandazione 4.3-NLP 4.3.1-Analisi-del-Sentimento 4.4-Reinforced-Learning 4.4.1-Regressione-non-lineare Ogni sezione contiene\nNotebook di lavoro: È presente il codice e l’output relativa all’analisi. Presentazione: in foma di slides e più discorsiva, per capire e risolvere il problema. ",
     "description": "",
     "tags": null,
     "title": "4  -  Progetti",
