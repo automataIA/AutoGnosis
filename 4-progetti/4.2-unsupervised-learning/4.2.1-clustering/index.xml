@@ -7,5 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
     <lastBuildDate>Wed, 28 Dec 2022 18:27:18 +0100</lastBuildDate><atom:link href="https://example.com/4-progetti/4.2-unsupervised-learning/4.2.1-clustering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4.2.1 Notebook-di-lavoro</title>
+      <link>https://example.com/4-progetti/4.2-unsupervised-learning/4.2.1-clustering/notebook-di-lavoro/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
+      <guid>https://example.com/4-progetti/4.2-unsupervised-learning/4.2.1-clustering/notebook-di-lavoro/index.html</guid>
+      <description>2. Raccolta dati ► 2.1. Identificazione delle fonti dati ► 2.2. Selezione delle fonti dati Il caso richiede di sviluppare una segmentazione dei clienti per definire una strategia di marketing. Il dataset di esempio riassume il comportamento di utilizzo di circa 9000 titolari di carta di credito attivi durante gli ultimi 6 mesi. Il file è a livello di cliente con 18 variabili comportamentali.
+Il dataset contiene informazioni su variabili come l&amp;rsquo;identificazione del titolare della carta di credito, l&amp;rsquo;importo del saldo disponibile, la frequenza di aggiornamento del saldo, l&amp;rsquo;importo degli acquisti effettuati, la frequenza degli acquisti e l&amp;rsquo;importo massimo degli acquisti effettuati in un&amp;rsquo;unica transazione.</description>
+    </item>
+    <item>
+      <title>4.2.1 ShowCase</title>
+      <link>https://example.com/4-progetti/4.2-unsupervised-learning/4.2.1-clustering/showcase/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
+      <guid>https://example.com/4-progetti/4.2-unsupervised-learning/4.2.1-clustering/showcase/index.html</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

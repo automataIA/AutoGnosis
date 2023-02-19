@@ -20,7 +20,8 @@ a[href*="/6."], a[href*="/7."], a[href*="/8."] {
     font-weight:bold;
     font-size: 18px ;
 }
-#sidebar a[href*=".1."], a[href*=".2."], a[href*=".3."], a[href*=".4."], a[href*=".5."], 
+
+#sidebar a[href*=".1."], a[href*=".2."], a[href*=".3."], a[href*=".4."], a[href*="4.1."], a[href*=".5."], 
 a[href*=".6."], a[href*=".7."], a[href*=".8."] {
     font-weight:normal;
     font-size: 16px ;

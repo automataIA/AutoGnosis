@@ -12,15 +12,14 @@
       <link>https://example.com/4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/index.html</link>
       <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
       <guid>https://example.com/4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/index.html</guid>
-      <description>In questa sezione dei progetti di data science dedicata alla regressione non lineare esploreremo come utilizzare la regressione non lineare per modellare relazioni complesse tra variabili indipendenti e dipendenti. La regressione non lineare ci permette di rappresentare relazioni non lineari tra le variabili, permettendoci di catturare relazioni più complesse e accurate.
-Utilizzeremo diverse tecniche per modellare i dati e fare previsioni. Sia i principianti che gli utenti esperti troveranno utili questi esempi per capire come utilizzare la regressione non lineare in problemi di previsione.</description>
+      <description>INDICE Notebook di Lavoro ShowCase </description>
     </item>
     <item>
       <title>4.1.2 Classificatore CNN</title>
       <link>https://example.com/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/index.html</link>
       <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
       <guid>https://example.com/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/index.html</guid>
-      <description>intro </description>
+      <description>INDICE Notebook di Lavoro ShowCase </description>
     </item>
   </channel>
 </rss>
