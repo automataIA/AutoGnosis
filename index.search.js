@@ -602,7 +602,7 @@ var relearn_search_index = [
     "uri": "/2-appunti/2.3-machine-learning/2.3.6-valutazione-e-ottimizzazione-dei-modelli-di-machine-learning/index.html"
   },
   {
-    "content": "I vari progetti sono divisi per aree tematiche:\n4.1-Supervised-Learning Predizione del Costo unitario degli Immobili in New Taipei Rinconoscimento immagini a bassa risoluzione di vestiti e accessori 4.2-Unsupervised-Learning 4.2.1-Classificazione dei clienti di una Banca 4.2.2-Sistemi-di-raccomandazione 4.3-NLP 4.3.1-Analisi-del-Sentimento 4.4-Reinforced-Learning 4.4.1-Regressione-non-lineare Ogni sezione contiene\nNotebook di lavoro: È presente il codice e l’output relativa all’analisi. Presentazione: in foma di slides e più discorsiva, per capire e risolvere il problema. ",
+    "content": "\rI vari progetti sono divisi per aree tematiche:\n4.1-Supervised-Learning Predizione del Costo unitario degli Immobili in New Taipei Rinconoscimento immagini a bassa risoluzione di vestiti e accessori 4.2-Unsupervised-Learning 4.2.1-Classificazione dei clienti di una Banca 4.3-NLP 4.3.1-Analisi-del-Sentimento 4.4-Reinforced-Learning 4.4.1-Regressione-non-lineare Ogni sezione contiene\nNotebook di lavoro: È presente il codice e l’output relativa all’analisi. Presentazione: in foma di slides e più discorsiva, per capire e risolvere il problema. seconda colonna da riempire ",
     "description": "",
     "tags": null,
     "title": "4  -  Progetti",
@@ -658,7 +658,7 @@ var relearn_search_index = [
     "uri": "/index.html"
   },
   {
-    "content": "4.1.1-Regressione-non-lineare 4.1.2-Classificatore-CNN ",
+    "content": "4.1.1-Regressione-non-lineare 4.1.2-Classificatore-CNN 4.1.3-Classificatore-CNN ",
     "description": "",
     "tags": null,
     "title": "4.1 Supervised learning",
@@ -707,7 +707,14 @@ var relearn_search_index = [
     "uri": "/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/showcase/index.html"
   },
   {
-    "content": "4.2.1-Clustering 4.2.2-Sistemi-di-raccomandazione ",
+    "content": "",
+    "description": "",
+    "tags": null,
+    "title": "4.1.3 Predizione Correntisti Morosi",
+    "uri": "/4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/index.html"
+  },
+  {
+    "content": "4.2.1-Classificazione dei clienti di una Banca ",
     "description": "",
     "tags": null,
     "title": "4.2 Unsupervised Learning",
@@ -733,13 +740,6 @@ var relearn_search_index = [
     "tags": null,
     "title": "4.2.1 ShowCase",
     "uri": "/4-progetti/4.2-unsupervised-learning/4.2.1-clustering/showcase/index.html"
-  },
-  {
-    "content": "intro ",
-    "description": "",
-    "tags": null,
-    "title": "4.2.2 Raccomandation System",
-    "uri": "/4-progetti/4.2-unsupervised-learning/4.2.2-sistemi-di-raccomandazione/index.html"
   },
   {
     "content": "intro ",

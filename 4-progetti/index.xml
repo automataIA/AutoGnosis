@@ -12,14 +12,14 @@
       <link>https://example.com/4-progetti/4.1-supervised-learning/index.html</link>
       <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
       <guid>https://example.com/4-progetti/4.1-supervised-learning/index.html</guid>
-      <description>4.1.1-Regressione-non-lineare 4.1.2-Classificatore-CNN </description>
+      <description>4.1.1-Regressione-non-lineare 4.1.2-Classificatore-CNN 4.1.3-Classificatore-CNN </description>
     </item>
     <item>
       <title>4.2 Unsupervised Learning</title>
       <link>https://example.com/4-progetti/4.2-unsupervised-learning/index.html</link>
       <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
       <guid>https://example.com/4-progetti/4.2-unsupervised-learning/index.html</guid>
-      <description>4.2.1-Clustering 4.2.2-Sistemi-di-raccomandazione </description>
+      <description>4.2.1-Classificazione dei clienti di una Banca </description>
     </item>
     <item>
       <title>4.3 Classificazione NLP</title>
