@@ -7,8 +7,8 @@
     <meta name="generator" content="Relearn 5.9.2+tip">
     <meta name="description" content="Documentation for Hugo Relearn Theme">
     <meta name="author" content="Sören Weber">
-    <title>4.1.2 Notebook-di-lavoro  -  Data Science &amp; Co.</title>
-    <link href="../../../../4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/index.xml" rel="alternate" type="application/rss+xml" title="4.1.2 Notebook-di-lavoro  -  Data Science &amp; Co.">
+    <title>4.1.3 Notebook-di-lavoro  -  Data Science &amp; Co.</title>
+    <link href="../../../../4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/notebook-di-lavoro/index.xml" rel="alternate" type="application/rss+xml" title="4.1.3 Notebook-di-lavoro  -  Data Science &amp; Co.">
     <link href="../../../../images/favicon.svg?1677232296" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="../../../../css/fontawesome-all.min.css?1677232296" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../../css/fontawesome-all.min.css?1677232296" rel="stylesheet"></noscript>
@@ -48,20 +48,20 @@
       }
     </style>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="../../../../4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="../../../../4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/notebook-di-lavoro/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable" dir="ltr">
         <div>
           <div class="navigation">
-            <a class="nav nav-next" href="../../../../4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/showcase/index.html" title="4.1.2 ShowCase (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <a class="nav nav-next" href="../../../../4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/showcase/index.html" title="4.1.3 ShowCase (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev" href="../../../../4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/index.html" title="4.1.2 Classificatore CNN (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev" href="../../../../4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/index.html" title="4.1.3 Predizione Correntisti Morosi (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="top-github-link">
-            <a class="github-link" title='Modifica (CTRL+ALT+w)' href="https://automataia.github.io/AutoGnosis/4-Progetti/4.1-Supervised-Learning/4.1.2-Classificatore-CNN/Notebook-di-lavoro/_index.it.md" target="_blank">
+            <a class="github-link" title='Modifica (CTRL+ALT+w)' href="https://automataia.github.io/AutoGnosis/4-Progetti/4.1-Supervised-Learning/4.1.3-Predizione-Correntisti-Morosi/Notebook-di-lavoro/_index.it.md" target="_blank">
               <i class="fas fa-pen fa-fw"></i>
             </a>
           </div>
@@ -69,13 +69,47 @@
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
             </span>
+            <span id="toc-menu" title='Indice (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../index.html"><span itemprop="name">AUTOGNOSIS</span></a><meta itemprop="position" content="1"> > </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../4-progetti/index.html"><span itemprop="name">4  -  Progetti</span></a><meta itemprop="position" content="2"> > </li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../4-progetti/4.1-supervised-learning/index.html"><span itemprop="name">4.1 Supervised learning</span></a><meta itemprop="position" content="3"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/index.html"><span itemprop="name">4.1.2 Classificatore CNN</span></a><meta itemprop="position" content="4"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">4.1.2 Notebook-di-lavoro</span><meta itemprop="position" content="5"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../../4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/index.html"><span itemprop="name">4.1.3 Predizione Correntisti Morosi</span></a><meta itemprop="position" content="4"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">4.1.3 Notebook-di-lavoro</span><meta itemprop="position" content="5"></li>
             </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper" dir="ltr">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#-21-identificazione-delle-fonti-dati">► 2.1. Identificazione delle fonti dati</a></li>
+    <li><a href="#-22-selezione-delle-fonti-dati">► 2.2. Selezione delle fonti dati</a></li>
+    <li><a href="#-23-raccolta-dei-dati">► 2.3. Raccolta dei dati</a></li>
+    <li><a href="#-24-verifica-della-qualità-dei-dati">► 2.4. Verifica della qualità dei dati</a></li>
+    <li><a href="#-25-archiviazione-dei-dati">► 2.5. Archiviazione dei dati</a></li>
+    <li><a href="#-26-documentazione-dei-dati">► 2.6. Documentazione dei dati</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#-31-analisi-iniziale-dei-dati">► 3.1. Analisi iniziale dei dati</a></li>
+    <li><a href="#-32-trasformazione-dei-dati">► 3.2. Trasformazione dei dati</a></li>
+    <li><a href="#-33-normalizzazione-dei-dati">► 3.3. Normalizzazione dei dati</a></li>
+    <li><a href="#-34-creazione-di-nuove-variabili">► 3.4. Creazione di nuove variabili</a></li>
+    <li><a href="#-35-documentazione-dei-dati">► 3.5. Documentazione dei dati</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#-41-analisi-multivariata">► 4.1 Analisi multivariata</a></li>
+    <li><a href="#-47-interpretazione-e-comunicazione-dei-risultati">► 4.7 Interpretazione e comunicazione dei risultati</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#-51-selezione-del-modello">► 5.1 Selezione del modello</a></li>
+    <li><a href="#-52-preparazione-dei-dati">► 5.2 Preparazione dei dati</a></li>
+    <li><a href="#-53-allenamento-del-modello">► 5.3 Allenamento del modello</a></li>
+  </ul>
+</nav>
+            </div>
           </div>
         </div>
       </nav>
@@ -84,195 +118,502 @@
           <div id="head-tags">
           </div>
           <article class="default">
-<h1 id="4.1.2-notebook-di-lavoro">4.1.2 Notebook-di-lavoro</h1>
+<h1 id="4.1.3-notebook-di-lavoro">4.1.3 Notebook-di-lavoro</h1>
 
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torchvision.transforms</span> <span class="k">as</span> <span class="nn">transforms</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torchvision</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch.optim</span> <span class="k">as</span> <span class="nn">optim</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="k">as</span> <span class="nn">F</span>
+<h1 id="2-raccolta-dati">2. Raccolta dati</h1>
+<h2 id="-21-identificazione-delle-fonti-dati">► 2.1. Identificazione delle fonti dati</h2>
+<h2 id="-22-selezione-delle-fonti-dati">► 2.2. Selezione delle fonti dati</h2>
+<p>Il dataset in questione contiene informazioni relative a diversi clienti di una banca. Ogni cliente è identificato da un <strong>ID</strong> univoco, e sono registrati diversi attributi a loro associati.</p>
+<p>Tra questi attributi, troviamo il <strong>LIMIT_BAL</strong>, ovvero l&rsquo;importo di credito concesso al cliente, espresso in NT dollars. Viene inoltre registrato il <strong>GENERE</strong> del cliente, indicato tramite il valore 1 per il genere maschile e 2 per quello femminile.</p>
+<p>Inoltre, viene riportato il livello di <strong>ISTRUZIONE</strong> raggiunto dal cliente, che può essere di diversi tipi, ovvero: graduate school (1), university (2), high school (3), others (4), unknown (5) o sconosciuto (6).</p>
+<p>Viene inoltre registrato lo <strong>STATO CIVILE</strong> del cliente, indicato tramite il valore 1 per i clienti sposati, 2 per quelli single e 3 per quelli che hanno un altro stato civile.</p>
+<p>Sono inoltre riportati l&rsquo;<strong>ETA&rsquo;</strong> del cliente in anni, e il suo <strong>STATUS DI PAGAMENTO</strong> per sei mesi consecutivi, dal mese di aprile al mese di settembre del 2005. Lo stato di pagamento viene indicato con valori compresi tra -1 e 9, dove -1 indica che il pagamento è stato effettuato regolarmente, mentre valori maggiori di 0 indicano un ritardo nei pagamenti.</p>
+<p>Infine, vengono registrati i valori delle <strong>FATTURE</strong> emesse al cliente per i sei mesi in questione, espressi in NT dollar, e le <strong>PAGAMENTI</strong> effettuati dal cliente nel mese precedente per ciascuna delle fatture emesse.</p>
+<p>L&rsquo;ultimo attributo presente nel dataset è la colonna <strong>default.payment.next.month</strong>, che indica se il cliente ha effettuato il pagamento del mese successivo (1) o meno (0).</p>
+<p>In sintesi, il dataset contiene informazioni dettagliate su diversi clienti di una banca, incluse informazioni relative al loro credito, alla loro situazione economica, all&rsquo;età, allo stato civile e allo stato di pagamento dei loro debiti.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Adatto l&#39;output stampato a schermo alla larghezza attuale della finestra</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">display</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&#34;&lt;style&gt;.container { width:100% !important; }&lt;/style&gt;&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s2">&#34;display.width&#34;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Cambio la palette dei colori standard per adattarli alla palette del sito</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># definire i colori specificati dall&#39;utente</span>
+</span></span><span class="line"><span class="cl"><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;#0077b5&#34;</span><span class="p">,</span> <span class="s2">&#34;#7cb82f&#34;</span><span class="p">,</span> <span class="s2">&#34;#dd5143&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;#00aeb3&#34;</span><span class="p">,</span> <span class="s2">&#34;#8d6cab&#34;</span><span class="p">,</span> <span class="s2">&#34;#edb220&#34;</span><span class="p">,</span> <span class="s2">&#34;#262626&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># cambiare la palette di colori di default</span>
+</span></span><span class="line"><span class="cl"><span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&#34;axes.prop_cycle&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">cycler</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">)</span>
+</span></span></code></pre></div><style>.container { width:100% !important; }</style>
+<h2 id="-23-raccolta-dei-dati">► 2.3. Raccolta dei dati</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Carica il file CSV in un DataFrame(https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset)</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&#34;UCI_Credit_Card.csv&#34;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&#34;,&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Traduzione in italiano e accorciamento dei nomi delle colonne</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#df.columns = [  &#39;ID Titol&#39;,&#39;Saldo Res&#39;,&#39;Freq Sald&#39;,&#39;Acquisti&#39;,&#39;Acq Sing&#39;,&#39;Acq Rate&#39;,&#39;Antic Cont&#39;,&#39;Freq Acqu&#39;,&#39;Freq Sing&#39;,&#39;Freq Rate&#39;,&#39;Freq Antic&#39;,&#39;Trx Antic&#39;,&#39;Trx Acqu&#39;,&#39;Lim Credit&#39;,&#39;Pagamenti&#39;,&#39;Min Pagam&#39;,&#39;Prc Pagam&#39;,&#39;Durata Ser&#39;]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Aggiunta del commento</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">metadata</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;ID&#34;</span><span class="p">:</span> <span class="s2">&#34;ID di ogni cliente&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;LIMIT_BAL&#34;</span><span class="p">:</span> <span class="s2">&#34;Importo di credito concesso in dollari NT (include il credito individuale e familiare / supplementare)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;SEX&#34;</span><span class="p">:</span> <span class="s2">&#34;Genere (1=maschio, 2=femmina)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;EDUCATION&#34;</span><span class="p">:</span> <span class="s2">&#34;(1=scuola di specializzazione, 2=università, 3=scuola superiore, 4=altro, 5=sconosciuto, 6=sconosciuto)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;MARRIAGE&#34;</span><span class="p">:</span> <span class="s2">&#34;Stato civile (1=sposato, 2=single, 3=altro)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;AGE&#34;</span><span class="p">:</span> <span class="s2">&#34;Età in anni&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;PAY_0&#34;</span><span class="p">:</span> <span class="s2">&#34;Stato di pagamento a settembre 2005 (-1=pagamento regolare, 1=ritardo di pagamento di un mese, 2=ritardo di pagamento di due mesi, ... 8=ritardo di pagamento di otto mesi, 9=ritardo di pagamento di nove mesi o più)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;PAY_2&#34;</span><span class="p">:</span> <span class="s2">&#34;Stato di pagamento ad agosto 2005 (scala come sopra)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;PAY_3&#34;</span><span class="p">:</span> <span class="s2">&#34;Stato di pagamento a luglio 2005 (scala come sopra)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;PAY_4&#34;</span><span class="p">:</span> <span class="s2">&#34;Stato di pagamento a giugno 2005 (scala come sopra)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;PAY_5&#34;</span><span class="p">:</span> <span class="s2">&#34;Stato di pagamento a maggio 2005 (scala come sopra)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;PAY_6&#34;</span><span class="p">:</span> <span class="s2">&#34;Stato di pagamento ad aprile 2005 (scala come sopra)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;BILL_AMT1&#34;</span><span class="p">:</span> <span class="s2">&#34;Importo della dichiarazione di fatturazione a settembre 2005 (dollari NT)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;BILL_AMT2&#34;</span><span class="p">:</span> <span class="s2">&#34;Importo della dichiarazione di fatturazione ad agosto 2005 (dollari NT)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;BILL_AMT3&#34;</span><span class="p">:</span> <span class="s2">&#34;Importo della dichiarazione di fatturazione a luglio 2005 (dollari NT)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;BILL_AMT4&#34;</span><span class="p">:</span> <span class="s2">&#34;Importo della dichiarazione di fatturazione a giugno 2005 (dollari NT)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;BILL_AMT5&#34;</span><span class="p">:</span> <span class="s2">&#34;Importo della dichiarazione di fatturazione a maggio 2005 (dollari NT)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;BILL_AMT6&#34;</span><span class="p">:</span> <span class="s2">&#34;Importo della dichiarazione di fatturazione ad aprile 2005 (dollari NT)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;PAY_AMT1&#34;</span><span class="p">:</span> <span class="s2">&#34;Importo del pagamento precedente a settembre 2005 (dollari NT)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;PAY_AMT2&#34;</span><span class="p">:</span> <span class="s2">&#34;Importo del pagamento precedente ad agosto 2005 (dollari NT)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;PAY_AMT3&#34;</span><span class="p">:</span> <span class="s2">&#34;Importo del pagamento precedente a luglio 2005 (dollari NT)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;PAY_AMT4&#34;</span><span class="p">:</span> <span class="s2">&#34;Importo del pagamento precedente a giugno 2005 (dollari NT)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;PAY_AMT5&#34;</span><span class="p">:</span> <span class="s2">&#34;Importo del pagamento precedente a maggio 2005 (dollari NT)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;PAY_AMT6&#34;</span><span class="p">:</span> <span class="s2">&#34;Importo del pagamento precedente ad aprile 2005 (dollari NT)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;default.payment.next.month&#34;</span><span class="p">:</span> <span class="s2">&#34;Pagamento predefinito (1=sì, 0=no)&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Stampa i commenti descrittivi</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#print(df.metadata)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Stampa le prime 5 righe del DataFrame</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</span></span></code></pre></div><pre><code>   ID  LIMIT_BAL  SEX  EDUCATION  MARRIAGE  AGE  PAY_0  PAY_2  PAY_3  PAY_4  ...  BILL_AMT4  BILL_AMT5  BILL_AMT6  PAY_AMT1  PAY_AMT2  PAY_AMT3  PAY_AMT4  PAY_AMT5  PAY_AMT6  default.payment.next.month
+0   1    20000.0    2          2         1   24      2      2     -1     -1  ...        0.0        0.0        0.0       0.0     689.0       0.0       0.0       0.0       0.0                           1
+1   2   120000.0    2          2         2   26     -1      2      0      0  ...     3272.0     3455.0     3261.0       0.0    1000.0    1000.0    1000.0       0.0    2000.0                           1
+2   3    90000.0    2          2         2   34      0      0      0      0  ...    14331.0    14948.0    15549.0    1518.0    1500.0    1000.0    1000.0    1000.0    5000.0                           0
+3   4    50000.0    2          2         1   37      0      0      0      0  ...    28314.0    28959.0    29547.0    2000.0    2019.0    1200.0    1100.0    1069.0    1000.0                           0
+4   5    50000.0    1          2         1   57     -1      0     -1      0  ...    20940.0    19146.0    19131.0    2000.0   36681.0   10000.0    9000.0     689.0     679.0                           0
+
+[5 rows x 25 columns]
+
+
+C:\Users\wolvi\AppData\Local\Temp\ipykernel_9100\3669284972.py:11: UserWarning: Pandas doesn't allow columns to be created via a new attribute name - see https://pandas.pydata.org/pandas-docs/stable/indexing.html#attribute-access
+  df.metadata = {
+</code></pre>
+<h2 id="-24-verifica-della-qualità-dei-dati">► 2.4. Verifica della qualità dei dati</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Analisi delle informazioni sul dataset</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\033</span><span class="s2">[1m&#34;</span> <span class="o">+</span> <span class="s2">&#34;Numero di righe e colonne:     &#34;</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">+</span> <span class="s2">&#34;</span><span class="se">\033</span><span class="s2">[0m&#34;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;════════════════════════════════════════════════════════════════════════&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># print(&#34;Nomi delle colonne:&#34;, df.columns)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\033</span><span class="s2">[1m&#34;</span> <span class="o">+</span> <span class="s2">&#34;Tipi di dati delle colonne:</span><span class="se">\n\n</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">+</span> <span class="s2">&#34;</span><span class="se">\033</span><span class="s2">[0m&#34;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">dtypes</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;════════════════════════════════════════════════════════════════════════&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\033</span><span class="s2">[1m&#34;</span> <span class="o">+</span> <span class="s2">&#34;Valori mancanti nel dataset: </span><span class="se">\n\n</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">+</span> <span class="s2">&#34;</span><span class="se">\033</span><span class="s2">[0m&#34;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;════════════════════════════════════════════════════════════════════════&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\033</span><span class="s2">[1m&#34;</span> <span class="o">+</span> <span class="s2">&#34;Numero di valori a zero: </span><span class="se">\n\n</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">+</span> <span class="s2">&#34;</span><span class="se">\033</span><span class="s2">[0m&#34;</span><span class="p">,</span> <span class="p">(</span><span class="n">df</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;════════════════════════════════════════════════════════════════════════&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Gestione dei valori mancanti</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># rimozione delle righe con valori mancanti</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># df = df.dropna()</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># o sostituzione dei valori mancanti con un valore specifico</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># df = df.fillna(0)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>[1mNUMERO DI RIGHE E COLONNE:     [0m (30000, 25)
+════════════════════════════════════════════════════════════════════════
+[1mTIPI DI DATI DELLE COLONNE:
+
+[0m       ID LIMIT_BAL    SEX EDUCATION MARRIAGE    AGE  PAY_0  PAY_2  PAY_3  PAY_4  ... BILL_AMT4 BILL_AMT5 BILL_AMT6 PAY_AMT1 PAY_AMT2 PAY_AMT3 PAY_AMT4 PAY_AMT5 PAY_AMT6 default.payment.next.month
+0  int64   float64  int64     int64    int64  int64  int64  int64  int64  int64  ...   float64   float64   float64  float64  float64  float64  float64  float64  float64                      int64
+
+[1 rows x 25 columns]
+════════════════════════════════════════════════════════════════════════
+[1mVALORI MANCANTI NEL DATASET: 
+
+[0m    ID  LIMIT_BAL  SEX  EDUCATION  MARRIAGE  AGE  PAY_0  PAY_2  PAY_3  PAY_4  ...  BILL_AMT4  BILL_AMT5  BILL_AMT6  PAY_AMT1  PAY_AMT2  PAY_AMT3  PAY_AMT4  PAY_AMT5  PAY_AMT6  default.payment.next.month
+0   0          0    0          0         0    0      0      0      0      0  ...          0          0          0         0         0         0         0         0         0                           0
+
+[1 rows x 25 columns]
+════════════════════════════════════════════════════════════════════════
+[1mNUMERO DI VALORI A ZERO: 
+
+[0m    ID  LIMIT_BAL  SEX  EDUCATION  MARRIAGE  AGE  PAY_0  PAY_2  PAY_3  PAY_4  ...  BILL_AMT4  BILL_AMT5  BILL_AMT6  PAY_AMT1  PAY_AMT2  PAY_AMT3  PAY_AMT4  PAY_AMT5  PAY_AMT6  default.payment.next.month
+0   0          0    0         14        54    0  14737  15730  15764  16455  ...       3195       3506       4020      5249      5396      5968      6408      6703      7173                       23364
+
+[1 rows x 25 columns]
+════════════════════════════════════════════════════════════════════════
+</code></pre>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+<pre><code>.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+</code></pre>
+<p></style></p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>LIMIT_BAL</th>
+      <th>SEX</th>
+      <th>EDUCATION</th>
+      <th>MARRIAGE</th>
+      <th>AGE</th>
+      <th>PAY_0</th>
+      <th>PAY_2</th>
+      <th>PAY_3</th>
+      <th>PAY_4</th>
+      <th>...</th>
+      <th>BILL_AMT4</th>
+      <th>BILL_AMT5</th>
+      <th>BILL_AMT6</th>
+      <th>PAY_AMT1</th>
+      <th>PAY_AMT2</th>
+      <th>PAY_AMT3</th>
+      <th>PAY_AMT4</th>
+      <th>PAY_AMT5</th>
+      <th>PAY_AMT6</th>
+      <th>default.payment.next.month</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>20000.0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>24</td>
+      <td>2</td>
+      <td>2</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>689.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>120000.0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>26</td>
+      <td>-1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>3272.0</td>
+      <td>3455.0</td>
+      <td>3261.0</td>
+      <td>0.0</td>
+      <td>1000.0</td>
+      <td>1000.0</td>
+      <td>1000.0</td>
+      <td>0.0</td>
+      <td>2000.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>90000.0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>34</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>14331.0</td>
+      <td>14948.0</td>
+      <td>15549.0</td>
+      <td>1518.0</td>
+      <td>1500.0</td>
+      <td>1000.0</td>
+      <td>1000.0</td>
+      <td>1000.0</td>
+      <td>5000.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>50000.0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>37</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>28314.0</td>
+      <td>28959.0</td>
+      <td>29547.0</td>
+      <td>2000.0</td>
+      <td>2019.0</td>
+      <td>1200.0</td>
+      <td>1100.0</td>
+      <td>1069.0</td>
+      <td>1000.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>50000.0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>57</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>-1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>20940.0</td>
+      <td>19146.0</td>
+      <td>19131.0</td>
+      <td>2000.0</td>
+      <td>36681.0</td>
+      <td>10000.0</td>
+      <td>9000.0</td>
+      <td>689.0</td>
+      <td>679.0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 25 columns</p>
+</div>
+<h2 id="-25-archiviazione-dei-dati">► 2.5. Archiviazione dei dati</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Salvataggio del dataset pulito</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&#34;04-dataset_pulito.csv&#34;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="-26-documentazione-dei-dati">► 2.6. Documentazione dei dati</h2>
+<p>La Documentazione dei dati è data, in questo caso dal salvataggio su github del notebook di lavoro, ordinato per sottosezioni, con ulteriori commenti all&rsquo;interno del codice.</p>
+<h1 id="3-pulizia-dei-dati">3. Pulizia dei dati</h1>
+<h2 id="-31-analisi-iniziale-dei-dati">► 3.1. Analisi iniziale dei dati</h2>
+<h2 id="-32-trasformazione-dei-dati">► 3.2. Trasformazione dei dati</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># sostituisci i valori mancanti con la mediana</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</span></span></code></pre></div><h2 id="-33-normalizzazione-dei-dati">► 3.3. Normalizzazione dei dati</h2>
+<h2 id="-34-creazione-di-nuove-variabili">► 3.4. Creazione di nuove variabili</h2>
+<h2 id="-35-documentazione-dei-dati">► 3.5. Documentazione dei dati</h2>
+<p>La Documentazione dei dati è data, in questo caso dal salvataggio su github del notebook di lavoro, ordinato per sottosezioni, con ulteriori commenti all&rsquo;interno del codice.</p>
+<h1 id="4-esplorazione-dei-dati">4. Esplorazione dei dati</h1>
+<h2 id="-41-analisi-multivariata">► 4.1 Analisi multivariata</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">matplotlib.ticker</span> <span class="kn">import</span> <span class="n">MaxNLocator</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">transform</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">([</span>
-</span></span><span class="line"><span class="cl">    <span class="n">transforms</span><span class="o">.</span><span class="n">RandomHorizontalFlip</span><span class="p">(),</span>
-</span></span><span class="line"><span class="cl">    <span class="n">transforms</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">(),</span>
-</span></span><span class="line"><span class="cl">    <span class="n">transforms</span><span class="o">.</span><span class="n">Normalize</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,),</span> <span class="p">(</span><span class="mf">0.5</span><span class="p">,))</span>
-</span></span><span class="line"><span class="cl"><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Rimuovi  la prima colonna</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">train_dataset</span> <span class="o">=</span> <span class="n">torchvision</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">FashionMNIST</span><span class="p">(</span><span class="n">root</span><span class="o">=</span><span class="s1">&#39;data/&#39;</span><span class="p">,</span> <span class="n">train</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">download</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">transform</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">test_dataset</span> <span class="o">=</span> <span class="n">torchvision</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">FashionMNIST</span><span class="p">(</span><span class="n">root</span><span class="o">=</span><span class="s1">&#39;data/&#39;</span><span class="p">,</span> <span class="n">train</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">download</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">transform</span><span class="p">)</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">val_ratio</span> <span class="o">=</span> <span class="mf">0.2</span>
-</span></span><span class="line"><span class="cl"><span class="n">val_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">val_ratio</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">train_dataset</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl"><span class="n">train_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">train_dataset</span><span class="p">)</span> <span class="o">-</span> <span class="n">val_size</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">train_dataset</span><span class="p">,</span> <span class="n">val_dataset</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">random_split</span><span class="p">(</span><span class="n">train_dataset</span><span class="p">,</span> <span class="p">[</span><span class="n">train_size</span><span class="p">,</span> <span class="n">val_size</span><span class="p">])</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">GrayScaleCNN</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="nb">super</span><span class="p">(</span><span class="n">GrayScaleCNN</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        <span class="c1"># Strato di convolution con kernel 3x3, output di 64 filtri</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">conv1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="n">in_channels</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">out_channels</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">relu1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        <span class="c1"># Strato di pooling con kernel 2x2</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">pool1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">MaxPool2d</span><span class="p">(</span><span class="n">kernel_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        <span class="c1"># Strato di convolution con kernel 3x3, output di 128 filtri</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">conv2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="n">in_channels</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">out_channels</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">relu2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        <span class="c1"># Strato di pooling con kernel 2x2</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">pool2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">MaxPool2d</span><span class="p">(</span><span class="n">kernel_size</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">stride</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        <span class="c1"># Strato fully connected con output di 128 unità</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">fc1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">in_features</span><span class="o">=</span><span class="mi">128</span> <span class="o">*</span> <span class="mi">7</span> <span class="o">*</span> <span class="mi">7</span><span class="p">,</span> <span class="n">out_features</span><span class="o">=</span><span class="mi">128</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">relu3</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        <span class="c1"># Strato di output con 10 unità, una per ogni classe</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">fc2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">in_features</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">out_features</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">conv1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">relu1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pool1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">conv2</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">relu2</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pool2</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">128</span> <span class="o">*</span> <span class="mi">7</span> <span class="o">*</span> <span class="mi">7</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">relu3</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc2</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">x</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch.optim</span> <span class="k">as</span> <span class="nn">optim</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="k">as</span> <span class="nn">F</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">device</span> <span class="o">=</span> <span class="s1">&#39;cuda&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">())</span>
-</span></span><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">GrayScaleCNN</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">criterion</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">CrossEntropyLoss</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Trasforma i titoli delle colonne in minuscolo</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">train_loader</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">DataLoader</span><span class="p">(</span><span class="n">train_dataset</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">val_loader</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">DataLoader</span><span class="p">(</span><span class="n">val_dataset</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Analisi della distribuzione dei dati</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Statistiche descrittive:</span><span class="se">\n\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;════════════════════════════════════════════════════════════════════════&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Valori unici per ogni colonna:</span><span class="se">\n\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;════════════════════════════════════════════════════════════════════════&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Correzione dei tipi di dati</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># df[&#34;colonna_specifica&#34;] = df[&#34;colonna_specifica&#34;].astype(int)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">epochs</span> <span class="o">=</span> <span class="mi">30</span>
-</span></span><span class="line"><span class="cl"><span class="n">train_losses</span> <span class="o">=</span> <span class="p">[]</span>
-</span></span><span class="line"><span class="cl"><span class="n">val_losses</span> <span class="o">=</span> <span class="p">[]</span>
-</span></span><span class="line"><span class="cl"><span class="n">lr</span> <span class="o">=</span> <span class="mf">0.02</span>
-</span></span><span class="line"><span class="cl"><span class="n">weight_decay</span> <span class="o">=</span> <span class="mf">0.001</span>
-</span></span><span class="line"><span class="cl"><span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">ASGD</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span> <span class="o">=</span> <span class="n">lr</span> <span class="p">,</span> <span class="n">weight_decay</span> <span class="o">=</span> <span class="n">weight_decay</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">epochs</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">train_loss</span> <span class="o">=</span> <span class="mf">0.0</span>
-</span></span><span class="line"><span class="cl">    <span class="n">val_loss</span> <span class="o">=</span> <span class="mf">0.0</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="c1"># Addestramento sui dati di train</span>
-</span></span><span class="line"><span class="cl">    <span class="n">model</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">data</span><span class="p">,</span> <span class="n">target</span> <span class="ow">in</span> <span class="n">train_loader</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="n">data</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">,</span> <span class="n">non_blocking</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">target</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">,</span> <span class="n">non_blocking</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">optimizer</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">        <span class="n">output</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">loss</span> <span class="o">=</span> <span class="n">criterion</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">loss</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">        <span class="n">optimizer</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">        <span class="n">train_loss</span> <span class="o">+=</span> <span class="n">loss</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">        
-</span></span><span class="line"><span class="cl">    <span class="n">train_losses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">train_loss</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">train_loader</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="c1"># Valutazione sui dati di validation</span>
-</span></span><span class="line"><span class="cl">    <span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">data</span><span class="p">,</span> <span class="n">target</span> <span class="ow">in</span> <span class="n">val_loader</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">            <span class="n">data</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">),</span> <span class="n">target</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">            <span class="n">output</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">            <span class="n">loss</span> <span class="o">=</span> <span class="n">criterion</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">            <span class="n">val_loss</span> <span class="o">+=</span> <span class="n">loss</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">            
-</span></span><span class="line"><span class="cl">    <span class="n">val_losses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val_loss</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">val_loader</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Epoch </span><span class="si">{}</span><span class="s2">/</span><span class="si">{}</span><span class="s2"> - Train Loss: </span><span class="si">{:.4f}</span><span class="s2"> - Val Loss: </span><span class="si">{:.4f}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">epoch</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">epochs</span><span class="p">,</span> <span class="n">train_loss</span><span class="p">,</span> <span class="n">val_loss</span><span class="p">),</span> <span class="s2">&#34;  lr = &#34;</span><span class="p">,</span><span class="n">lr</span><span class="p">,</span><span class="s2">&#34;  weight_decay = &#34;</span><span class="p">,</span><span class="n">weight_decay</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="c1"># Plot della curva di addestramento</span>
-</span></span><span class="line"><span class="cl">    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">train_losses</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Training Loss&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">val_losses</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Validation Loss&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># visualizzare la distribuzione dei valori per ogni colonna</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&#34;Distribuzione dei valori per ogni colonna </span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">24</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Addestramento completato!&#34;</span><span class="p">)</span>
-</span></span></code></pre></div><pre><code>Epoch 30/30 - Train Loss: 143.4445 - Val Loss: 43.1652   lr =  0.02   weight_decay =  0.001
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Calcola la correlazione lineare tra le colonne</span>
+</span></span><span class="line"><span class="cl"><span class="n">corr_matrix</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Crea una figura con due sottografici</span>
+</span></span><span class="line"><span class="cl"><span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Crea una heatmap della matrice di correlazione lineare</span>
+</span></span><span class="line"><span class="cl"><span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s2">&#34;Spectral&#34;</span><span class="p">,</span> <span class="mi">256</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">im1</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">corr_matrix</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">,</span><span class="n">clim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax1</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">corr_matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax1</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">corr_matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax1</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">corr_matrix</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&#34;right&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax1</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">corr_matrix</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&#34;Grafico di Correlazione Lineare fra le variabili </span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">im1</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Calcola la correlazione non lineare tra le colonne</span>
+</span></span><span class="line"><span class="cl"><span class="n">corr_matrix_non_lineare</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">&#34;spearman&#34;</span><span class="p">,</span> <span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Crea una heatmap della matrice di correlazione non lineare</span>
+</span></span><span class="line"><span class="cl"><span class="n">im2</span> <span class="o">=</span> <span class="n">ax2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">corr_matrix_non_lineare</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">,</span><span class="n">clim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax2</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">corr_matrix_non_lineare</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax2</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">corr_matrix_non_lineare</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax2</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">corr_matrix_non_lineare</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&#34;right&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax2</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">corr_matrix_non_lineare</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&#34;Grafico di Correlazione non Lineare fra le variabili </span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">im2</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&#34;Grafici di Correlazione fra le variabili&#34;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>Statistiche descrittive:
+
+            sex  education  marriage      age    pay_0    pay_2    pay_3    pay_4    pay_5    pay_6  ...  bill_amt4  bill_amt5  bill_amt6  pay_amt1   pay_amt2  pay_amt3  pay_amt4  pay_amt5  pay_amt6  default.payment.next.month
+count  30000.0    30000.0   30000.0  30000.0  30000.0  30000.0  30000.0  30000.0  30000.0  30000.0  ...    30000.0    30000.0    30000.0   30000.0    30000.0   30000.0   30000.0   30000.0   30000.0                     30000.0
+mean       2.0        2.0       2.0     35.0     -0.0     -0.0     -0.0     -0.0     -0.0     -0.0  ...    43263.0    40311.0    38872.0    5664.0     5921.0    5226.0    4826.0    4799.0    5216.0                         0.0
+std        0.0        1.0       1.0      9.0      1.0      1.0      1.0      1.0      1.0      1.0  ...    64333.0    60797.0    59554.0   16563.0    23041.0   17607.0   15666.0   15278.0   17777.0                         0.0
+min        1.0        0.0       0.0     21.0     -2.0     -2.0     -2.0     -2.0     -2.0     -2.0  ...  -170000.0   -81334.0  -339603.0       0.0        0.0       0.0       0.0       0.0       0.0                         0.0
+25%        1.0        1.0       1.0     28.0     -1.0     -1.0     -1.0     -1.0     -1.0     -1.0  ...     2327.0     1763.0     1256.0    1000.0      833.0     390.0     296.0     252.0     118.0                         0.0
+50%        2.0        2.0       2.0     34.0      0.0      0.0      0.0      0.0      0.0      0.0  ...    19052.0    18104.0    17071.0    2100.0     2009.0    1800.0    1500.0    1500.0    1500.0                         0.0
+75%        2.0        2.0       2.0     41.0      0.0      0.0      0.0      0.0      0.0      0.0  ...    54506.0    50190.0    49198.0    5006.0     5000.0    4505.0    4013.0    4032.0    4000.0                         0.0
+max        2.0        6.0       3.0     79.0      8.0      8.0      8.0      8.0      8.0      8.0  ...   891586.0   927171.0   961664.0  873552.0  1684259.0  896040.0  621000.0  426529.0  528666.0                         1.0
+
+[8 rows x 23 columns]
+════════════════════════════════════════════════════════════════════════
+Valori unici per ogni colonna:
+
+    sex  education  marriage  age  pay_0  pay_2  pay_3  pay_4  pay_5  pay_6  ...  bill_amt4  bill_amt5  bill_amt6  pay_amt1  pay_amt2  pay_amt3  pay_amt4  pay_amt5  pay_amt6  default.payment.next.month
+0    2          7         4   56     11     11     11     11     10     10  ...      21548      21010      20604      7943      7899      7518      6937      6897      6939                           2
+
+[1 rows x 23 columns]
+════════════════════════════════════════════════════════════════════════
 </code></pre>
 <p>
-<a href="../../../../4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/output_3_1.png" data-featherlight="image">
-<img src="../../../../4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/output_3_1.png" alt="png" style="height: auto; width: auto;" loading="lazy">
+<a href="../../../../4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/notebook-di-lavoro/output_17_1.png" data-featherlight="image">
+<img src="../../../../4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/notebook-di-lavoro/output_17_1.png" alt="png" style="height: auto; width: auto;" loading="lazy">
 </a></p>
-<pre><code>Addestramento completato!
-</code></pre>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">test_loader</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">DataLoader</span><span class="p">(</span><span class="n">test_dataset</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">test_loss</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl"><span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">data</span><span class="p">,</span> <span class="n">target</span> <span class="ow">in</span> <span class="n">test_loader</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="n">data</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">),</span> <span class="n">target</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">output</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">test_loss</span> <span class="o">+=</span> <span class="n">criterion</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">        <span class="n">pred</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">keepdim</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">correct</span> <span class="o">+=</span> <span class="n">pred</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="n">target</span><span class="o">.</span><span class="n">view_as</span><span class="p">(</span><span class="n">pred</span><span class="p">))</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">test_loss</span> <span class="o">/=</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_loader</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">accuracy</span> <span class="o">=</span> <span class="mf">100.</span> <span class="o">*</span> <span class="n">correct</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_dataset</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Test set: Average loss: </span><span class="si">{:.4f}</span><span class="s1">, Accuracy: </span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1"> (</span><span class="si">{:.0f}</span><span class="s1">%)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">    <span class="n">test_loss</span><span class="p">,</span> <span class="n">correct</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_dataset</span><span class="p">),</span> <span class="n">accuracy</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#Test set: Average loss: 0.2864, Accuracy: 8953/10000 (90%)</span>
-</span></span></code></pre></div><pre><code>Test set: Average loss: 0.2481, Accuracy: 9095/10000 (91%)
-</code></pre>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch.optim</span> <span class="k">as</span> <span class="nn">optim</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torchvision</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torchvision.transforms</span> <span class="k">as</span> <span class="nn">transforms</span>
-</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">torchviz</span> <span class="kn">import</span> <span class="n">make_dot</span>
-</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">SVG</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">GrayScaleCNN</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">vis_graph</span> <span class="o">=</span> <span class="n">make_dot</span><span class="p">(</span><span class="n">model</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">28</span><span class="p">,</span><span class="mi">28</span><span class="p">)),</span> <span class="n">params</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">named_parameters</span><span class="p">()))</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#vis_graph.view()</span>
-</span></span><span class="line"><span class="cl"><span class="n">SVG</span><span class="p">(</span><span class="n">vis_graph</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">))</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">GrayScaleCNN</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">param_count</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">numel</span><span class="p">()</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">())</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Il modello ha un totale di </span><span class="si">{}</span><span class="s2"> parametri.&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">param_count</span><span class="p">))</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">model</span> <span class="o">=</span> <span class="n">GrayScaleCNN</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">param</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">named_parameters</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Strato: </span><span class="si">{}</span><span class="se">\t</span><span class="s2">Numero di parametri: </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">param</span><span class="o">.</span><span class="n">numel</span><span class="p">()))</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">&#34;cuda:0&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">())</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">get_device_name</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">train_losses</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Training Loss&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">val_losses</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Validation Loss&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">image_format</span> <span class="o">=</span> <span class="s1">&#39;svg&#39;</span> <span class="c1"># e.g .png, .svg, etc.</span>
-</span></span><span class="line"><span class="cl"><span class="n">image_name</span> <span class="o">=</span> <span class="s1">&#39;myimage.svg&#39;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">image_name</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="n">image_format</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">1200</span><span class="p">)</span>
-</span></span></code></pre></div><pre><code>True
-Tesla T4
-</code></pre>
 <p>
-<a href="../../../../4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/output_8_1.png" data-featherlight="image">
-<img src="../../../../4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/output_8_1.png" alt="png" style="height: auto; width: auto;" loading="lazy">
+<a href="../../../../4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/notebook-di-lavoro/output_17_2.png" data-featherlight="image">
+<img src="../../../../4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/notebook-di-lavoro/output_17_2.png" alt="png" style="height: auto; width: auto;" loading="lazy">
 </a></p>
+<h2 id="-47-interpretazione-e-comunicazione-dei-risultati">► 4.7 Interpretazione e comunicazione dei risultati</h2>
+<ul>
+<li>I risultati mostrano che la clientela è molto giovane, con media di 35 anni.</li>
+<li>I dati personali(sex,marriage,age) sono scorrelati dall&rsquo;inadempienza dei pagamenti data dall&rsquo;ultima colonna.</li>
+<li>I pagamenti(pay_*) sono simili fra loro, molto probabilmente sono dovuti a pagamenti periodici.</li>
+<li>L&rsquo;importo della dichiarazione di fatturazione(bill_amt*, pay_amt*) e simile nei mesi ed è correlato ai pagamenti. Vuol dire che i clienti fanno una vita abitudinaria</li>
+</ul>
+<h1 id="5-modellizzazione">5. Modellizzazione</h1>
+<h2 id="-51-selezione-del-modello">► 5.1 Selezione del modello</h2>
+<h2 id="-52-preparazione-dei-dati">► 5.2 Preparazione dei dati</h2>
+<h2 id="-53-allenamento-del-modello">► 5.3 Allenamento del modello</h2>
+<ul>
+<li>USO DEL MODELLO <strong>ANN</strong> ══════════════════════════════════════════════════════════</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">KernelPCA</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OrdinalEncoder</span><span class="p">,</span> <span class="n">MinMaxScaler</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Carica il dataset</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&#34;04-dataset_pulito.csv&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Rimuovi la colonna &#39;ID&#39; dal dataset</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;ID&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">y_train</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;default.payment.next.month&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># identificazione delle colonne categoriali e delle colonne intere</span>
+</span></span><span class="line"><span class="cl"><span class="n">cat_cols</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="s1">&#39;category&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">int_cols</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="s1">&#39;float&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># OrdinalEncoder per le variabili categoriali</span>
+</span></span><span class="line"><span class="cl"><span class="n">ordinal_encoder</span> <span class="o">=</span> <span class="n">OrdinalEncoder</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span><span class="p">[</span><span class="n">cat_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">ordinal_encoder</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">cat_cols</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># normalizzazione delle variabili numeriche</span>
+</span></span><span class="line"><span class="cl"><span class="n">scaler</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">(</span><span class="n">feature_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span><span class="p">[</span><span class="n">int_cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">int_cols</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Crea una matrice X contenente le features</span>
+</span></span><span class="line"><span class="cl"><span class="n">x_train</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;default.payment.next.month&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Crea un array y contenente la variabile di output</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#y_train = data[&#39;default.payment.next.month&#39;]</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">keras</span> <span class="kn">import</span> <span class="n">layers</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">keras</span> <span class="kn">import</span> <span class="n">models</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">keras</span> <span class="kn">import</span> <span class="n">optimizers</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">keras</span> <span class="kn">import</span> <span class="n">losses</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">keras</span> <span class="kn">import</span> <span class="n">regularizers</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">keras</span> <span class="kn">import</span> <span class="n">metrics</span><span class="c1"># add validation dataset</span>
+</span></span><span class="line"><span class="cl"><span class="n">validation_split</span> <span class="o">=</span> <span class="mi">15</span> <span class="c1">#percentuale</span>
+</span></span><span class="line"><span class="cl"><span class="n">validation_split</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">validation_split</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">x_validation</span><span class="o">=</span><span class="n">x_train</span><span class="p">[:</span><span class="n">validation_split</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">x_partial_train</span><span class="o">=</span><span class="n">x_train</span><span class="p">[</span><span class="n">validation_split</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl"><span class="n">y_validation</span><span class="o">=</span><span class="n">y_train</span><span class="p">[:</span><span class="n">validation_split</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">y_partial_train</span><span class="o">=</span><span class="n">y_train</span><span class="p">[</span><span class="n">validation_split</span><span class="p">:]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">model</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">Sequential</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">kernel_regularizer</span><span class="o">=</span><span class="n">regularizers</span><span class="o">.</span><span class="n">l2</span><span class="p">(</span><span class="mf">0.003</span><span class="p">),</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="n">optimizers</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">learning_rate</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">,</span> <span class="n">amsgrad</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;binary_crossentropy&#39;</span><span class="p">,</span><span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_partial_train</span><span class="p">,</span><span class="n">y_partial_train</span><span class="p">,</span><span class="n">epochs</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span><span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">x_validation</span><span class="p">,</span><span class="n">y_validation</span><span class="p">),</span> 
+</span></span><span class="line"><span class="cl">          <span class="n">workers</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">use_multiprocessing</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;score on test: &#34;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">x_validation</span><span class="p">,</span><span class="n">y_validation</span><span class="p">)[</span><span class="mi">1</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;score on train: &#34;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)[</span><span class="mi">1</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># evaluate the model</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">x_validation</span><span class="p">,</span> <span class="n">y_validation</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>141/141 [==============================] - 0s 2ms/step - loss: 0.5213 - acc: 0.7800
+score on test: 0.7799999713897705
+938/938 [==============================] - 2s 2ms/step - loss: 0.5191 - acc: 0.7788
+score on train: 0.7788000106811523
+
+
+
+
+
+[0.5213088393211365, 0.7799999713897705]
+</code></pre>
 
             <footer class="footline">
             </footer>
@@ -474,11 +815,11 @@ Tesla T4
           <li data-nav-id="/4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-58b44256ffcbf81f1b98458ac7b6d609" aria-controls="subsections-58b44256ffcbf81f1b98458ac7b6d609" class="toggle" checked><label class="a11y-only toggle" for="section-58b44256ffcbf81f1b98458ac7b6d609" >Sottomenu 4.1.1 Regressione non-lineare</label><a href="../../../../4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/index.html">4.1.1 Regressione non-lineare<i class="fas fa-check read-icon"></i></a><ul id="subsections-58b44256ffcbf81f1b98458ac7b6d609">
           <li data-nav-id="/4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/notebook-di-lavoro/index.html" class="dd-item"><a href="../../../../4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/notebook-di-lavoro/index.html">4.1.1 Notebook-di-lavoro<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/showcase/index.html" class="dd-item"><a href="../../../../4-progetti/4.1-supervised-learning/4.1.1-regressione-non-lineare/showcase/index.html">4.1.1 ShowCase<i class="fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/index.html" class="dd-item parent alwaysopen"><input type="checkbox" id="section-616d9bf45d8e7ffb243fdd89466afc9d" aria-controls="subsections-616d9bf45d8e7ffb243fdd89466afc9d" class="toggle" checked><label class="a11y-only toggle" for="section-616d9bf45d8e7ffb243fdd89466afc9d" >Sottomenu 4.1.2 Classificatore CNN</label><a href="../../../../4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/index.html">4.1.2 Classificatore CNN<i class="fas fa-check read-icon"></i></a><ul id="subsections-616d9bf45d8e7ffb243fdd89466afc9d">
-          <li data-nav-id="/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/index.html" class="dd-item active"><a href="../../../../4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/index.html">4.1.2 Notebook-di-lavoro<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-616d9bf45d8e7ffb243fdd89466afc9d" aria-controls="subsections-616d9bf45d8e7ffb243fdd89466afc9d" class="toggle" checked><label class="a11y-only toggle" for="section-616d9bf45d8e7ffb243fdd89466afc9d" >Sottomenu 4.1.2 Classificatore CNN</label><a href="../../../../4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/index.html">4.1.2 Classificatore CNN<i class="fas fa-check read-icon"></i></a><ul id="subsections-616d9bf45d8e7ffb243fdd89466afc9d">
+          <li data-nav-id="/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/index.html" class="dd-item"><a href="../../../../4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/index.html">4.1.2 Notebook-di-lavoro<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/showcase/index.html" class="dd-item"><a href="../../../../4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/showcase/index.html">4.1.2 ShowCase<i class="fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-cf054c7c915649e3e5cde64329a7d941" aria-controls="subsections-cf054c7c915649e3e5cde64329a7d941" class="toggle" checked><label class="a11y-only toggle" for="section-cf054c7c915649e3e5cde64329a7d941" >Sottomenu 4.1.3 Predizione Correntisti Morosi</label><a href="../../../../4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/index.html">4.1.3 Predizione Correntisti Morosi<i class="fas fa-check read-icon"></i></a><ul id="subsections-cf054c7c915649e3e5cde64329a7d941">
-          <li data-nav-id="/4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/notebook-di-lavoro/index.html" class="dd-item"><a href="../../../../4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/notebook-di-lavoro/index.html">4.1.3 Notebook-di-lavoro<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/index.html" class="dd-item parent alwaysopen"><input type="checkbox" id="section-cf054c7c915649e3e5cde64329a7d941" aria-controls="subsections-cf054c7c915649e3e5cde64329a7d941" class="toggle" checked><label class="a11y-only toggle" for="section-cf054c7c915649e3e5cde64329a7d941" >Sottomenu 4.1.3 Predizione Correntisti Morosi</label><a href="../../../../4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/index.html">4.1.3 Predizione Correntisti Morosi<i class="fas fa-check read-icon"></i></a><ul id="subsections-cf054c7c915649e3e5cde64329a7d941">
+          <li data-nav-id="/4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/notebook-di-lavoro/index.html" class="dd-item active"><a href="../../../../4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/notebook-di-lavoro/index.html">4.1.3 Notebook-di-lavoro<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/showcase/index.html" class="dd-item"><a href="../../../../4-progetti/4.1-supervised-learning/4.1.3-predizione-correntisti-morosi/showcase/index.html">4.1.3 ShowCase<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
           <li data-nav-id="/4-progetti/4.2-unsupervised-learning/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-240c23d54951429608884b621c0b522b" aria-controls="subsections-240c23d54951429608884b621c0b522b" class="toggle" checked><label class="a11y-only toggle" for="section-240c23d54951429608884b621c0b522b" >Sottomenu 4.2 Unsupervised Learning</label><a href="../../../../4-progetti/4.2-unsupervised-learning/index.html">4.2 Unsupervised Learning<i class="fas fa-check read-icon"></i></a><ul id="subsections-240c23d54951429608884b621c0b522b">
           <li data-nav-id="/4-progetti/4.2-unsupervised-learning/4.2.1-clustering/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-16015def46e7a5caaec1c509159b8e8d" aria-controls="subsections-16015def46e7a5caaec1c509159b8e8d" class="toggle" checked><label class="a11y-only toggle" for="section-16015def46e7a5caaec1c509159b8e8d" >Sottomenu 4.2.1 Clustering</label><a href="../../../../4-progetti/4.2-unsupervised-learning/4.2.1-clustering/index.html">4.2.1 Clustering<i class="fas fa-check read-icon"></i></a><ul id="subsections-16015def46e7a5caaec1c509159b8e8d">
