@@ -35,5 +35,21 @@
       <guid>https://example.com/4-progetti/4.4-reinforced-learning/index.html</guid>
       <description>intro </description>
     </item>
+    <item>
+      <title>● Spark - Appunti con esempi</title>
+      <link>https://example.com/4-progetti/apachespark/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/4-progetti/apachespark/index.html</guid>
+      <description>Appunti con esempi per l&amp;rsquo;uso e la comprensione di Apache Spark in Python: Introduzione a Apache Spark Architettura di Apache Spark Installazione e configurazione di Apache Spark SparkSQL: l&amp;rsquo;interfaccia SQL di Spark DataFrames e Dataset in Spark Spark Streaming: l&amp;rsquo;elaborazione di dati in tempo reale Spark MLlib: libreria per il machine learning in Spark Spark GraphX: libreria per l&amp;rsquo;elaborazione di grafi in Spark Apache Spark e Hadoop: integrazione con l&amp;rsquo;Hadoop Distributed File System (HDFS) Gestione della distribuzione dei dati e del carico di lavoro in Spark Debugging e ottimizzazione di applicazioni Spark Utilizzo di Spark con altri framework e tecnologie (ad es.</description>
+    </item>
+    <item>
+      <title>● SQL - Appunti con esempi</title>
+      <link>https://example.com/4-progetti/sql/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/4-progetti/sql/index.html</guid>
+      <description>Guida passo-passo per imparare SQL Benvenuto alla guida passo-passo per imparare SQL! In questa guida ti insegneremo le basi del linguaggio SQL, che è uno strumento essenziale per lavorare con database.
+Indice degli argomenti di un libro corso di SQL:
+Introduzione a SQL Concetti di base del database Tipi di dati in SQL Creazione di database e tabelle Chiavi primarie e chiavi esterne Inserimento di dati in una tabella Selezione di dati da una tabella Filtraggio dei dati con il comando WHERE Ordinamento dei dati con il comando ORDER BY Utilizzo delle funzioni di aggregazione (SUM, AVG, COUNT, etc.</description>
+    </item>
   </channel>
 </rss>

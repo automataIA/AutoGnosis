@@ -35,10 +35,9 @@ Il MLOps inizia con la creazione di un ambiente di sviluppo sicuro e controllato
       <link>https://example.com/4-progetti/index.html</link>
       <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
       <guid>https://example.com/4-progetti/index.html</guid>
-      <description>I vari progetti sono divisi per aree tematiche:
+      <description>I vari progetti sono divisi per aree tematiche:
 4.1-Supervised-Learning Predizione Costo Immobili in New Taipei Rinconoscimento di immagini a bassa risoluzione Predizione-Correntisti-Morosi 4.2-Unsupervised-Learning 4.2.1-Classificazione dei clienti di una Banca 4.3-NLP 4.3.1-Analisi-del-Sentimento 4.4-Reinforced-Learning 4.4.1-Regressione-non-lineare Ogni sezione contiene
-Notebook di lavoro: È presente il codice e l&amp;rsquo;output relativa all&amp;rsquo;analisi. Presentazione: in foma di slides e più discorsiva, per capire e risolvere il problema. SQL Appunti con Esempi
-seconda colonna da riempire </description>
+Notebook di lavoro: È presente il codice e l&amp;rsquo;output relativa all&amp;rsquo;analisi. Presentazione: in foma di slides e più discorsiva, per capire e risolvere il problema. Altri Progetti Spark Appunti con Esempi SQL Appunti con Esempi</description>
     </item>
     <item>
       <title>5  -  Risorse</title>

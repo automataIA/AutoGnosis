@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://example.com/4-progetti/apachespark/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.com/4-progetti/sql/index.html</loc>
+    <lastmod>2022-12-28T18:27:41+01:00</lastmod>
+  </url>
+  <url>
     <loc>https://example.com/1-introduzione/index.html</loc>
     <lastmod>2022-12-28T18:27:41+01:00</lastmod>
   </url>
