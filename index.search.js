@@ -616,7 +616,7 @@ var relearn_search_index = [
     "uri": "/2-appunti/2.3-machine-learning/2.3.6-valutazione-e-ottimizzazione-dei-modelli-di-machine-learning/index.html"
   },
   {
-    "content": "\rI vari progetti sono divisi per aree tematiche:\n4.1-Supervised-Learning Predizione Costo Immobili in New Taipei Rinconoscimento di immagini a bassa risoluzione Predizione-Correntisti-Morosi 4.2-Unsupervised-Learning 4.2.1-Classificazione dei clienti di una Banca 4.3-NLP 4.3.1-Analisi-del-Sentimento 4.4-Reinforced-Learning 4.4.1-Regressione-non-lineare Ogni sezione contiene\nNotebook di lavoro: È presente il codice e l’output relativa all’analisi. Presentazione: in foma di slides e più discorsiva, per capire e risolvere il problema. Altri Progetti Spark Appunti con Esempi SQL Appunti con Esempi\n",
+    "content": "\rI vari progetti sono divisi per aree tematiche:\n4.1-Supervised-Learning Predizione Costo Immobili in New Taipei Rinconoscimento di immagini a bassa risoluzione Predizione-Correntisti-Morosi 4.2-Unsupervised-Learning 4.2.1-Classificazione dei clienti di una Banca 4.3-NLP 4.3.1-Analisi-del-Sentimento 4.4-Reinforced-Learning 4.4.1-Regressione-non-lineare Ogni sezione contiene\nNotebook di lavoro: È presente il codice e l’output relativa all’analisi. Presentazione: in foma di slides e più discorsiva, per capire e risolvere il problema. Altri Progetti Spark Appunti con Esempi\nSQL Appunti con Esempi\n",
     "description": "",
     "tags": null,
     "title": "4  -  Progetti",

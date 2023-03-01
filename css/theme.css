@@ -9,7 +9,13 @@ html {
     background-color: #f3f2ef;
 }
 
-#sidebar a[href*="/sql/"], a[href*="/apachespark/"] {
+#sidebar a[href*="/sql/"] {
+    font-weight:bold;
+    font-size: 18px ;
+
+}
+
+#sidebar a[href*="/apachespark/"] {
     font-weight:bold;
     font-size: 18px ;
 
