@@ -7,5 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
     <lastBuildDate>Wed, 28 Dec 2022 18:27:18 +0100</lastBuildDate><atom:link href="https://example.com/4-progetti/4.3-classificazione-nlp/4.3.1-analisi-del-sentimento/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4.3.1 Notebook-di-lavoro</title>
+      <link>https://example.com/4-progetti/4.3-classificazione-nlp/4.3.1-analisi-del-sentimento/notebook-di-lavoro/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
+      <guid>https://example.com/4-progetti/4.3-classificazione-nlp/4.3.1-analisi-del-sentimento/notebook-di-lavoro/index.html</guid>
+      <description>Questo notebook preso da Kaggle è stato tradotto in italiano. Volendo sottolineare le potenzialità dei TRANSFORMER e dei modelli PRE-ADDESTRATI, che tramite poche righe di codice riesce a fare risultati notevoli. Costruire un classificatore di sentiment Introduzione ai Transformers L&amp;rsquo;analisi del sentiment è un tipo di problema dell&amp;rsquo;elaborazione del linguaggio naturale che consiste nel determinare se un testo ha un sentiment positivo o negativo. Questo compito non è così facile come si potrebbe pensare, perché il linguaggio è per definizione molto intricato e complesso.</description>
+    </item>
   </channel>
 </rss>
