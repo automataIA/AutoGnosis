@@ -36,6 +36,18 @@
       <description>intro </description>
     </item>
     <item>
+      <title>● ML Explainability - Appunti</title>
+      <link>https://example.com/4-progetti/explainable-ai/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/4-progetti/explainable-ai/index.html</guid>
+      <description>Indice degli argomenti degli appunti di Explainable AI:
+Capitolo 1: Introduzione all&amp;rsquo;Explainable AI
+Cosa è l&amp;rsquo;Explainable AI Perché è importante Come è cambiato il panorama dell&amp;rsquo;AI con l&amp;rsquo;Explainable AI Capitolo 2: Interpretazione di modelli
+Cos&amp;rsquo;è l&amp;rsquo;interpretazione dei modelli Perché è importante Come funziona Capitolo 3: Modelli lineari
+Cos&amp;rsquo;è un modello lineare Come interpretare un modello lineare Esempi di modelli lineari interpretati Capitolo 4: Alberi di decisione
+Cos&amp;rsquo;è un albero di decisione Come interpretare un albero di decisione Esempi di alberi di decisione interpretati Capitolo 5: Reti neurali</description>
+    </item>
+    <item>
       <title>● Spark - Appunti con esempi</title>
       <link>https://example.com/4-progetti/apachespark/index.html</link>
       <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
