@@ -8,11 +8,13 @@
     <language>it</language>
     <lastBuildDate>Wed, 28 Dec 2022 18:27:18 +0100</lastBuildDate><atom:link href="https://example.com/4-progetti/4.4-reinforced-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>4.4.1 Regressione non-lineare</title>
-      <link>https://example.com/4-progetti/4.4-reinforced-learning/4.4.1-regressione-non-lineare/index.html</link>
+      <title>4.4.1 Imparare una nuova ricetta</title>
+      <link>https://example.com/4-progetti/4.4-reinforced-learning/4.4.1-ricetta/index.html</link>
       <pubDate>Wed, 28 Dec 2022 18:27:18 +0100</pubDate>
-      <guid>https://example.com/4-progetti/4.4-reinforced-learning/4.4.1-regressione-non-lineare/index.html</guid>
-      <description>intro </description>
+      <guid>https://example.com/4-progetti/4.4-reinforced-learning/4.4.1-ricetta/index.html</guid>
+      <description>Introduzione al problema Lo script Python che ho scritto utilizza l&amp;rsquo;algoritmo di apprendimento rinforzato &amp;ldquo;Q-learning&amp;rdquo; per risolvere un problema di esplorazione di uno spazio di stati.
+L&amp;rsquo;agente deve esplorare l&amp;rsquo;ambiente di gioco, prendere decisioni in ogni stato e massimizzare la sua ricompensa complessiva, seguendo una politica di scelta delle azioni che si basa sul valore Q degli stati e delle azioni possibili.
+L&amp;rsquo;output dello script mostra la sequenza di azioni scelte dall&amp;rsquo;agente durante la sua esplorazione dell&amp;rsquo;ambiente di gioco, fino a raggiungere lo stato finale desiderato.</description>
     </item>
   </channel>
 </rss>

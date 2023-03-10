@@ -9,21 +9,21 @@
     <meta name="author" content="Sören Weber">
     <title>4.5 Transfer learning   -  Data Science &amp; Co.</title>
     <link href="../../../2-appunti/2.4-apprendimento-profondo/2.4.5-transfer-learning/index.xml" rel="alternate" type="application/rss+xml" title="4.5 Transfer learning   -  Data Science &amp; Co.">
-    <link href="../../../images/favicon.svg?1677857093" rel="icon" type="image/svg+xml">
+    <link href="../../../images/favicon.svg?1678464495" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="../../../css/fontawesome-all.min.css?1677857093" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1677857093" rel="stylesheet"></noscript>
-    <link href="../../../css/featherlight.min.css?1677857093" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/featherlight.min.css?1677857093" rel="stylesheet"></noscript>
-    <link href="../../../css/auto-complete.css?1677857093" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1677857093" rel="stylesheet"></noscript>
-    <link href="../../../css/perfect-scrollbar.min.css?1677857093" rel="stylesheet">
-    <link href="../../../css/nucleus.css?1677857093" rel="stylesheet">
-    <link href="../../../css/fonts.css?1677857093" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1677857093" rel="stylesheet"></noscript>
-    <link href="../../../css/theme.css?1677857093" rel="stylesheet">
-    <link href="../../../css/theme-relearn-light.css?1677857093" rel="stylesheet" id="variant-style">
-    <link href="../../../css/ie.css?1677857093" rel="stylesheet">
-    <link href="../../../css/variant.css?1677857093" rel="stylesheet">
-    <link href="../../../css/print.css?1677857093" rel="stylesheet" media="print">
-    <script src="../../../js/url.js?1677857093"></script>
-    <script src="../../../js/variant.js?1677857093"></script>
+    <link href="../../../css/fontawesome-all.min.css?1678464495" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1678464495" rel="stylesheet"></noscript>
+    <link href="../../../css/featherlight.min.css?1678464495" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/featherlight.min.css?1678464495" rel="stylesheet"></noscript>
+    <link href="../../../css/auto-complete.css?1678464495" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/auto-complete.css?1678464495" rel="stylesheet"></noscript>
+    <link href="../../../css/perfect-scrollbar.min.css?1678464495" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1678464495" rel="stylesheet">
+    <link href="../../../css/fonts.css?1678464495" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fonts.css?1678464495" rel="stylesheet"></noscript>
+    <link href="../../../css/theme.css?1678464495" rel="stylesheet">
+    <link href="../../../css/theme-relearn-light.css?1678464495" rel="stylesheet" id="variant-style">
+    <link href="../../../css/ie.css?1678464495" rel="stylesheet">
+    <link href="../../../css/variant.css?1678464495" rel="stylesheet">
+    <link href="../../../css/print.css?1678464495" rel="stylesheet" media="print">
+    <script src="../../../js/url.js?1678464495"></script>
+    <script src="../../../js/variant.js?1678464495"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -41,7 +41,7 @@
       var baseUriFull='https:\/\/example.com/';
       window.variants && variants.init( [ 'relearn-light' ] );
     </script>
-    <script src="../../../js/jquery.min.js?1677857093" defer></script>
+    <script src="../../../js/jquery.min.js?1678464495" defer></script>
     <style>
       #body img.bg-white {
         background-color: white;
@@ -191,12 +191,12 @@ Il transfer learning può essere utilizzato in molti scenari diversi, come ad es
         <script>
           var contentLangs=['it'];
         </script>
-        <script src="../../../js/auto-complete.js?1677857094" defer></script>
-        <script src="../../../js/lunr/lunr.min.js?1677857094" defer></script>
-        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1677857094" defer></script>
-        <script src="../../../js/lunr/lunr.multi.min.js?1677857094" defer></script>
-        <script src="../../../js/lunr/lunr.it.min.js?1677857094" defer></script>
-        <script src="../../../js/search.js?1677857094" defer></script>
+        <script src="../../../js/auto-complete.js?1678464496" defer></script>
+        <script src="../../../js/lunr/lunr.min.js?1678464496" defer></script>
+        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1678464496" defer></script>
+        <script src="../../../js/lunr/lunr.multi.min.js?1678464496" defer></script>
+        <script src="../../../js/lunr/lunr.it.min.js?1678464496" defer></script>
+        <script src="../../../js/search.js?1678464496" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
@@ -313,7 +313,7 @@ Il transfer learning può essere utilizzato in molti scenari diversi, come ad es
           <li data-nav-id="/4-progetti/4.3-classificazione-nlp/4.3.1-analisi-del-sentimento/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-0103da45fc7d16013932490658713f03" aria-controls="subsections-0103da45fc7d16013932490658713f03" class="toggle" checked><label class="a11y-only toggle" for="section-0103da45fc7d16013932490658713f03" >Sottomenu 4.3.1 Analisi del Sentimento</label><a href="../../../4-progetti/4.3-classificazione-nlp/4.3.1-analisi-del-sentimento/index.html">4.3.1 Analisi del Sentimento<i class="fas fa-check read-icon"></i></a><ul id="subsections-0103da45fc7d16013932490658713f03">
           <li data-nav-id="/4-progetti/4.3-classificazione-nlp/4.3.1-analisi-del-sentimento/notebook-di-lavoro/index.html" class="dd-item"><a href="../../../4-progetti/4.3-classificazione-nlp/4.3.1-analisi-del-sentimento/notebook-di-lavoro/index.html">4.3.1 Notebook-di-lavoro<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
           <li data-nav-id="/4-progetti/4.4-reinforced-learning/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-3f75f2e0234572a5a797f8ca55e6e44d" aria-controls="subsections-3f75f2e0234572a5a797f8ca55e6e44d" class="toggle" checked><label class="a11y-only toggle" for="section-3f75f2e0234572a5a797f8ca55e6e44d" >Sottomenu 4.4 Reinforced Learning</label><a href="../../../4-progetti/4.4-reinforced-learning/index.html">4.4 Reinforced Learning<i class="fas fa-check read-icon"></i></a><ul id="subsections-3f75f2e0234572a5a797f8ca55e6e44d">
-          <li data-nav-id="/4-progetti/4.4-reinforced-learning/4.4.1-regressione-non-lineare/index.html" class="dd-item"><a href="../../../4-progetti/4.4-reinforced-learning/4.4.1-regressione-non-lineare/index.html">4.4.1 Regressione non-lineare<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+          <li data-nav-id="/4-progetti/4.4-reinforced-learning/4.4.1-ricetta/index.html" class="dd-item"><a href="../../../4-progetti/4.4-reinforced-learning/4.4.1-ricetta/index.html">4.4.1 Imparare una nuova ricetta<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
           <li data-nav-id="/5-risorse/index.html" class="dd-item"><a href="../../../5-risorse/index.html">5  -  Risorse<i class="fas fa-check read-icon"></i></a></li>
         </ul>
         <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
@@ -369,9 +369,9 @@ Il transfer learning può essere utilizzato in molti scenari diversi, come ad es
         </div>
       </div>
     </aside>
-    <script src="../../../js/clipboard.min.js?1677857095" defer></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1677857095" defer></script>
-    <script src="../../../js/featherlight.min.js?1677857095" defer></script>
-    <script src="../../../js/theme.js?1677857095" defer></script>
+    <script src="../../../js/clipboard.min.js?1678464496" defer></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1678464496" defer></script>
+    <script src="../../../js/featherlight.min.js?1678464496" defer></script>
+    <script src="../../../js/theme.js?1678464496" defer></script>
   </body>
 </html>

@@ -7,8 +7,8 @@
     <meta name="generator" content="Relearn 5.9.2+tip">
     <meta name="description" content="Documentation for Hugo Relearn Theme">
     <meta name="author" content="Sören Weber">
-    <title>2.5.4 Analisi del sentimento  -  Data Science &amp; Co.</title>
-    <link href="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/index.xml" rel="alternate" type="application/rss+xml" title="2.5.4 Analisi del sentimento  -  Data Science &amp; Co.">
+    <title>4.4.1 Imparare una nuova ricetta  -  Data Science &amp; Co.</title>
+    <link href="../../../4-progetti/4.4-reinforced-learning/4.4.1-ricetta/index.xml" rel="alternate" type="application/rss+xml" title="4.4.1 Imparare una nuova ricetta  -  Data Science &amp; Co.">
     <link href="../../../images/favicon.svg?1678464495" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="../../../css/fontawesome-all.min.css?1678464495" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../../css/fontawesome-all.min.css?1678464495" rel="stylesheet"></noscript>
@@ -48,20 +48,20 @@
       }
     </style>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="../../../4-progetti/4.4-reinforced-learning/4.4.1-ricetta/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable" dir="ltr">
         <div>
           <div class="navigation">
-            <a class="nav nav-next" href="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/2.5.4.1-approcci-allanalisi-del-sentimento/index.html" title="2.5.4.1 Approcci all’analisi del sentimento (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <a class="nav nav-next" href="../../../5-risorse/index.html" title="5  -  Risorse (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev" href="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/2.5.3.3-valutazione-delle-prestazioni/index.html" title="2.5.3.3 Valutazione delle prestazioni (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev" href="../../../4-progetti/4.4-reinforced-learning/index.html" title="4.4 Reinforced Learning (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="top-github-link">
-            <a class="github-link" title='Modifica (CTRL+ALT+w)' href="https://automataia.github.io/AutoGnosis/2-Appunti/2.5-NLP-%28Natural-Language-Processing%29/2.5.4-Analisi-del-sentimento/_index.it.md" target="_blank">
+            <a class="github-link" title='Modifica (CTRL+ALT+w)' href="https://automataia.github.io/AutoGnosis/4-Progetti/4.4-Reinforced-Learning/4.4.1-Ricetta/_index.it.md" target="_blank">
               <i class="fas fa-pen fa-fw"></i>
             </a>
           </div>
@@ -69,12 +69,29 @@
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
             </span>
+            <span id="toc-menu" title='Indice (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../index.html"><span itemprop="name">AUTOGNOSIS</span></a><meta itemprop="position" content="1"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../2-appunti/index.html"><span itemprop="name">2  -  Appunti di AI</span></a><meta itemprop="position" content="2"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../2-appunti/2.5-nlp-natural-language-processing/index.html"><span itemprop="name">2.5 NLP (Natural Language Processing) </span></a><meta itemprop="position" content="3"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">2.5.4 Analisi del sentimento</span><meta itemprop="position" content="4"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../4-progetti/index.html"><span itemprop="name">4  -  Progetti</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../../4-progetti/4.4-reinforced-learning/index.html"><span itemprop="name">4.4 Reinforced Learning</span></a><meta itemprop="position" content="3"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">4.4.1 Imparare una nuova ricetta</span><meta itemprop="position" content="4"></li>
             </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper" dir="ltr">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introduzione-al-problema">Introduzione al problema</a></li>
+        <li><a href="#descrizione-del-problema-tramite-un-esempio">Descrizione del problema tramite un esempio</a></li>
+        <li><a href="#inizializzazione-del-problema">Inizializzazione del problema</a></li>
+        <li><a href="#spiegazione-tramite-esempio-dei-risultati-ottenuti">Spiegazione tramite esempio dei risultati ottenuti</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
           </div>
         </div>
       </nav>
@@ -83,14 +100,113 @@
           <div id="head-tags">
           </div>
           <article class="default">
-<h1 id="2.5.4-analisi-del-sentimento">2.5.4 Analisi del sentimento</h1>
+<h1 id="4.4.1-imparare-una-nuova-ricetta">4.4.1 Imparare una nuova ricetta</h1>
 
-<p><strong>L&rsquo;analisi del sentimento</strong> è un&rsquo;area di ricerca interdisciplinare che combina tecniche di elaborazione del <strong>linguaggio naturale</strong> e di <strong>apprendimento automatico</strong> per analizzare e comprendere le emozioni espresse in testi scritti o parlati.</p>
-<p>Il suo scopo principale è quello di determinare l&rsquo;atteggiamento o la valutazione espressa nei testi, che possono essere positivi, negativi o neutri. L&rsquo;analisi del sentimento è utilizzata in diversi ambiti, come il marketing, la finanza, le relazioni pubbliche e la comunicazione politica.</p>
-<p>L&rsquo;<strong>elaborazione del linguaggio naturale</strong> fornisce le tecniche per l&rsquo;estrazione del significato dai testi, mentre l&rsquo;<strong>apprendimento automatico</strong> fornisce i modelli statistici per classificare e analizzare i dati estratti.</p>
-<p>In generale, esistono due approcci principali per l&rsquo;analisi del sentimento: l&rsquo;approccio basato sul lessico e l&rsquo;approccio basato sull&rsquo;apprendimento automatico. L&rsquo;approccio basato sul lessico utilizza un dizionario di parole o espressioni con valutazioni già assegnate per analizzare i testi, mentre l&rsquo;approccio basato sull&rsquo;apprendimento automatico addestra un modello statistico su un insieme di dati etichettati per classificare i testi in base al loro sentimento.</p>
-<p>L&rsquo;analisi del sentimento è un&rsquo;area in rapida evoluzione, con nuove tecniche e modelli che vengono continuamente sviluppati per migliorare l&rsquo;accuratezza dell&rsquo;analisi. Ad esempio, l&rsquo;uso di tecniche di <strong>deep learning</strong> sta diventando sempre più comune nell&rsquo;analisi del sentimento.</p>
-<p>In generale, l&rsquo;analisi del sentimento è uno strumento potente per comprendere le opinioni e le emozioni espresse nei testi, che può essere utilizzato per aiutare a prendere decisioni in molti ambiti diversi.</p>
+<h3 id="introduzione-al-problema">Introduzione al problema</h3>
+<p>Lo script Python che ho scritto utilizza l&rsquo;algoritmo di apprendimento rinforzato &ldquo;Q-learning&rdquo; per risolvere un problema di esplorazione di uno spazio di stati.</p>
+<p>L&rsquo;agente deve esplorare l&rsquo;ambiente di gioco, prendere decisioni in ogni stato e massimizzare la sua ricompensa complessiva, seguendo una politica di scelta delle azioni che si basa sul valore Q degli stati e delle azioni possibili.</p>
+<p>L&rsquo;output dello script mostra la sequenza di azioni scelte dall&rsquo;agente durante la sua esplorazione dell&rsquo;ambiente di gioco, fino a raggiungere lo stato finale desiderato.</p>
+<p>Lo script può essere utilizzato come base per risolvere problemi di esplorazione di spazi di stati più complessi, aggiungendo regole e restrizioni all&rsquo;ambiente di gioco, o modificando l&rsquo;algoritmo di apprendimento utilizzato.</p>
+<h3 id="descrizione-del-problema-tramite-un-esempio">Descrizione del problema tramite un esempio</h3>
+<p>Immagina di dover imparare a cucinare un piatto specifico per la prima volta. Per farlo, devi seguire una ricetta che ti indica gli ingredienti e i passaggi necessari. Nel nostro caso, l&rsquo;ambiente di gioco è come la tua cucina, la matrice di ricompensa è la soddisfazione che provi quando il piatto viene bene, mentre la matrice di transizione è il passaggio da un ingrediente o da una fase della ricetta all&rsquo;altra.</p>
+<p>Nel processo di apprendimento rinforzato, come nella cucina, impariamo dalle esperienze precedenti per migliorare il nostro processo decisionale in futuro. In questo esempio, l&rsquo;algoritmo Q-learning impara la politica migliore per raggiungere l&rsquo;obiettivo finale, che corrisponde alla cottura del piatto perfetto. Invece di seguire la ricetta esattamente come scritta, possiamo adattare la nostra strategia in base alle situazioni impreviste che possono presentarsi durante la preparazione.</p>
+<p>Il ciclo di apprendimento corrisponde al processo di preparazione del piatto, dove impariamo a conoscere gli ingredienti, le quantità e le tecniche necessarie. Durante questo processo, aggiorniamo la nostra &ldquo;matrice Q&rdquo; personale, in cui registriamo le conoscenze acquisite e le utilizziamo per migliorare la qualità del piatto.</p>
+<p>Infine, quando abbiamo imparato abbastanza e siamo pronti a testare la nostra politica appresa, possiamo preparare il piatto con sicurezza e facilità, sapendo esattamente cosa fare in ogni fase della preparazione. In sostanza, l&rsquo;apprendimento rinforzato è come imparare a cucinare un nuovo piatto, utilizzando le esperienze passate per migliorare il nostro processo decisionale e ottenere un risultato finale soddisfacente.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># definire l&#39;ambiente</span>
+</span></span><span class="line"><span class="cl"><span class="n">num_states</span> <span class="o">=</span> <span class="mi">6</span>
+</span></span><span class="line"><span class="cl"><span class="n">num_actions</span> <span class="o">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="n">reward_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+</span></span><span class="line"><span class="cl"><span class="n">transition_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>    <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># definire iperparametri</span>
+</span></span><span class="line"><span class="cl"><span class="n">discount_factor</span> <span class="o">=</span> <span class="mf">0.9</span>
+</span></span><span class="line"><span class="cl"><span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.1</span>
+</span></span><span class="line"><span class="cl"><span class="n">num_episodes</span> <span class="o">=</span> <span class="mi">1000</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># inizializzare la matrice Q</span>
+</span></span><span class="line"><span class="cl"><span class="n">q_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">num_states</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">))</span>
+</span></span></code></pre></div><h3 id="inizializzazione-del-problema">Inizializzazione del problema</h3>
+<p>Si definisco le grandezze di input scelte e le variabili da inizializzare utilizzate successivamente nella fase di addestramento.
+I parametri sono definiti come segue:</p>
+<ol>
+<li>
+<p><code>discount_factor</code>: anche noto come gamma, indica il fattore di sconto utilizzato per pesare la ricompensa a breve termine rispetto alla ricompensa a lungo termine. Un valore elevato di discount_factor indica che l&rsquo;agente darà maggiore importanza alle ricompense future rispetto alle ricompense immediate.</p>
+</li>
+<li>
+<p><code>learning_rate</code>: anche noto come alpha, indica il tasso di apprendimento utilizzato dall&rsquo;algoritmo Q-learning per aggiornare il valore Q di uno stato e di un&rsquo;azione. Un valore elevato di learning_rate può rendere l&rsquo;apprendimento più rapido ma meno stabile, mentre un valore basso può rendere l&rsquo;apprendimento più lento ma più stabile.</p>
+</li>
+<li>
+<p><code>num_episodes</code>: indica il numero di episodi che l&rsquo;agente dovrà completare durante il training. Un episodio è una sequenza di azioni che inizia dallo stato iniziale e termina quando l&rsquo;agente raggiunge uno stato terminale. Un maggior numero di episodi può migliorare la stabilità e la qualità dell&rsquo;apprendimento, ma richiederà più tempo di esecuzione.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># ciclo di apprendimento</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">episode</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_episodes</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">state</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_states</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">state</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># scegliere un&#39;azione con probabilità epsilon-greedy</span>
+</span></span><span class="line"><span class="cl">        <span class="n">epsilon</span> <span class="o">=</span> <span class="mf">0.1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">epsilon</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">action</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_actions</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">action</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">q_matrix</span><span class="p">[</span><span class="n">state</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># eseguire l&#39;azione e ottenere una ricompensa</span>
+</span></span><span class="line"><span class="cl">        <span class="n">next_state</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">num_states</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">transition_matrix</span><span class="p">[</span><span class="n">state</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="n">reward</span> <span class="o">=</span> <span class="n">reward_matrix</span><span class="p">[</span><span class="n">state</span><span class="p">][</span><span class="n">action</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># aggiornare la matrice Q</span>
+</span></span><span class="line"><span class="cl">        <span class="n">q_matrix</span><span class="p">[</span><span class="n">state</span><span class="p">][</span><span class="n">action</span><span class="p">]</span> <span class="o">=</span> <span class="n">q_matrix</span><span class="p">[</span><span class="n">state</span><span class="p">][</span><span class="n">action</span><span class="p">]</span> <span class="o">+</span> <span class="n">learning_rate</span> <span class="o">*</span> \
+</span></span><span class="line"><span class="cl">            <span class="p">(</span><span class="n">reward</span> <span class="o">+</span> <span class="n">discount_factor</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">q_matrix</span><span class="p">[</span><span class="n">next_state</span><span class="p">])</span> <span class="o">-</span> <span class="n">q_matrix</span><span class="p">[</span><span class="n">state</span><span class="p">][</span><span class="n">action</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="n">state</span> <span class="o">=</span> <span class="n">next_state</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># testare la politica appresa</span>
+</span></span><span class="line"><span class="cl"><span class="n">state</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">state</span> <span class="o">!=</span> <span class="mi">3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">action</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">q_matrix</span><span class="p">[</span><span class="n">state</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Stato:&#34;</span><span class="p">,</span> <span class="n">state</span><span class="p">,</span> <span class="s2">&#34;Azione:&#34;</span><span class="p">,</span> <span class="n">action</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">state</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">num_states</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">transition_matrix</span><span class="p">[</span><span class="n">state</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Stato finale:&#34;</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span>
+</span></span></code></pre></div><pre><code>Stato: 0 Azione: 0
+Stato: 1 Azione: 0
+Stato: 0 Azione: 0
+Stato: 0 Azione: 0
+Stato: 1 Azione: 0
+Stato: 2 Azione: 0
+Stato finale: 3
+</code></pre>
+<h3 id="spiegazione-tramite-esempio-dei-risultati-ottenuti">Spiegazione tramite esempio dei risultati ottenuti</h3>
+<ol>
+<li>
+<p>Stato 0: è il punto di partenza dell&rsquo;agente, ovvero il momento in cui si trova davanti alla lista degli ingredienti necessari per la ricetta e deve decidere quale azione intraprendere.</p>
+</li>
+<li>
+<p>Stato 1: rappresenta il momento in cui l&rsquo;agente ha deciso di prendere una certa quantità di un ingrediente specifico, ma ha scoperto che non è sufficiente per la ricetta.</p>
+</li>
+<li>
+<p>Stato 0: dopo il tentativo fallito di trovare la quantità giusta dell&rsquo;ingrediente desiderato, l&rsquo;agente torna allo stato 0 per cercare una soluzione alternativa.</p>
+</li>
+<li>
+<p>Stato 0: ancora una volta, l&rsquo;agente non riesce a trovare la quantità giusta dell&rsquo;ingrediente desiderato e torna allo stato 0.</p>
+</li>
+<li>
+<p>Stato 1: dopo aver nuovamente cercato un&rsquo;altra quantità dell&rsquo;ingrediente, l&rsquo;agente scopre che la quantità giusta è ora disponibile e la prende.</p>
+</li>
+<li>
+<p>Stato 2: rappresenta il momento in cui l&rsquo;agente si è spostato verso gli altri ingredienti necessari per la ricetta e ha iniziato a raccoglierli.</p>
+</li>
+<li>
+<p>Stato 3: rappresenta il momento in cui l&rsquo;agente ha raccolto tutti gli ingredienti necessari e si sta preparando per la fase successiva della ricetta.</p>
+</li>
+<li>
+<p>Stato finale: rappresenta il momento in cui l&rsquo;agente ha completato con successo la sua missione, ovvero raccogliere tutti gli ingredienti necessari per la ricetta.</p>
+</li>
+</ol>
 
             <footer class="footline">
             </footer>
@@ -187,17 +303,17 @@
         <script>
           var contentLangs=['it'];
         </script>
-        <script src="../../../js/auto-complete.js?1678464497" defer></script>
-        <script src="../../../js/lunr/lunr.min.js?1678464497" defer></script>
-        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1678464497" defer></script>
-        <script src="../../../js/lunr/lunr.multi.min.js?1678464497" defer></script>
-        <script src="../../../js/lunr/lunr.it.min.js?1678464497" defer></script>
-        <script src="../../../js/search.js?1678464497" defer></script>
+        <script src="../../../js/auto-complete.js?1678464499" defer></script>
+        <script src="../../../js/lunr/lunr.min.js?1678464499" defer></script>
+        <script src="../../../js/lunr/lunr.stemmer.support.min.js?1678464499" defer></script>
+        <script src="../../../js/lunr/lunr.multi.min.js?1678464499" defer></script>
+        <script src="../../../js/lunr/lunr.it.min.js?1678464499" defer></script>
+        <script src="../../../js/search.js?1678464499" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
           <li data-nav-id="/1-introduzione/index.html" class="dd-item"><a href="../../../1-introduzione/index.html">1  -  About Me<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/2-appunti/index.html" class="dd-item parent"><input type="checkbox" id="section-7896bebefe5f2a681672e406660fb029" aria-controls="subsections-7896bebefe5f2a681672e406660fb029" class="toggle" checked><label class="a11y-only toggle" for="section-7896bebefe5f2a681672e406660fb029" >Sottomenu 2  -  Appunti di AI</label><a href="../../../2-appunti/index.html">2  -  Appunti di AI<i class="fas fa-check read-icon"></i></a><ul id="subsections-7896bebefe5f2a681672e406660fb029">
+          <li data-nav-id="/2-appunti/index.html" class="dd-item"><input type="checkbox" id="section-7896bebefe5f2a681672e406660fb029" aria-controls="subsections-7896bebefe5f2a681672e406660fb029" class="toggle"><label class="a11y-only toggle" for="section-7896bebefe5f2a681672e406660fb029" >Sottomenu 2  -  Appunti di AI</label><a href="../../../2-appunti/index.html">2  -  Appunti di AI<i class="fas fa-check read-icon"></i></a><ul id="subsections-7896bebefe5f2a681672e406660fb029">
           <li data-nav-id="/2-appunti/2.1-introduzione-allintelligenza-artificiale/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-b2c25d89f93f66091b7cf6aad836aa58" aria-controls="subsections-b2c25d89f93f66091b7cf6aad836aa58" class="toggle" checked><label class="a11y-only toggle" for="section-b2c25d89f93f66091b7cf6aad836aa58" >Sottomenu 2.1 Introduzione all&#39;AI </label><a href="../../../2-appunti/2.1-introduzione-allintelligenza-artificiale/index.html">2.1 Introduzione all&#39;AI <i class="fas fa-check read-icon"></i></a><ul id="subsections-b2c25d89f93f66091b7cf6aad836aa58">
           <li data-nav-id="/2-appunti/2.1-introduzione-allintelligenza-artificiale/2.1.1-storia-dellia/index.html" class="dd-item"><a href="../../../2-appunti/2.1-introduzione-allintelligenza-artificiale/2.1.1-storia-dellia/index.html">2.1.1 Storia dell&#39;IA <i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/2-appunti/2.1-introduzione-allintelligenza-artificiale/2.1.2-definizione-di-intelligenza-artificiale/index.html" class="dd-item"><a href="../../../2-appunti/2.1-introduzione-allintelligenza-artificiale/2.1.2-definizione-di-intelligenza-artificiale/index.html">2.1.2 Definizione di AI <i class="fas fa-check read-icon"></i></a></li>
@@ -226,7 +342,7 @@
           <li data-nav-id="/2-appunti/2.4-apprendimento-profondo/2.4.3-reti-neurali-convoluzionali/index.html" class="dd-item"><a href="../../../2-appunti/2.4-apprendimento-profondo/2.4.3-reti-neurali-convoluzionali/index.html">4.3 Reti neurali convoluzionali <i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/2-appunti/2.4-apprendimento-profondo/2.4.4-reti-neurali-ricorrenti/index.html" class="dd-item"><a href="../../../2-appunti/2.4-apprendimento-profondo/2.4.4-reti-neurali-ricorrenti/index.html">4.4 Reti neurali ricorrenti <i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/2-appunti/2.4-apprendimento-profondo/2.4.5-transfer-learning/index.html" class="dd-item"><a href="../../../2-appunti/2.4-apprendimento-profondo/2.4.5-transfer-learning/index.html">4.5 Transfer learning <i class="fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/index.html" class="dd-item parent alwaysopen"><input type="checkbox" id="section-be53efac73542a5f10f0d7e5df14a504" aria-controls="subsections-be53efac73542a5f10f0d7e5df14a504" class="toggle" checked><label class="a11y-only toggle" for="section-be53efac73542a5f10f0d7e5df14a504" >Sottomenu 2.5 NLP (Natural Language Processing) </label><a href="../../../2-appunti/2.5-nlp-natural-language-processing/index.html">2.5 NLP (Natural Language Processing) <i class="fas fa-check read-icon"></i></a><ul id="subsections-be53efac73542a5f10f0d7e5df14a504">
+          <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-be53efac73542a5f10f0d7e5df14a504" aria-controls="subsections-be53efac73542a5f10f0d7e5df14a504" class="toggle" checked><label class="a11y-only toggle" for="section-be53efac73542a5f10f0d7e5df14a504" >Sottomenu 2.5 NLP (Natural Language Processing) </label><a href="../../../2-appunti/2.5-nlp-natural-language-processing/index.html">2.5 NLP (Natural Language Processing) <i class="fas fa-check read-icon"></i></a><ul id="subsections-be53efac73542a5f10f0d7e5df14a504">
           <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-a06d3fea5ed9a1344233a86b9a760fb9" aria-controls="subsections-a06d3fea5ed9a1344233a86b9a760fb9" class="toggle" checked><label class="a11y-only toggle" for="section-a06d3fea5ed9a1344233a86b9a760fb9" >Sottomenu 2.5.1 Introduzione al NLP </label><a href="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/index.html">2.5.1 Introduzione al NLP <i class="fas fa-check read-icon"></i></a><ul id="subsections-a06d3fea5ed9a1344233a86b9a760fb9">
           <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/2.5.1.1-definizione-e-applicazioni/index.html" class="dd-item"><a href="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/2.5.1.1-definizione-e-applicazioni/index.html">2.5.1.1 Definizione e Applicazioni<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/2.5.1.2-strumenti-e-librerie-utili/index.html" class="dd-item"><a href="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/2.5.1.2-strumenti-e-librerie-utili/index.html">2.5.1.2 Strumenti e librerie utili<i class="fas fa-check read-icon"></i></a></li>
@@ -240,7 +356,7 @@
           <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/2.5.3.1-come-classificare-il-testo/index.html" class="dd-item"><a href="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/2.5.3.1-come-classificare-il-testo/index.html">2.5.3.1 Come classificare il testo<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/2.5.3.2-algoritmi-di-classificazione/index.html" class="dd-item"><a href="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/2.5.3.2-algoritmi-di-classificazione/index.html">2.5.3.2-Algoritmi di classificazione<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/2.5.3.3-valutazione-delle-prestazioni/index.html" class="dd-item"><a href="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.3-classificazione-del-testo/2.5.3.3-valutazione-delle-prestazioni/index.html">2.5.3.3 Valutazione delle prestazioni<i class="fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/index.html" class="dd-item active parent alwaysopen"><input type="checkbox" id="section-b92dd0401e9eef681c269373bd3dae39" aria-controls="subsections-b92dd0401e9eef681c269373bd3dae39" class="toggle" checked><label class="a11y-only toggle" for="section-b92dd0401e9eef681c269373bd3dae39" >Sottomenu 2.5.4 Analisi del sentimento</label><a href="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/index.html">2.5.4 Analisi del sentimento<i class="fas fa-check read-icon"></i></a><ul id="subsections-b92dd0401e9eef681c269373bd3dae39">
+          <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-b92dd0401e9eef681c269373bd3dae39" aria-controls="subsections-b92dd0401e9eef681c269373bd3dae39" class="toggle" checked><label class="a11y-only toggle" for="section-b92dd0401e9eef681c269373bd3dae39" >Sottomenu 2.5.4 Analisi del sentimento</label><a href="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/index.html">2.5.4 Analisi del sentimento<i class="fas fa-check read-icon"></i></a><ul id="subsections-b92dd0401e9eef681c269373bd3dae39">
           <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/2.5.4.1-approcci-allanalisi-del-sentimento/index.html" class="dd-item"><a href="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/2.5.4.1-approcci-allanalisi-del-sentimento/index.html">2.5.4.1 Approcci all’analisi del sentimento<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/2.5.4.2-valutazione-delle-prestazioni/index.html" class="dd-item"><a href="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.4-analisi-del-sentimento/2.5.4.2-valutazione-delle-prestazioni/index.html">2.5.4.2 Valutazione delle prestazioni<i class="fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/2.5.5-riconoscimento-entit%C3%A0-e-relazioni/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-eae7602fa27bd2cabb51e4bc0b0e084b" aria-controls="subsections-eae7602fa27bd2cabb51e4bc0b0e084b" class="toggle" checked><label class="a11y-only toggle" for="section-eae7602fa27bd2cabb51e4bc0b0e084b" >Sottomenu 2.5.5 Riconoscimento entità e relazioni</label><a href="../../../2-appunti/2.5-nlp-natural-language-processing/2.5.5-riconoscimento-entit%C3%A0-e-relazioni/index.html">2.5.5 Riconoscimento entità e relazioni<i class="fas fa-check read-icon"></i></a><ul id="subsections-eae7602fa27bd2cabb51e4bc0b0e084b">
@@ -287,7 +403,7 @@
           <li data-nav-id="/3-mlops/3.3-monitoraggio-in-produzione/3.3.4-automatizzazione-rollback/index.html" class="dd-item"><a href="../../../3-mlops/3.3-monitoraggio-in-produzione/3.3.4-automatizzazione-rollback/index.html">3.3.4 Automatizzazione Rollback<i class="fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/3-mlops/3.4-configurazione-e-provisioning/index.html" class="dd-item"><a href="../../../3-mlops/3.4-configurazione-e-provisioning/index.html">3.4.1 configurazione e provisioning<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/3-mlops/3.5-documentazione-del-processo/index.html" class="dd-item"><a href="../../../3-mlops/3.5-documentazione-del-processo/index.html">3.5.1 Documentazione del processo<i class="fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/4-progetti/index.html" class="dd-item"><input type="checkbox" id="section-2caf92af5fc010deb9b0d7a642b67f2c" aria-controls="subsections-2caf92af5fc010deb9b0d7a642b67f2c" class="toggle"><label class="a11y-only toggle" for="section-2caf92af5fc010deb9b0d7a642b67f2c" >Sottomenu 4  -  Progetti</label><a href="../../../4-progetti/index.html">4  -  Progetti<i class="fas fa-check read-icon"></i></a><ul id="subsections-2caf92af5fc010deb9b0d7a642b67f2c">
+          <li data-nav-id="/4-progetti/index.html" class="dd-item parent"><input type="checkbox" id="section-2caf92af5fc010deb9b0d7a642b67f2c" aria-controls="subsections-2caf92af5fc010deb9b0d7a642b67f2c" class="toggle" checked><label class="a11y-only toggle" for="section-2caf92af5fc010deb9b0d7a642b67f2c" >Sottomenu 4  -  Progetti</label><a href="../../../4-progetti/index.html">4  -  Progetti<i class="fas fa-check read-icon"></i></a><ul id="subsections-2caf92af5fc010deb9b0d7a642b67f2c">
           <li data-nav-id="/4-progetti/explainable-ai/index.html" class="dd-item"><a href="../../../4-progetti/explainable-ai/index.html">● ML Explainability<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/4-progetti/apachespark/index.html" class="dd-item"><a href="../../../4-progetti/apachespark/index.html">● Spark - Appunti con esempi<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/4-progetti/sql/index.html" class="dd-item"><a href="../../../4-progetti/sql/index.html">● SQL - Appunti con esempi<i class="fas fa-check read-icon"></i></a></li>
@@ -308,8 +424,8 @@
           <li data-nav-id="/4-progetti/4.3-classificazione-nlp/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-82a4fb082c510763e90331190740418f" aria-controls="subsections-82a4fb082c510763e90331190740418f" class="toggle" checked><label class="a11y-only toggle" for="section-82a4fb082c510763e90331190740418f" >Sottomenu 4.3 Classificazione NLP</label><a href="../../../4-progetti/4.3-classificazione-nlp/index.html">4.3 Classificazione NLP<i class="fas fa-check read-icon"></i></a><ul id="subsections-82a4fb082c510763e90331190740418f">
           <li data-nav-id="/4-progetti/4.3-classificazione-nlp/4.3.1-analisi-del-sentimento/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-0103da45fc7d16013932490658713f03" aria-controls="subsections-0103da45fc7d16013932490658713f03" class="toggle" checked><label class="a11y-only toggle" for="section-0103da45fc7d16013932490658713f03" >Sottomenu 4.3.1 Analisi del Sentimento</label><a href="../../../4-progetti/4.3-classificazione-nlp/4.3.1-analisi-del-sentimento/index.html">4.3.1 Analisi del Sentimento<i class="fas fa-check read-icon"></i></a><ul id="subsections-0103da45fc7d16013932490658713f03">
           <li data-nav-id="/4-progetti/4.3-classificazione-nlp/4.3.1-analisi-del-sentimento/notebook-di-lavoro/index.html" class="dd-item"><a href="../../../4-progetti/4.3-classificazione-nlp/4.3.1-analisi-del-sentimento/notebook-di-lavoro/index.html">4.3.1 Notebook-di-lavoro<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
-          <li data-nav-id="/4-progetti/4.4-reinforced-learning/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-3f75f2e0234572a5a797f8ca55e6e44d" aria-controls="subsections-3f75f2e0234572a5a797f8ca55e6e44d" class="toggle" checked><label class="a11y-only toggle" for="section-3f75f2e0234572a5a797f8ca55e6e44d" >Sottomenu 4.4 Reinforced Learning</label><a href="../../../4-progetti/4.4-reinforced-learning/index.html">4.4 Reinforced Learning<i class="fas fa-check read-icon"></i></a><ul id="subsections-3f75f2e0234572a5a797f8ca55e6e44d">
-          <li data-nav-id="/4-progetti/4.4-reinforced-learning/4.4.1-ricetta/index.html" class="dd-item"><a href="../../../4-progetti/4.4-reinforced-learning/4.4.1-ricetta/index.html">4.4.1 Imparare una nuova ricetta<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
+          <li data-nav-id="/4-progetti/4.4-reinforced-learning/index.html" class="dd-item parent alwaysopen"><input type="checkbox" id="section-3f75f2e0234572a5a797f8ca55e6e44d" aria-controls="subsections-3f75f2e0234572a5a797f8ca55e6e44d" class="toggle" checked><label class="a11y-only toggle" for="section-3f75f2e0234572a5a797f8ca55e6e44d" >Sottomenu 4.4 Reinforced Learning</label><a href="../../../4-progetti/4.4-reinforced-learning/index.html">4.4 Reinforced Learning<i class="fas fa-check read-icon"></i></a><ul id="subsections-3f75f2e0234572a5a797f8ca55e6e44d">
+          <li data-nav-id="/4-progetti/4.4-reinforced-learning/4.4.1-ricetta/index.html" class="dd-item active"><a href="../../../4-progetti/4.4-reinforced-learning/4.4.1-ricetta/index.html">4.4.1 Imparare una nuova ricetta<i class="fas fa-check read-icon"></i></a></li></ul></li></ul></li>
           <li data-nav-id="/5-risorse/index.html" class="dd-item"><a href="../../../5-risorse/index.html">5  -  Risorse<i class="fas fa-check read-icon"></i></a></li>
         </ul>
         <div class="footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVisitedLinks showFooter"></div>
@@ -365,9 +481,9 @@
         </div>
       </div>
     </aside>
-    <script src="../../../js/clipboard.min.js?1678464497" defer></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1678464497" defer></script>
-    <script src="../../../js/featherlight.min.js?1678464497" defer></script>
-    <script src="../../../js/theme.js?1678464497" defer></script>
+    <script src="../../../js/clipboard.min.js?1678464499" defer></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1678464499" defer></script>
+    <script src="../../../js/featherlight.min.js?1678464499" defer></script>
+    <script src="../../../js/theme.js?1678464499" defer></script>
   </body>
 </html>
