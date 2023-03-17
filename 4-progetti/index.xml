@@ -36,6 +36,14 @@
       <description>4.4.1 Imparare una nuova ricetta </description>
     </item>
     <item>
+      <title>● Appunti Serie Temporali</title>
+      <link>https://example.com/4-progetti/timehistory/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/4-progetti/timehistory/index.html</guid>
+      <description>Ecco l&amp;rsquo;indice per l&amp;rsquo;argomento delle serie temporali per la data science:
+Introduzione alle serie temporali 1.1 Definizione di serie temporale 1.2 Esempi di serie temporali 1.3 Importanza dell&amp;rsquo;analisi delle serie temporali nella data science Analisi esplorativa delle serie temporali 2.1 Visualizzazione delle serie temporali 2.2 Analisi delle proprietà di base delle serie temporali 2.3 Decomposizione delle serie temporali in tendenza, stagionalità e componente residuale 2.4 Misurazione della variabilità delle serie temporali Modellizzazione delle serie temporali 3.</description>
+    </item>
+    <item>
       <title>● ML Explainability</title>
       <link>https://example.com/4-progetti/explainable-ai/index.html</link>
       <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
