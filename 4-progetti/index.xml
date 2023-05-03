@@ -44,6 +44,14 @@
 Introduzione alle serie temporali 1.1 Definizione di serie temporale 1.2 Esempi di serie temporali 1.3 Importanza dell&amp;rsquo;analisi delle serie temporali nella data science Analisi esplorativa delle serie temporali 2.1 Visualizzazione delle serie temporali 2.2 Analisi delle proprietà di base delle serie temporali 2.3 Decomposizione delle serie temporali in tendenza, stagionalità e componente residuale 2.4 Misurazione della variabilità delle serie temporali Modellizzazione delle serie temporali 3.</description>
     </item>
     <item>
+      <title>● Custom Transformer</title>
+      <link>https://example.com/4-progetti/transformer-model/index.html</link>
+      <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>
+      <guid>https://example.com/4-progetti/transformer-model/index.html</guid>
+      <description>Customizzazione dei Transformer Un Transformer è un modello di apprendimento profondo che adotta il meccanismo di self-attention, ovvero la capacità di pesare differenzialmente l&amp;rsquo;importanza di ogni parte dei dati in input (che include anche l&amp;rsquo;output ricorsivo). È usato principalmente nei campi del natural language processing (NLP) e della computer vision (CV). ¹²
+Un Attention Model è una componente che permette al Transformer Neural Network di rappresentare quanto sono importanti altri elementi nella sequenza di input per la codifica di un dato elemento.</description>
+    </item>
+    <item>
       <title>● ML Explainability</title>
       <link>https://example.com/4-progetti/explainable-ai/index.html</link>
       <pubDate>Wed, 28 Dec 2022 18:27:41 +0100</pubDate>

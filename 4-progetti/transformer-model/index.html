@@ -7,8 +7,8 @@
     <meta name="generator" content="Relearn 5.9.2+tip">
     <meta name="description" content="Documentation for Hugo Relearn Theme">
     <meta name="author" content="Sören Weber">
-    <title>2.5 NLP (Natural Language Processing)   -  Data Science &amp; Co.</title>
-    <link href="../../2-appunti/2.5-nlp-natural-language-processing/index.xml" rel="alternate" type="application/rss+xml" title="2.5 NLP (Natural Language Processing)   -  Data Science &amp; Co.">
+    <title>● Custom Transformer  -  Data Science &amp; Co.</title>
+    <link href="../../4-progetti/transformer-model/index.xml" rel="alternate" type="application/rss+xml" title="● Custom Transformer  -  Data Science &amp; Co.">
     <link href="../../images/favicon.svg?1683101138" rel="icon" type="image/svg+xml">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="../../css/fontawesome-all.min.css?1683101138" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1683101138" rel="stylesheet"></noscript>
@@ -48,20 +48,20 @@
       }
     </style>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="../../2-appunti/2.5-nlp-natural-language-processing/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="../../4-progetti/transformer-model/index.html">
     <div id="body" class="default-animation">
       <div id="sidebar-overlay"></div>
       <div id="toc-overlay"></div>
       <nav id="topbar" class="highlightable" dir="ltr">
         <div>
           <div class="navigation">
-            <a class="nav nav-next" href="../../2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/index.html" title="2.5.1 Introduzione al NLP  (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <a class="nav nav-next" href="../../4-progetti/explainable-ai/index.html" title="● ML Explainability (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
-            <a class="nav nav-prev" href="../../2-appunti/2.4-apprendimento-profondo/2.4.5-transfer-learning/index.html" title="4.5 Transfer learning  (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+            <a class="nav nav-prev" href="../../4-progetti/timehistory/index.html" title="● Appunti Serie Temporali (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="top-github-link">
-            <a class="github-link" title='Modifica (CTRL+ALT+w)' href="https://automataia.github.io/AutoGnosis/2-Appunti/2.5-NLP-%28Natural-Language-Processing%29/_index.it.md" target="_blank">
+            <a class="github-link" title='Modifica (CTRL+ALT+w)' href="https://automataia.github.io/AutoGnosis/4-Progetti/Transformer-Model.md" target="_blank">
               <i class="fas fa-pen fa-fw"></i>
             </a>
           </div>
@@ -72,8 +72,8 @@
             <span id="toc-menu" title='Indice (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../index.html"><span itemprop="name">AUTOGNOSIS</span></a><meta itemprop="position" content="1"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../2-appunti/index.html"><span itemprop="name">2  -  Appunti di AI</span></a><meta itemprop="position" content="2"> > </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">2.5 NLP (Natural Language Processing) </span><meta itemprop="position" content="3"></li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="../../4-progetti/index.html"><span itemprop="name">4  -  Progetti</span></a><meta itemprop="position" content="2"> > </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">● Custom Transformer</span><meta itemprop="position" content="3"></li>
             </ol>
           </div>
           <div class="default-animation progress">
@@ -82,7 +82,7 @@
   <ul>
     <li>
       <ul>
-        <li></li>
+        <li><a href="#customizzazione-dei-transformer">Customizzazione dei Transformer</a></li>
       </ul>
     </li>
   </ul>
@@ -96,50 +96,261 @@
           <div id="head-tags">
           </div>
           <article class="default">
-<h1 id="2.5-nlp-natural-language-processing">2.5 NLP (Natural Language Processing) </h1>
+<h1 id="custom-transformer">● Custom Transformer</h1>
 
-<h4 id="introduzione-al-natural-language-processing">Introduzione al natural language processing</h4>
+<h3 id="customizzazione-dei-transformer">Customizzazione dei Transformer</h3>
+<p>Un <strong>Transformer</strong> è un modello di apprendimento profondo che adotta il meccanismo di <strong>self-attention</strong>, ovvero la capacità di pesare differenzialmente l&rsquo;importanza di ogni parte dei dati in input (che include anche l&rsquo;output ricorsivo). È usato principalmente nei campi del <strong>natural language processing (NLP)</strong> e della <strong>computer vision (CV)</strong>. ¹²</p>
+<p>Un <strong>Attention Model</strong> è una componente che permette al Transformer Neural Network di rappresentare quanto sono importanti altri elementi nella sequenza di input per la codifica di un dato elemento. Per esempio, in un modello di traduzione automatica, l&rsquo;Attention Model permette al Transformer Neural Network di tradurre parole come &ldquo;it&rdquo; in una parola del genere corretto in francese o spagnolo prestando attenzione a tutte le parole rilevanti nella frase originale. Inoltre, l&rsquo;Attention Model permette al Transformer Neural Network di focalizzarsi su parole sia a sinistra che a destra della parola corrente per decidere come tradurla. ²</p>
+<p>Per avere esperienza nella customizzazione di Transformer Neural Networks e conoscenza dell&rsquo;Attention Model, bisogna sapere come funzionano questi modelli, quali sono i loro vantaggi e svantaggi rispetto ad altri modelli sequenziali, come adattarli a diversi compiti e domini, e come ottimizzarli in termini di prestazioni e risorse.</p>
+<p>Un esempio di codice Python per creare un Transformer Neural Network con Pytorch è il seguente:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Importare le librerie necessarie</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="k">as</span> <span class="nn">F</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Definire i parametri del modello</span>
+</span></span><span class="line"><span class="cl"><span class="n">num_layers</span> <span class="o">=</span> <span class="mi">6</span> <span class="c1"># Numero di strati encoder e decoder</span>
+</span></span><span class="line"><span class="cl"><span class="n">d_model</span> <span class="o">=</span> <span class="mi">512</span> <span class="c1"># Dimensione dei vettori di input e output</span>
+</span></span><span class="line"><span class="cl"><span class="n">num_heads</span> <span class="o">=</span> <span class="mi">8</span> <span class="c1"># Numero di testine di attenzione multipla</span>
+</span></span><span class="line"><span class="cl"><span class="n">d_ff</span> <span class="o">=</span> <span class="mi">2048</span> <span class="c1"># Dimensione dello strato feed-forward interno</span>
+</span></span><span class="line"><span class="cl"><span class="n">dropout</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="c1"># Probabilità di dropout</span>
+</span></span><span class="line"><span class="cl"><span class="n">max_length</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1"># Lunghezza massima delle sequenze in input e output</span>
+</span></span><span class="line"><span class="cl"><span class="n">vocab_size</span> <span class="o">=</span> <span class="mi">10000</span> <span class="c1"># Dimensione del vocabolario</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Definire la classe Transformer</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Transformer</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">super</span><span class="p">(</span><span class="n">Transformer</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Creare lo strato di embedding per le parole</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">embedding</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Embedding</span><span class="p">(</span><span class="n">vocab_size</span><span class="p">,</span> <span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Creare lo strato di embedding per le posizioni</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">positional_encoding</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_positional_encoding</span><span class="p">(</span><span class="n">max_length</span><span class="p">,</span> <span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Creare gli strati encoder</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">encoder_layers</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">ModuleList</span><span class="p">([</span><span class="n">EncoderLayer</span><span class="p">(</span><span class="n">d_model</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">,</span> <span class="n">d_ff</span><span class="p">,</span> <span class="n">dropout</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_layers</span><span class="p">)])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Creare gli strati decoder</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">decoder_layers</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">ModuleList</span><span class="p">([</span><span class="n">DecoderLayer</span><span class="p">(</span><span class="n">d_model</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">,</span> <span class="n">d_ff</span><span class="p">,</span> <span class="n">dropout</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_layers</span><span class="p">)])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Creare lo strato finale lineare</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">linear</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">d_model</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">get_positional_encoding</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">max_length</span><span class="p">,</span> <span class="n">d_model</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Calcolare la codifica posizionale secondo la formula del paper originale</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pe</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">max_length</span><span class="p">,</span> <span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">position</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_length</span><span class="p">)</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">div_term</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">d_model</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="n">torch</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="mf">10000.0</span><span class="p">))</span> <span class="o">/</span> <span class="n">d_model</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pe</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">position</span> <span class="o">*</span> <span class="n">div_term</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pe</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">position</span> <span class="o">*</span> <span class="n">div_term</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pe</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">pe</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Aggiungere le codifiche posizionali agli embedding delle parole</span>
+</span></span><span class="line"><span class="cl">        <span class="n">source</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">embedding</span><span class="p">(</span><span class="n">source</span><span class="p">)</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">positional_encoding</span><span class="p">[:,</span> <span class="p">:</span><span class="n">source</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="p">:]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">target</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">embedding</span><span class="p">(</span><span class="n">target</span><span class="p">)</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">positional_encoding</span><span class="p">[:,</span> <span class="p">:</span><span class="n">target</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="p">:]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare gli strati encoder al sorgente</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">encoder_layers</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">source</span> <span class="o">=</span> <span class="n">layer</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare gli strati decoder al target usando il sorgente come memoria</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">decoder_layers</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">target</span> <span class="o">=</span> <span class="n">layer</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">source</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare lo strato lineare finale al target per ottenere le probabilità delle parole in output</span>
+</span></span><span class="line"><span class="cl">        <span class="n">output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">linear</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">output</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Definire la classe EncoderLayer</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">EncoderLayer</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">d_model</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">,</span> <span class="n">d_ff</span><span class="p">,</span> <span class="n">dropout</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">super</span><span class="p">(</span><span class="n">EncoderLayer</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Creare lo strato di attenzione multi-head</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">multi_head_attention</span> <span class="o">=</span> <span class="n">MultiHeadAttention</span><span class="p">(</span><span class="n">d_model</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Creare lo strato feed-forward</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">feed_forward</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">d_model</span><span class="p">,</span> <span class="n">d_ff</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">d_ff</span><span class="p">,</span> <span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Creare i layer normalization</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">norm1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">LayerNorm</span><span class="p">(</span><span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">norm2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">LayerNorm</span><span class="p">(</span><span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Creare i dropout</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">dropout1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">dropout</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">dropout2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">dropout</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare lo strato di attenzione multi-head a x con x come query, key e value (attenzione self-attention)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">attention_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">multi_head_attention</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare il dropout e il layer normalization al risultato dell&#39;attenzione</span>
+</span></span><span class="line"><span class="cl">        <span class="n">attention_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dropout1</span><span class="p">(</span><span class="n">attention_output</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">attention_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">norm1</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">attention_output</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare lo strato feed-forward al risultato dell&#39;attenzione</span>
+</span></span><span class="line"><span class="cl">        <span class="n">feed_forward_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">feed_forward</span><span class="p">(</span><span class="n">attention_output</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare il dropout e il layer normalization al risultato dello strato feed-forward</span>
+</span></span><span class="line"><span class="cl">        <span class="n">feed_forward_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dropout2</span><span class="p">(</span><span class="n">feed_forward_output</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">feed_forward_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">norm2</span><span class="p">(</span><span class="n">attention_output</span> <span class="o">+</span> <span class="n">feed_forward_output</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">feed_forward_output</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Definire la classe DecoderLayer</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">DecoderLayer</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">d_model</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">,</span> <span class="n">d_ff</span><span class="p">,</span> <span class="n">dropout</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">super</span><span class="p">(</span><span class="n">DecoderLayer</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="c1"># Creare i tre strati di attenzione multi-head (uno per l&#39;attenzione masked-self-attention sul target,</span>
+</span></span><span class="line"><span class="cl">         <span class="c1"># uno per l&#39;attenzione encoder-decoder tra il target e il sorgente,</span>
+</span></span><span class="line"><span class="cl">         <span class="c1"># e uno per l&#39;attenzione self-attention sulla memoria)</span>
+</span></span><span class="line"><span class="cl">         <span class="err">```</span>
+</span></span><span class="line"><span class="cl"><span class="err">```</span><span class="n">python</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">masked_multi_head_attention</span> <span class="o">=</span> <span class="n">MultiHeadAttention</span><span class="p">(</span><span class="n">d_model</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">encoder_decoder_attention</span> <span class="o">=</span> <span class="n">MultiHeadAttention</span><span class="p">(</span><span class="n">d_model</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">memory_attention</span> <span class="o">=</span> <span class="n">MultiHeadAttention</span><span class="p">(</span><span class="n">d_model</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Creare lo strato feed-forward</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">feed_forward</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">d_model</span><span class="p">,</span> <span class="n">d_ff</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">d_ff</span><span class="p">,</span> <span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Creare i layer normalization</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">norm1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">LayerNorm</span><span class="p">(</span><span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">norm2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">LayerNorm</span><span class="p">(</span><span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">norm3</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">LayerNorm</span><span class="p">(</span><span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">norm4</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">LayerNorm</span><span class="p">(</span><span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Creare i dropout</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">dropout1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">dropout</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">dropout2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">dropout</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">dropout3</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">dropout</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">dropout4</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">dropout</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">memory</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Creare una maschera per evitare che il target guardi le parole future nella sequenza</span>
+</span></span><span class="line"><span class="cl">        <span class="n">mask</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">triu</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">1</span><span class="p">)),</span> <span class="n">diagonal</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">bool</span><span class="p">()</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">device</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare lo strato di attenzione multi-head a x con x come query, key e value (attenzione masked-self-attention) e usando la maschera</span>
+</span></span><span class="line"><span class="cl">        <span class="n">attention_output_1</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">masked_multi_head_attention</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">mask</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare il dropout e il layer normalization al risultato dell&#39;attenzione</span>
+</span></span><span class="line"><span class="cl">        <span class="n">attention_output_1</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dropout1</span><span class="p">(</span><span class="n">attention_output_1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">attention_output_1</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">norm1</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">attention_output_1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare lo strato di attenzione multi-head a attention_output_1 con attention_output_1 come query e memory come key e value (attenzione encoder-decoder)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">attention_output_2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">encoder_decoder_attention</span><span class="p">(</span><span class="n">attention_output_1</span><span class="p">,</span> <span class="n">memory</span><span class="p">,</span> <span class="n">memory</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare il dropout e il layer normalization al risultato dell&#39;attenzione</span>
+</span></span><span class="line"><span class="cl">        <span class="n">attention_output_2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dropout2</span><span class="p">(</span><span class="n">attention_output_2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">attention_output_2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">norm2</span><span class="p">(</span><span class="n">attention_output_1</span> <span class="o">+</span> <span class="n">attention_output_2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare lo strato di attenzione multi-head a attention_output_2 con attention_output_2 come query e memory come key e value (attenzione self-attention sulla memoria)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">attention_output_3</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">memory_attention</span><span class="p">(</span><span class="n">attention_output_2</span><span class="p">,</span> <span class="n">memory</span><span class="p">,</span> <span class="n">memory</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare il dropout e il layer normalization al risultato dell&#39;attenzione</span>
+</span></span><span class="line"><span class="cl">        <span class="n">attention_output_3</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dropout3</span><span class="p">(</span><span class="n">attention_output_3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">attention_output_3</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">norm3</span><span class="p">(</span><span class="n">attention_output_2</span> <span class="o">+</span> <span class="n">attention_output_3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare lo strato feed-forward al risultato dell&#39;attenzione</span>
+</span></span><span class="line"><span class="cl">        <span class="n">feed_forward_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">feed_forward</span><span class="p">(</span><span class="n">attention_output_3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="c1"># Applicare il dropout e il layer normalization al risultato dello strato feed-forward</span>
+</span></span><span class="line"><span class="cl">         <span class="n">feed_forward_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dropout4</span><span class="p">(</span><span class="n">feed_forward_output</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="n">feed_forward_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">norm4</span><span class="p">(</span><span class="n">attention_output_3</span> <span class="o">+</span> <span class="n">feed_forward_output</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="k">return</span> <span class="n">feed_forward_output</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Definire la classe MultiHeadAttention</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MultiHeadAttention</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">d_model</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">         <span class="nb">super</span><span class="p">(</span><span class="n">MultiHeadAttention</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="c1"># Assicurarsi che la dimensione del modello sia divisibile per il numero di testine</span>
+</span></span><span class="line"><span class="cl">         <span class="k">assert</span> <span class="n">d_model</span> <span class="o">%</span> <span class="n">num_heads</span> <span class="o">==</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="c1"># Definire la dimensione di ogni testina</span>
+</span></span><span class="line"><span class="cl">         <span class="bp">self</span><span class="o">.</span><span class="n">d_k</span> <span class="o">=</span> <span class="n">d_model</span> <span class="o">//</span> <span class="n">num_heads</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="c1"># Definire il numero di testine</span>
+</span></span><span class="line"><span class="cl">         <span class="bp">self</span><span class="o">.</span><span class="n">num_heads</span> <span class="o">=</span> <span class="n">num_heads</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="c1"># Creare le matrici di proiezione lineari per le query, le key e i value</span>
+</span></span><span class="line"><span class="cl">         <span class="err">```</span>
+</span></span><span class="line"><span class="cl"><span class="err">```</span><span class="n">python</span>
+</span></span><span class="line"><span class="cl">         <span class="bp">self</span><span class="o">.</span><span class="n">linear_q</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">d_model</span><span class="p">,</span> <span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="bp">self</span><span class="o">.</span><span class="n">linear_k</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">d_model</span><span class="p">,</span> <span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="bp">self</span><span class="o">.</span><span class="n">linear_v</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">d_model</span><span class="p">,</span> <span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="c1"># Creare la matrice di output lineare</span>
+</span></span><span class="line"><span class="cl">         <span class="bp">self</span><span class="o">.</span><span class="n">linear_out</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">d_model</span><span class="p">,</span> <span class="n">d_model</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="c1"># Creare il dropout</span>
+</span></span><span class="line"><span class="cl">         <span class="bp">self</span><span class="o">.</span><span class="n">dropout</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">dropout</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">         <span class="c1"># Ottenere il numero di esempi nel batch</span>
+</span></span><span class="line"><span class="cl">         <span class="n">batch_size</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="c1"># Proiettare le query, le key e i value usando le matrici lineari</span>
+</span></span><span class="line"><span class="cl">         <span class="n">q</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">linear_q</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="n">k</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">linear_k</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="n">v</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">linear_v</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="c1"># Dividere le query, le key e i value in num_heads testine e trasporre il risultato in modo che la dimensione sia (batch_size, num_heads, seq_length, d_k)</span>
+</span></span><span class="line"><span class="cl">         <span class="n">q</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_heads</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">d_k</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="n">k</span> <span class="o">=</span> <span class="n">k</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_heads</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">d_k</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">         <span class="n">v</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_heads</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">d_k</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="c1"># Calcolare le matrici di attenzione usando la funzione scaled dot-product attention</span>
+</span></span><span class="line"><span class="cl">         <span class="n">attention_scores</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">scaled_dot_product_attention</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">k</span> <span class="p">,</span><span class="n">v</span> <span class="p">,</span><span class="n">mask</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="c1"># Concatenare le testine di attenzione e trasporre il risultato in modo che la dimensione sia (batch_size, seq_length, num_heads * d_k)</span>
+</span></span><span class="line"><span class="cl">         <span class="n">attention_scores</span> <span class="o">=</span> <span class="n">attention_scores</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">contiguous</span><span class="p">()</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_heads</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">d_k</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="c1"># Applicare la matrice di output lineare al risultato dell&#39;attenzione</span>
+</span></span><span class="line"><span class="cl">         <span class="n">output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">linear_out</span><span class="p">(</span><span class="n">attention_scores</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         <span class="k">return</span> <span class="n">output</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">scaled_dot_product_attention</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">q</span> <span class="p">,</span><span class="n">k</span> <span class="p">,</span><span class="n">v</span> <span class="p">,</span><span class="n">mask</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Calcolare il prodotto scalare tra le query e le key trasposte</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scores</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">q</span> <span class="p">,</span><span class="n">k</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Dividere i punteggi per la radice quadrata della dimensione delle testine</span>
+</span></span><span class="line"><span class="cl">        <span class="n">scores</span> <span class="o">=</span> <span class="n">scores</span> <span class="o">/</span> <span class="n">torch</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">d_k</span> <span class="p">,</span><span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare la maschera se presente (per evitare che si guardino le parole future o il padding)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">mask</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">scores</span> <span class="o">=</span> <span class="n">scores</span><span class="o">.</span><span class="n">masked_fill</span><span class="p">(</span><span class="n">mask</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">,</span><span class="o">-</span><span class="mf">1e9</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare la funzione softmax per ottenere i pesi di attenzione</span>
+</span></span><span class="line"><span class="cl">        <span class="n">attention_weights</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">scores</span> <span class="p">,</span><span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Applicare il dropout ai pesi di attenzione</span>
+</span></span><span class="line"><span class="cl">        <span class="n">attention_weights</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dropout</span><span class="p">(</span><span class="n">attention_weights</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Moltiplicare i pesi di attenzione per i value per ottenere il risultato finale</span>
+</span></span><span class="line"><span class="cl">        <span class="n">output</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">attention_weights</span> <span class="p">,</span><span class="n">v</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">output</span>
+</span></span></code></pre></div><p>Riferimenti Bibliografici</p>
 <ol>
-<li>Introduzione al natural language processing (NLP)</li>
+<li>Transformer (machine learning model) - Wikipedia. <a href="https://en.wikipedia.org/wiki/Transformer_%28machine_learning_model%29" target="_blank">https://en.wikipedia.org/wiki/Transformer_%28machine_learning_model%29</a>.</li>
+<li>Transformer Neural Network Definition | DeepAI. <a href="https://deepai.org/machine-learning-glossary-and-terms/transformer-neural-network" target="_blank">https://deepai.org/machine-learning-glossary-and-terms/transformer-neural-network</a>.</li>
+<li>Transformer Neural Networks: A Step-by-Step Breakdown. <a href="https://builtin.com/artificial-intelligence/transformer-neural-network" target="_blank">https://builtin.com/artificial-intelligence/transformer-neural-network</a>.</li>
 </ol>
-<ul>
-<li>NLP, definizione e applicazioni: Cos&rsquo;è il natural language processing e quali sono le sue applicazioni</li>
-<li>Strumenti e librerie utili: Strumenti e librerie comunemente utilizzati per il natural language processing</li>
-<li>Concetti Base: Concetti di base del linguaggio naturale e dei dati testuali</li>
-</ul>
-<ol start="2">
-<li>Linguaggio naturale e conversione in dati</li>
-</ol>
-<ul>
-<li>Struttura del linguaggio naturale: parole, frasi, parole chiave e significato del testo</li>
-<li>Tokenizzazione del testo: processo di suddivisione del testo in parole e frasi</li>
-<li>Stemming e lemmatizzazione: processi per ridurre le parole ai loro lemmi o radici</li>
-<li>Creazione delle features da dati testuali: processo di trasformazione del testo in un formato utilizzabile per l&rsquo;elaborazione dei dati</li>
-</ul>
-<ol start="3">
-<li>Classificazione del testo</li>
-</ol>
-<ul>
-<li>Cos&rsquo;è e come utilizzarla: la classificazione del testo e come viene utilizzata</li>
-<li>Algoritmi di classificazione del testo: Naive Bayes, Support Vector Machines (SVM), alberi decisionali, ecc.</li>
-<li>Valutazione delle prestazioni:  Valutazione del modello di classificazione: misure di precisione, sensibilità, f1-score e altre metriche</li>
-</ul>
-<ol start="4">
-<li>Analisi del sentimento</li>
-</ol>
-<ul>
-<li>Cos&rsquo;è e i suoi usi: l&rsquo;analisi del sentimento e come viene utilizzata</li>
-<li>Approcci all&rsquo;analisi del sentimento: etichettatura manuale, utilizzo di lexicon predefiniti, apprendimento automatico</li>
-<li>Valutazione delle prestazioni:  Valutazione del modello di analisi del sentimento: misure di precisione, sensibilità, f1-score e altre metriche</li>
-</ul>
-<ol start="5">
-<li>Riconoscimento delle entità e delle relazioni</li>
-</ol>
-<ul>
-<li>Cos&rsquo;è e dove utilizzarla: il riconoscimento delle entità e delle relazioni e come viene utilizzato</li>
-<li>Approcci al riconoscimento: Riconoscimento delle entità e delle relazioni: etichettatura manuale, utilizzo di modelli predefiniti, apprendimento automatico</li>
-<li>Esempi di utilizzo: Riconoscimento entità e relazioni: estrazione di informazioni da documenti, classificazione delle domande, generazione di riassunti automatici</li>
-</ul>
 
             <footer class="footline">
             </footer>
@@ -236,17 +447,17 @@
         <script>
           var contentLangs=['it'];
         </script>
-        <script src="../../js/auto-complete.js?1683101140" defer></script>
-        <script src="../../js/lunr/lunr.min.js?1683101140" defer></script>
-        <script src="../../js/lunr/lunr.stemmer.support.min.js?1683101140" defer></script>
-        <script src="../../js/lunr/lunr.multi.min.js?1683101140" defer></script>
-        <script src="../../js/lunr/lunr.it.min.js?1683101140" defer></script>
-        <script src="../../js/search.js?1683101140" defer></script>
+        <script src="../../js/auto-complete.js?1683101139" defer></script>
+        <script src="../../js/lunr/lunr.min.js?1683101139" defer></script>
+        <script src="../../js/lunr/lunr.stemmer.support.min.js?1683101139" defer></script>
+        <script src="../../js/lunr/lunr.multi.min.js?1683101139" defer></script>
+        <script src="../../js/lunr/lunr.it.min.js?1683101139" defer></script>
+        <script src="../../js/search.js?1683101139" defer></script>
       </div>
       <div id="content-wrapper" class="highlightable">
         <ul class="topics collapsible-menu">
           <li data-nav-id="/1-introduzione/index.html" class="dd-item"><a href="../../1-introduzione/index.html">1  -  About Me<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/2-appunti/index.html" class="dd-item parent"><input type="checkbox" id="section-7896bebefe5f2a681672e406660fb029" aria-controls="subsections-7896bebefe5f2a681672e406660fb029" class="toggle" checked><label class="a11y-only toggle" for="section-7896bebefe5f2a681672e406660fb029" >Sottomenu 2  -  Appunti di AI</label><a href="../../2-appunti/index.html">2  -  Appunti di AI<i class="fas fa-check read-icon"></i></a><ul id="subsections-7896bebefe5f2a681672e406660fb029">
+          <li data-nav-id="/2-appunti/index.html" class="dd-item"><input type="checkbox" id="section-7896bebefe5f2a681672e406660fb029" aria-controls="subsections-7896bebefe5f2a681672e406660fb029" class="toggle"><label class="a11y-only toggle" for="section-7896bebefe5f2a681672e406660fb029" >Sottomenu 2  -  Appunti di AI</label><a href="../../2-appunti/index.html">2  -  Appunti di AI<i class="fas fa-check read-icon"></i></a><ul id="subsections-7896bebefe5f2a681672e406660fb029">
           <li data-nav-id="/2-appunti/2.1-introduzione-allintelligenza-artificiale/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-b2c25d89f93f66091b7cf6aad836aa58" aria-controls="subsections-b2c25d89f93f66091b7cf6aad836aa58" class="toggle" checked><label class="a11y-only toggle" for="section-b2c25d89f93f66091b7cf6aad836aa58" >Sottomenu 2.1 Introduzione all&#39;AI </label><a href="../../2-appunti/2.1-introduzione-allintelligenza-artificiale/index.html">2.1 Introduzione all&#39;AI <i class="fas fa-check read-icon"></i></a><ul id="subsections-b2c25d89f93f66091b7cf6aad836aa58">
           <li data-nav-id="/2-appunti/2.1-introduzione-allintelligenza-artificiale/2.1.1-storia-dellia/index.html" class="dd-item"><a href="../../2-appunti/2.1-introduzione-allintelligenza-artificiale/2.1.1-storia-dellia/index.html">2.1.1 Storia dell&#39;IA <i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/2-appunti/2.1-introduzione-allintelligenza-artificiale/2.1.2-definizione-di-intelligenza-artificiale/index.html" class="dd-item"><a href="../../2-appunti/2.1-introduzione-allintelligenza-artificiale/2.1.2-definizione-di-intelligenza-artificiale/index.html">2.1.2 Definizione di AI <i class="fas fa-check read-icon"></i></a></li>
@@ -275,7 +486,7 @@
           <li data-nav-id="/2-appunti/2.4-apprendimento-profondo/2.4.3-reti-neurali-convoluzionali/index.html" class="dd-item"><a href="../../2-appunti/2.4-apprendimento-profondo/2.4.3-reti-neurali-convoluzionali/index.html">4.3 Reti neurali convoluzionali <i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/2-appunti/2.4-apprendimento-profondo/2.4.4-reti-neurali-ricorrenti/index.html" class="dd-item"><a href="../../2-appunti/2.4-apprendimento-profondo/2.4.4-reti-neurali-ricorrenti/index.html">4.4 Reti neurali ricorrenti <i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/2-appunti/2.4-apprendimento-profondo/2.4.5-transfer-learning/index.html" class="dd-item"><a href="../../2-appunti/2.4-apprendimento-profondo/2.4.5-transfer-learning/index.html">4.5 Transfer learning <i class="fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/index.html" class="dd-item active parent alwaysopen"><input type="checkbox" id="section-be53efac73542a5f10f0d7e5df14a504" aria-controls="subsections-be53efac73542a5f10f0d7e5df14a504" class="toggle" checked><label class="a11y-only toggle" for="section-be53efac73542a5f10f0d7e5df14a504" >Sottomenu 2.5 NLP (Natural Language Processing) </label><a href="../../2-appunti/2.5-nlp-natural-language-processing/index.html">2.5 NLP (Natural Language Processing) <i class="fas fa-check read-icon"></i></a><ul id="subsections-be53efac73542a5f10f0d7e5df14a504">
+          <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-be53efac73542a5f10f0d7e5df14a504" aria-controls="subsections-be53efac73542a5f10f0d7e5df14a504" class="toggle" checked><label class="a11y-only toggle" for="section-be53efac73542a5f10f0d7e5df14a504" >Sottomenu 2.5 NLP (Natural Language Processing) </label><a href="../../2-appunti/2.5-nlp-natural-language-processing/index.html">2.5 NLP (Natural Language Processing) <i class="fas fa-check read-icon"></i></a><ul id="subsections-be53efac73542a5f10f0d7e5df14a504">
           <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/index.html" class="dd-item alwaysopen"><input type="checkbox" id="section-a06d3fea5ed9a1344233a86b9a760fb9" aria-controls="subsections-a06d3fea5ed9a1344233a86b9a760fb9" class="toggle" checked><label class="a11y-only toggle" for="section-a06d3fea5ed9a1344233a86b9a760fb9" >Sottomenu 2.5.1 Introduzione al NLP </label><a href="../../2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/index.html">2.5.1 Introduzione al NLP <i class="fas fa-check read-icon"></i></a><ul id="subsections-a06d3fea5ed9a1344233a86b9a760fb9">
           <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/2.5.1.1-definizione-e-applicazioni/index.html" class="dd-item"><a href="../../2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/2.5.1.1-definizione-e-applicazioni/index.html">2.5.1.1 Definizione e Applicazioni<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/2.5.1.2-strumenti-e-librerie-utili/index.html" class="dd-item"><a href="../../2-appunti/2.5-nlp-natural-language-processing/2.5.1-introduzione-al-nlp/2.5.1.2-strumenti-e-librerie-utili/index.html">2.5.1.2 Strumenti e librerie utili<i class="fas fa-check read-icon"></i></a></li>
@@ -336,9 +547,9 @@
           <li data-nav-id="/3-mlops/3.3-monitoraggio-in-produzione/3.3.4-automatizzazione-rollback/index.html" class="dd-item"><a href="../../3-mlops/3.3-monitoraggio-in-produzione/3.3.4-automatizzazione-rollback/index.html">3.3.4 Automatizzazione Rollback<i class="fas fa-check read-icon"></i></a></li></ul></li>
           <li data-nav-id="/3-mlops/3.4-configurazione-e-provisioning/index.html" class="dd-item"><a href="../../3-mlops/3.4-configurazione-e-provisioning/index.html">3.4.1 configurazione e provisioning<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/3-mlops/3.5-documentazione-del-processo/index.html" class="dd-item"><a href="../../3-mlops/3.5-documentazione-del-processo/index.html">3.5.1 Documentazione del processo<i class="fas fa-check read-icon"></i></a></li></ul></li>
-          <li data-nav-id="/4-progetti/index.html" class="dd-item"><input type="checkbox" id="section-2caf92af5fc010deb9b0d7a642b67f2c" aria-controls="subsections-2caf92af5fc010deb9b0d7a642b67f2c" class="toggle"><label class="a11y-only toggle" for="section-2caf92af5fc010deb9b0d7a642b67f2c" >Sottomenu 4  -  Progetti</label><a href="../../4-progetti/index.html">4  -  Progetti<i class="fas fa-check read-icon"></i></a><ul id="subsections-2caf92af5fc010deb9b0d7a642b67f2c">
+          <li data-nav-id="/4-progetti/index.html" class="dd-item parent"><input type="checkbox" id="section-2caf92af5fc010deb9b0d7a642b67f2c" aria-controls="subsections-2caf92af5fc010deb9b0d7a642b67f2c" class="toggle" checked><label class="a11y-only toggle" for="section-2caf92af5fc010deb9b0d7a642b67f2c" >Sottomenu 4  -  Progetti</label><a href="../../4-progetti/index.html">4  -  Progetti<i class="fas fa-check read-icon"></i></a><ul id="subsections-2caf92af5fc010deb9b0d7a642b67f2c">
           <li data-nav-id="/4-progetti/timehistory/index.html" class="dd-item"><a href="../../4-progetti/timehistory/index.html">● Appunti Serie Temporali<i class="fas fa-check read-icon"></i></a></li>
-          <li data-nav-id="/4-progetti/transformer-model/index.html" class="dd-item"><a href="../../4-progetti/transformer-model/index.html">● Custom Transformer<i class="fas fa-check read-icon"></i></a></li>
+          <li data-nav-id="/4-progetti/transformer-model/index.html" class="dd-item active"><a href="../../4-progetti/transformer-model/index.html">● Custom Transformer<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/4-progetti/explainable-ai/index.html" class="dd-item"><a href="../../4-progetti/explainable-ai/index.html">● ML Explainability<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/4-progetti/apachespark/index.html" class="dd-item"><a href="../../4-progetti/apachespark/index.html">● Spark - Appunti con esempi<i class="fas fa-check read-icon"></i></a></li>
           <li data-nav-id="/4-progetti/sql/index.html" class="dd-item"><a href="../../4-progetti/sql/index.html">● SQL - Appunti con esempi<i class="fas fa-check read-icon"></i></a></li>
@@ -416,9 +627,9 @@
         </div>
       </div>
     </aside>
-    <script src="../../js/clipboard.min.js?1683101140" defer></script>
-    <script src="../../js/perfect-scrollbar.min.js?1683101140" defer></script>
-    <script src="../../js/featherlight.min.js?1683101140" defer></script>
-    <script src="../../js/theme.js?1683101140" defer></script>
+    <script src="../../js/clipboard.min.js?1683101139" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1683101139" defer></script>
+    <script src="../../js/featherlight.min.js?1683101139" defer></script>
+    <script src="../../js/theme.js?1683101139" defer></script>
   </body>
 </html>
