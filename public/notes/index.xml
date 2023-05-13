@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Automata</title>
+    <link>https://automataia.github.io/notes/</link>
+    <description>Recent content in Notes on Automata</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://automataia.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sentiment analysis using transformers</title>
+      <link>https://automataia.github.io/notes/change3/</link>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://automataia.github.io/notes/change3/</guid>
+      <description>Appunti con esempi per l’uso e la comprensione di Apache Spark in Python: Introduzione a Apache Spark Architettura di Apache Spark Installazione e configurazione di Apache Spark SparkSQL: l’interfaccia SQL di Spark DataFrames e Dataset in Spark Spark Streaming: l’elaborazione di dati in tempo reale Spark MLlib: libreria per il machine learning in Spark Spark GraphX: libreria per l’elaborazione di grafi in Spark Apache Spark e Hadoop: integrazione con l’Hadoop Distributed File System (HDFS) Gestione della distribuzione dei dati e del carico di lavoro in Spark Debugging e ottimizzazione di applicazioni Spark Utilizzo di Spark con altri framework e tecnologie (ad es.</description>
+    </item>
+    
+  </channel>
+</rss>
