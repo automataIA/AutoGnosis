@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Automata</title>
-    <link>https://lightbi-hugo-theme.netlify.app/tags/</link>
+    <link>https://automataia.github.io/AutoGnosis/tags/</link>
     <description>Recent content in Tags on Automata</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://lightbi-hugo-theme.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://automataia.github.io/AutoGnosis/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>markdown</title>
-      <link>https://lightbi-hugo-theme.netlify.app/tags/markdown/</link>
+      <link>https://automataia.github.io/AutoGnosis/tags/markdown/</link>
       <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://lightbi-hugo-theme.netlify.app/tags/markdown/</guid>
+      <guid>https://automataia.github.io/AutoGnosis/tags/markdown/</guid>
       <description></description>
     </item>
     
