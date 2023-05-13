@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="Lightbi is a simple, minimal personal website and blog theme for Hugo. Built by Bino Kochumol Varghese">
+
+
+  <title>Reinforced Learning - Imparare una ricetta - Automata</title>
+  <meta name="description" content="Far imparare una ricetta alla AI tramite Reinforced Learning...">
+
+  <meta name="author" content="Automata"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Automata",
+    
+    "url": "https:\/\/lightbi-hugo-theme.netlify.app\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/lightbi-hugo-theme.netlify.app\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/lightbi-hugo-theme.netlify.app\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/lightbi-hugo-theme.netlify.app\/post\/reinforcing-learning-imparare-una-ricetta\/",
+          "name": "Reinforced learning imparare una ricetta"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Automata"
+  },
+  "headline": "Reinforced Learning - Imparare una ricetta",
+  "description" : "Far imparare una ricetta alla AI tramite Reinforced Learning...",
+  "inLanguage" : "en",
+  "wordCount":  950 ,
+  "datePublished" : "2020-01-27T00:00:00",
+  "dateModified" : "2020-01-27T00:00:00",
+  "image" : "https:\/\/lightbi-hugo-theme.netlify.app\/",
+  "keywords" : [ "markdown" ],
+  "mainEntityOfPage" : "https:\/\/lightbi-hugo-theme.netlify.app\/post\/reinforcing-learning-imparare-una-ricetta\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/lightbi-hugo-theme.netlify.app\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/lightbi-hugo-theme.netlify.app\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:image" content="https://lightbi-hugo-theme.netlify.app/post/img/RL.jpg" />
+<meta property="og:url" content="https://lightbi-hugo-theme.netlify.app/post/reinforcing-learning-imparare-una-ricetta/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Automata" />
+   
+<link rel="apple-touch-icon" sizes="180x180" href=" https://lightbi-hugo-theme.netlify.app/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lightbi-hugo-theme.netlify.app/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lightbi-hugo-theme.netlify.app/favicon/favicon-16x16.png">
+
+
+<meta name="generator" content="Hugo 0.111.3"><link rel="alternate" href="https://lightbi-hugo-theme.netlify.app/index.xml" type="application/rss+xml" title="Automata">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://lightbi-hugo-theme.netlify.app/css/main.css" />
+<link disabled id="dark-mode-theme" rel="stylesheet" href="https://lightbi-hugo-theme.netlify.app/css/dark.css" />
+<link rel="stylesheet" href="https://lightbi-hugo-theme.netlify.app/css/highlight.min.css" /><link rel="stylesheet" href="https://lightbi-hugo-theme.netlify.app/css/codeblock.css" />
+
+
+
+
+  </head>
+  <body>
+    
+<div class="container fixed-top">
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0">
+        <div class="container">
+          
+          <a class="navbar-brand fw-bold" href="https://lightbi-hugo-theme.netlify.app/">Automata</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="Home"
+                  href="/"> Home</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="About"
+                  href="/about/"> About</a>
+              </li>
+
+              
+              
+
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item nav-link">
+                  <a id="dark-mode-toggle" class="bi bi-sun"></a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</div>
+    
+
+
+
+
+
+
+
+
+
+<header class="header-section ">
+
+  <div class="intro-header no-img mt-10">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+          
+
+          
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            
+
+            <div class="post-heading">
+              
+
+              
+
+              
+              <h1 class="fw-semibold display-5 lh-1 mb-3"> 
+                Reinforced Learning - Imparare una ricetta
+                
+              </h1>
+              
+              
+
+              
+
+              
+              
+              <span class="post-meta">
+  
+  
+  &nbsp;27 January 272712 
+
+  
+
+  
+  
+  
+</span>
+
+
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
+
+      <div class="card-image card-image-blog p-0">
+        
+        <img src="post/img/RL.jpg" alt="Reinforced Learning - Imparare una ricetta" class="card-img-top img-fluid " />
+        
+        
+      </div>
+    </div>
+ 
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      <article role="main" class="blog-post">
+        <h3 id="introduzione-al-problema">Introduzione al problema</h3>
+<p>Lo script Python che ho scritto utilizza l’algoritmo di apprendimento rinforzato “Q-learning” per risolvere un problema di esplorazione di uno spazio di stati.</p>
+<p>L’agente deve esplorare l’ambiente di gioco, prendere decisioni in ogni stato e massimizzare la sua ricompensa complessiva, seguendo una politica di scelta delle azioni che si basa sul valore Q degli stati e delle azioni possibili.</p>
+<p>L’output dello script mostra la sequenza di azioni scelte dall’agente durante la sua esplorazione dell’ambiente di gioco, fino a raggiungere lo stato finale desiderato.</p>
+<p>Lo script può essere utilizzato come base per risolvere problemi di esplorazione di spazi di stati più complessi, aggiungendo regole e restrizioni all’ambiente di gioco, o modificando l’algoritmo di apprendimento utilizzato.</p>
+<h3 id="descrizione-del-problema-tramite-un-esempio">Descrizione del problema tramite un esempio</h3>
+<p>Immagina di dover imparare a cucinare un piatto specifico per la prima volta. Per farlo, devi seguire una ricetta che ti indica gli ingredienti e i passaggi necessari. Nel nostro caso, l’ambiente di gioco è come la tua cucina, la matrice di ricompensa è la soddisfazione che provi quando il piatto viene bene, mentre la matrice di transizione è il passaggio da un ingrediente o da una fase della ricetta all’altra.</p>
+<p>Nel processo di apprendimento rinforzato, come nella cucina, impariamo dalle esperienze precedenti per migliorare il nostro processo decisionale in futuro. In questo esempio, l’algoritmo Q-learning impara la politica migliore per raggiungere l’obiettivo finale, che corrisponde alla cottura del piatto perfetto. Invece di seguire la ricetta esattamente come scritta, possiamo adattare la nostra strategia in base alle situazioni impreviste che possono presentarsi durante la preparazione.</p>
+<p>Il ciclo di apprendimento corrisponde al processo di preparazione del piatto, dove impariamo a conoscere gli ingredienti, le quantità e le tecniche necessarie. Durante questo processo, aggiorniamo la nostra “matrice Q” personale, in cui registriamo le conoscenze acquisite e le utilizziamo per migliorare la qualità del piatto.</p>
+<p>Infine, quando abbiamo imparato abbastanza e siamo pronti a testare la nostra politica appresa, possiamo preparare il piatto con sicurezza e facilità, sapendo esattamente cosa fare in ogni fase della preparazione. In sostanza, l’apprendimento rinforzato è come imparare a cucinare un nuovo piatto, utilizzando le esperienze passate per migliorare il nostro processo decisionale e ottenere un risultato finale soddisfacente.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>import numpy as np
+</span></span><span style="display:flex;"><span>import random
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># definire l&#39;ambiente
+</span></span><span style="display:flex;"><span>num_states = 6
+</span></span><span style="display:flex;"><span>num_actions = 2
+</span></span><span style="display:flex;"><span>reward_matrix = np.array([[0, 0], [0, 0], [0, 0], [1, 1], [0, 0], [0, 0]])
+</span></span><span style="display:flex;"><span>transition_matrix = np.array([    [0.5, 0.5, 0, 0, 0, 0],
+</span></span><span style="display:flex;"><span>    [0.5, 0, 0.5, 0, 0, 0],
+</span></span><span style="display:flex;"><span>    [0, 0.5, 0, 0.5, 0, 0],
+</span></span><span style="display:flex;"><span>    [0, 0, 0.5, 0, 0.5, 0],
+</span></span><span style="display:flex;"><span>    [0, 0, 0, 0.5, 0, 0.5],
+</span></span><span style="display:flex;"><span>    [0, 0, 0, 0, 0.5, 0.5]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># definire iperparametri
+</span></span><span style="display:flex;"><span>discount_factor = 0.9
+</span></span><span style="display:flex;"><span>learning_rate = 0.1
+</span></span><span style="display:flex;"><span>num_episodes = 1000
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># inizializzare la matrice Q
+</span></span><span style="display:flex;"><span>q_matrix = np.zeros((num_states, num_actions))
+</span></span></code></pre></div><h3 id="inizializzazione-del-problema">Inizializzazione del problema</h3>
+<p>Si definisco le grandezze di input scelte e le variabili da inizializzare utilizzate successivamente nella fase di addestramento. I parametri sono definiti come segue:</p>
+<ol>
+<li>
+<p><code>discount_factor</code>: anche noto come gamma, indica il fattore di sconto utilizzato per pesare la ricompensa a breve termine rispetto alla ricompensa a lungo termine. Un valore elevato di discount_factor indica che l’agente darà maggiore importanza alle ricompense future rispetto alle ricompense immediate.</p>
+</li>
+<li>
+<p><code>learning_rate</code>: anche noto come alpha, indica il tasso di apprendimento utilizzato dall’algoritmo Q-learning per aggiornare il valore Q di uno stato e di un’azione. Un valore elevato di learning_rate può rendere l’apprendimento più rapido ma meno stabile, mentre un valore basso può rendere l’apprendimento più lento ma più stabile.</p>
+</li>
+<li>
+<p><code>num_episodes</code>: indica il numero di episodi che l’agente dovrà completare durante il training. Un episodio è una sequenza di azioni che inizia dallo stato iniziale e termina quando l’agente raggiunge uno stato terminale. Un maggior numero di episodi può migliorare la stabilità e la qualità dell’apprendimento, ma richiederà più tempo di esecuzione.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># ciclo di apprendimento
+</span></span><span style="display:flex;"><span>for episode in range(num_episodes):
+</span></span><span style="display:flex;"><span>    state = random.randint(0, num_states-1)
+</span></span><span style="display:flex;"><span>    while state != 3:
+</span></span><span style="display:flex;"><span>        # scegliere un&#39;azione con probabilità epsilon-greedy
+</span></span><span style="display:flex;"><span>        epsilon = 0.1
+</span></span><span style="display:flex;"><span>        if random.random() &lt; epsilon:
+</span></span><span style="display:flex;"><span>            action = random.randint(0, num_actions-1)
+</span></span><span style="display:flex;"><span>        else:
+</span></span><span style="display:flex;"><span>            action = np.argmax(q_matrix[state])
+</span></span><span style="display:flex;"><span>        # eseguire l&#39;azione e ottenere una ricompensa
+</span></span><span style="display:flex;"><span>        next_state = np.random.choice(num_states, p=transition_matrix[state])
+</span></span><span style="display:flex;"><span>        reward = reward_matrix[state][action]
+</span></span><span style="display:flex;"><span>        # aggiornare la matrice Q
+</span></span><span style="display:flex;"><span>        q_matrix[state][action] = q_matrix[state][action] + learning_rate * \
+</span></span><span style="display:flex;"><span>            (reward + discount_factor * np.max(q_matrix[next_state]) - q_matrix[state][action])
+</span></span><span style="display:flex;"><span>        state = next_state
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># testare la politica appresa
+</span></span><span style="display:flex;"><span>state = 0
+</span></span><span style="display:flex;"><span>while state != 3:
+</span></span><span style="display:flex;"><span>    action = np.argmax(q_matrix[state])
+</span></span><span style="display:flex;"><span>    print(&#34;Stato:&#34;, state, &#34;Azione:&#34;, action)
+</span></span><span style="display:flex;"><span>    state = np.random.choice(num_states, p=transition_matrix[state])
+</span></span><span style="display:flex;"><span>print(&#34;Stato finale:&#34;, state)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Stato: 0 Azione: 0
+</span></span><span style="display:flex;"><span>Stato: 1 Azione: 0
+</span></span><span style="display:flex;"><span>Stato: 0 Azione: 0
+</span></span><span style="display:flex;"><span>Stato: 0 Azione: 0
+</span></span><span style="display:flex;"><span>Stato: 1 Azione: 0
+</span></span><span style="display:flex;"><span>Stato: 2 Azione: 0
+</span></span><span style="display:flex;"><span>Stato finale: 3
+</span></span></code></pre></div><h3 id="spiegazione-tramite-esempio-dei-risultati-ottenuti">Spiegazione tramite esempio dei risultati ottenuti</h3>
+<ol>
+<li>
+<p>Stato 0: è il punto di partenza dell’agente, ovvero il momento in cui si trova davanti alla lista degli ingredienti necessari per la ricetta e deve decidere quale azione intraprendere.</p>
+</li>
+<li>
+<p>Stato 1: rappresenta il momento in cui l’agente ha deciso di prendere una certa quantità di un ingrediente specifico, ma ha scoperto che non è sufficiente per la ricetta.</p>
+</li>
+<li>
+<p>Stato 0: dopo il tentativo fallito di trovare la quantità giusta dell’ingrediente desiderato, l’agente torna allo stato 0 per cercare una soluzione alternativa.</p>
+</li>
+<li>
+<p>Stato 0: ancora una volta, l’agente non riesce a trovare la quantità giusta dell’ingrediente desiderato e torna allo stato 0.</p>
+</li>
+<li>
+<p>Stato 1: dopo aver nuovamente cercato un’altra quantità dell’ingrediente, l’agente scopre che la quantità giusta è ora disponibile e la prende.</p>
+</li>
+<li>
+<p>Stato 2: rappresenta il momento in cui l’agente si è spostato verso gli altri ingredienti necessari per la ricetta e ha iniziato a raccoglierli.</p>
+</li>
+<li>
+<p>Stato 3: rappresenta il momento in cui l’agente ha raccolto tutti gli ingredienti necessari e si sta preparando per la fase successiva della ricetta.</p>
+</li>
+<li>
+<p>Stato finale: rappresenta il momento in cui l’agente ha completato con successo la sua missione, ovvero raccogliere tutti gli ingredienti necessari per la ricetta.</p>
+</li>
+</ol>
+
+      </article>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+      <hr />
+    </div>
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-2">
+        
+          <div class="blog-tags">
+            
+              <a href="https://lightbi-hugo-theme.netlify.app//tags/markdown/">markdown</a>
+            
+          </div>
+        
+      </div>
+ 
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      
+      <section id="social-share">
+        <div class="list-inline footer-links">
+          
+
+<div class="share-box" aria-hidden="true">
+  <div><p class="list-inline footer-links">Use the share button below if you liked it.</p></div>
+  <ul class="share">
+
+    
+    <li>
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2flightbi-hugo-theme.netlify.app%2fpost%2freinforcing-learning-imparare-una-ricetta%2f" target="_blank" title="Share on Facebook">
+        <i class="bi bi-facebook facebook-color"></i>
+      </a>
+    </li>
+
+    
+    <li>
+      <a href="//twitter.com/share?url=https%3a%2f%2flightbi-hugo-theme.netlify.app%2fpost%2freinforcing-learning-imparare-una-ricetta%2f&amp;text=Reinforced%20Learning%20-%20Imparare%20una%20ricetta&amp;via=map%5bname%3aAutomata%20website%3ahttps%3a%2f%2fautomataia.github.io%2fAutoGnosis%2f%5d"
+        target="_blank" title="Share on Twitter">
+        <i class="bi bi-twitter twitter-color"></i>
+      </a>
+    </li>
+
+    
+    <li>
+      <a href="//reddit.com/submit?url=https%3a%2f%2flightbi-hugo-theme.netlify.app%2fpost%2freinforcing-learning-imparare-una-ricetta%2f&amp;title=Reinforced%20Learning%20-%20Imparare%20una%20ricetta" target="_blank" title="Share on Reddit">
+        <i class="bi bi-reddit reddit-color"></i>
+      </a>
+    </li>
+
+    
+    <li>
+      <a href="whatsapp://send?text=https%3a%2f%2flightbi-hugo-theme.netlify.app%2fpost%2freinforcing-learning-imparare-una-ricetta%2f&amp;description=Reinforced%20Learning%20-%20Imparare%20una%20ricetta" target="_blank" rel="noopener"
+        title="Share on WhatsApp">
+        <i class="bi bi-whatsapp whatsapp-color"></i>
+      </a>
+    </li>
+
+
+    
+
+    
+
+    
+
+    
+    
+
+  </ul>
+</div>
+<p class="text-muted">It makes me smile, when I see it.</p>
+
+        </div>
+      </section>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 mt-3">
+      <div class="card">
+        <div class="row no-gutters">
+          <div class="col-md-2 "> 
+            <div class="card-body ">
+            <img src="/img/bino-about-small.jpg" class="img-responsive img-50 img-round" alt="">
+          </div>
+          </div>
+          <div class="col-md-10">
+            <div class="card-body p-1.1">
+
+              <p class="p-0 m-0"><small class="text-muted ">Written By</small></p>
+              <h5>
+                
+                
+                Automata
+                
+                
+              </h5>
+              <p class="card-text fs-1"></p>
+            </div>
+          </div>
+        </div>
+
+      
+    </div>
+  </div>
+
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+        
+        <ul class="list-group list-group-horizontal" style="flex-direction: row">
+          
+          <li class="list-group-item b-0">
+
+            <a type="button" class="btn btn-dark" role="button" href="https://lightbi-hugo-theme.netlify.app/post/sentiment-analysis-using-transformers/"
+              data-toggle="tooltip" data-placement="top" title="sentiment analysis using transformers">&larr;
+              Previous Post</a>
+          </li>
+          
+
+
+          
+          <li class="list-group-item ms-auto b-0">
+            <a type="button" class="btn btn-dark" role="button" href="https://lightbi-hugo-theme.netlify.app/post/predizione-costo-immobili-in-new-taipei/"
+              data-toggle="tooltip" data-placement="top" title="Predizione Costo Immobili in New Taipei">Next Post
+              &rarr;</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4"> 
+      </div>
+    </div>
+  </div>
+
+  <div class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 mt-3">
+          <h3>Read more</h3>
+          <hr />
+        </div>
+
+        
+        
+        
+        
+
+        
+ 
+        
+        
+         
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <div class="card h-100 single-post-card shadow-effect bg-faded-light">
+        <a href="https://lightbi-hugo-theme.netlify.app/post/predizione-correntisti-morosi/">
+            <div class="card-body">
+
+                <h3 class="fw-bold post-title">Predizione correntisti morosi</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta">
+  
+  
+  &nbsp;27 February 272712 
+
+  
+
+  
+  
+  
+</span>
+
+
+                </p>
+                
+                <div class="post-entry">
+
+                    
+                    Classificazione del profilo dei correntisti tipo di una banca...
+
+                    
+                </div>
+
+                <div class="read-more-section">
+                    <h6><a href="https://lightbi-hugo-theme.netlify.app/post/predizione-correntisti-morosi/" class="post-read-more">Read more</a> </h6>
+                </div>
+            </div>
+
+            
+            <img src="post/img/Correntisti.jpg" alt="Predizione correntisti morosi" class="card-img-top img-fluid " />
+            
+            
+        </a>
+        </a>
+    </div>
+</div> 
+        
+         
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <div class="card h-100 single-post-card shadow-effect bg-faded-light">
+        <a href="https://lightbi-hugo-theme.netlify.app/post/classificatore-di-immagine-cnn/">
+            <div class="card-body">
+
+                <h3 class="fw-bold post-title">Classificazione di immagini</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta">
+  
+  
+  &nbsp;29 January 292912 
+
+  
+
+  
+  
+  
+</span>
+
+
+                </p>
+                
+                <div class="post-entry">
+
+                    
+                    Classificazione di immagini di abiti e accessori in bassa risoluzione tramite reti convoluzionali...
+
+                    
+                </div>
+
+                <div class="read-more-section">
+                    <h6><a href="https://lightbi-hugo-theme.netlify.app/post/classificatore-di-immagine-cnn/" class="post-read-more">Read more</a> </h6>
+                </div>
+            </div>
+
+            
+            <img src="post/img/cnn.jpg" alt="Classificazione di immagini" class="card-img-top img-fluid " />
+            
+            
+        </a>
+        </a>
+    </div>
+</div> 
+        
+         
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <div class="card h-100 single-post-card shadow-effect bg-faded-light">
+        <a href="https://lightbi-hugo-theme.netlify.app/post/predizione-costo-immobili-in-new-taipei/">
+            <div class="card-body">
+
+                <h3 class="fw-bold post-title">Predizione Costo Immobili in New Taipei</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta">
+  
+  
+  &nbsp;27 January 272712 
+
+  
+
+  
+  
+  
+</span>
+
+
+                </p>
+                
+                <div class="post-entry">
+
+                    
+                    Predizione del valore degli immobili tramite reti neurali artificiali...
+
+                    
+                </div>
+
+                <div class="read-more-section">
+                    <h6><a href="https://lightbi-hugo-theme.netlify.app/post/predizione-costo-immobili-in-new-taipei/" class="post-read-more">Read more</a> </h6>
+                </div>
+            </div>
+
+            
+            <img src="post/img/Taipei.jpg" alt="Predizione Costo Immobili in New Taipei" class="card-img-top img-fluid " />
+            
+            
+        </a>
+        </a>
+    </div>
+</div> 
+         
+
+        
+        
+      </div>
+    </div>
+
+    
+
+  </div>
+</div>
+</div>
+
+    
+
+
+<footer>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul
+          class="list-inline list-group list-group-horizontal text-center footer-links d-flex justify-content-center flex-row">
+
+          
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p class="credits copyright text-muted">
+          
+          
+          <a href="https://automataia.github.io/AutoGnosis/">Automata</a>
+          
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+          2020
+          
+
+          
+          &nbsp;&bull;&nbsp;
+          <a href="https://lightbi-hugo-theme.netlify.app/">Automata</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          Powered by <a href="https://gohugo.io">Hugo</a> & <a href="https://github.com/binokochumolvarghese/lightbi-hugo">Lightbi.</a>&nbsp; Made with ❤ by <a href="https://codbix.com">Bino</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</footer><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+<script src="https://lightbi-hugo-theme.netlify.app/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function () { $("pre.chroma").css("padding", "0"); }); </script><script src="https://lightbi-hugo-theme.netlify.app/js/dark-mode.js"></script>
+
+    
+  </body>
+</html>
+

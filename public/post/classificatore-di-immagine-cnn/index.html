@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="Lightbi is a simple, minimal personal website and blog theme for Hugo. Built by Bino Kochumol Varghese">
+
+
+  <title>Classificazione di immagini - Automata</title>
+  <meta name="description" content="Classificazione di immagini di abiti e accessori in bassa risoluzione tramite reti convoluzionali...">
+
+  <meta name="author" content="Automata"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Automata",
+    
+    "url": "https:\/\/lightbi-hugo-theme.netlify.app\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/lightbi-hugo-theme.netlify.app\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/lightbi-hugo-theme.netlify.app\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/lightbi-hugo-theme.netlify.app\/post\/classificatore-di-immagine-cnn\/",
+          "name": "Classificazione di immagini"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Automata"
+  },
+  "headline": "Classificazione di immagini",
+  "description" : "Classificazione di immagini di abiti e accessori in bassa risoluzione tramite reti convoluzionali...",
+  "inLanguage" : "en",
+  "wordCount":  582 ,
+  "datePublished" : "2020-01-29T00:00:00",
+  "dateModified" : "2020-01-29T00:00:00",
+  "image" : "https:\/\/lightbi-hugo-theme.netlify.app\/",
+  "keywords" : [ "markdown" ],
+  "mainEntityOfPage" : "https:\/\/lightbi-hugo-theme.netlify.app\/post\/classificatore-di-immagine-cnn\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/lightbi-hugo-theme.netlify.app\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/lightbi-hugo-theme.netlify.app\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:image" content="https://lightbi-hugo-theme.netlify.app/post/img/cnn.jpg" />
+<meta property="og:url" content="https://lightbi-hugo-theme.netlify.app/post/classificatore-di-immagine-cnn/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Automata" />
+   
+<link rel="apple-touch-icon" sizes="180x180" href=" https://lightbi-hugo-theme.netlify.app/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lightbi-hugo-theme.netlify.app/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lightbi-hugo-theme.netlify.app/favicon/favicon-16x16.png">
+
+
+<meta name="generator" content="Hugo 0.111.3"><link rel="alternate" href="https://lightbi-hugo-theme.netlify.app/index.xml" type="application/rss+xml" title="Automata">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://lightbi-hugo-theme.netlify.app/css/main.css" />
+<link disabled id="dark-mode-theme" rel="stylesheet" href="https://lightbi-hugo-theme.netlify.app/css/dark.css" />
+<link rel="stylesheet" href="https://lightbi-hugo-theme.netlify.app/css/highlight.min.css" /><link rel="stylesheet" href="https://lightbi-hugo-theme.netlify.app/css/codeblock.css" />
+
+
+
+
+  </head>
+  <body>
+    
+<div class="container fixed-top">
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0">
+        <div class="container">
+          
+          <a class="navbar-brand fw-bold" href="https://lightbi-hugo-theme.netlify.app/">Automata</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="Home"
+                  href="/"> Home</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="About"
+                  href="/about/"> About</a>
+              </li>
+
+              
+              
+
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item nav-link">
+                  <a id="dark-mode-toggle" class="bi bi-sun"></a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</div>
+    
+
+
+
+
+
+
+
+
+
+<header class="header-section ">
+
+  <div class="intro-header no-img mt-10">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+          
+
+          
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            
+
+            <div class="post-heading">
+              
+
+              
+
+              
+              <h1 class="fw-semibold display-5 lh-1 mb-3"> 
+                Classificazione di immagini
+                
+              </h1>
+              
+              
+
+              
+
+              
+              
+              <span class="post-meta">
+  
+  
+  &nbsp;29 January 292912 
+
+  
+
+  
+  
+  
+</span>
+
+
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">
+
+      <div class="card-image card-image-blog p-0">
+        
+        <img src="post/img/cnn.jpg" alt="Classificazione di immagini" class="card-img-top img-fluid " />
+        
+        
+      </div>
+    </div>
+ 
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      <article role="main" class="blog-post">
+        <h1 id="presentazione">Presentazione</h1>
+<p><a href="https://docs.google.com/presentation/d/e/2PACX-1vQAO3RBGqYbmRqohruiuVRg3hR5IFxAqxV2PFOHD29-iPJLiZS8tuWXGFJPPrRMa7mNcHRT5FwqTmYQ/pub?start=false&amp;loop=false&amp;delayms=3000">Avvio presentazione fullscreen</a></p>
+<h1 id="notebook">Notebook</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>import torchvision.transforms as transforms
+</span></span><span style="display:flex;"><span>import torchvision
+</span></span><span style="display:flex;"><span>import torch
+</span></span><span style="display:flex;"><span>import torch.optim as optim
+</span></span><span style="display:flex;"><span>import torch.nn.functional as F
+</span></span><span style="display:flex;"><span>import matplotlib.pyplot as plt
+</span></span><span style="display:flex;"><span>from IPython.display import clear_output
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>transform = transforms.Compose([
+</span></span><span style="display:flex;"><span>    transforms.RandomHorizontalFlip(),
+</span></span><span style="display:flex;"><span>    transforms.ToTensor(),
+</span></span><span style="display:flex;"><span>    transforms.Normalize((0.5,), (0.5,))
+</span></span><span style="display:flex;"><span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>train_dataset = torchvision.datasets.FashionMNIST(root=&#39;data/&#39;, train=True, download=True, transform=transform)
+</span></span><span style="display:flex;"><span>test_dataset = torchvision.datasets.FashionMNIST(root=&#39;data/&#39;, train=False, download=True, transform=transform)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>val_ratio = 0.2
+</span></span><span style="display:flex;"><span>val_size = int(val_ratio * len(train_dataset))
+</span></span><span style="display:flex;"><span>train_size = len(train_dataset) - val_size
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>train_dataset, val_dataset = torch.utils.data.random_split(train_dataset, [train_size, val_size])
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>import torch.nn as nn
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>class GrayScaleCNN(nn.Module):
+</span></span><span style="display:flex;"><span>    def __init__(self):
+</span></span><span style="display:flex;"><span>        super(GrayScaleCNN, self).__init__()
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        # Strato di convolution con kernel 3x3, output di 64 filtri
+</span></span><span style="display:flex;"><span>        self.conv1 = nn.Conv2d(in_channels=1, out_channels=64, kernel_size=3, padding=1)
+</span></span><span style="display:flex;"><span>        self.relu1 = nn.ReLU()
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        # Strato di pooling con kernel 2x2
+</span></span><span style="display:flex;"><span>        self.pool1 = nn.MaxPool2d(kernel_size=2, stride=2)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        # Strato di convolution con kernel 3x3, output di 128 filtri
+</span></span><span style="display:flex;"><span>        self.conv2 = nn.Conv2d(in_channels=64, out_channels=128, kernel_size=3, padding=1)
+</span></span><span style="display:flex;"><span>        self.relu2 = nn.ReLU()
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        # Strato di pooling con kernel 2x2
+</span></span><span style="display:flex;"><span>        self.pool2 = nn.MaxPool2d(kernel_size=2, stride=2)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        # Strato fully connected con output di 128 unità
+</span></span><span style="display:flex;"><span>        self.fc1 = nn.Linear(in_features=128 * 7 * 7, out_features=128)
+</span></span><span style="display:flex;"><span>        self.relu3 = nn.ReLU()
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        # Strato di output con 10 unità, una per ogni classe
+</span></span><span style="display:flex;"><span>        self.fc2 = nn.Linear(in_features=128, out_features=10)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    def forward(self, x):
+</span></span><span style="display:flex;"><span>        x = self.conv1(x)
+</span></span><span style="display:flex;"><span>        x = self.relu1(x)
+</span></span><span style="display:flex;"><span>        x = self.pool1(x)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        x = self.conv2(x)
+</span></span><span style="display:flex;"><span>        x = self.relu2(x)
+</span></span><span style="display:flex;"><span>        x = self.pool2(x)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        x = x.view(-1, 128 * 7 * 7)
+</span></span><span style="display:flex;"><span>        x = self.fc1(x)
+</span></span><span style="display:flex;"><span>        x = self.relu3(x)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        x = self.fc2(x)
+</span></span><span style="display:flex;"><span>        return x
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>import torch
+</span></span><span style="display:flex;"><span>import torch.optim as optim
+</span></span><span style="display:flex;"><span>import torch.nn.functional as F
+</span></span><span style="display:flex;"><span>import matplotlib.pyplot as plt
+</span></span><span style="display:flex;"><span>from IPython.display import clear_output
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>device = &#39;cuda&#39;
+</span></span><span style="display:flex;"><span>print(torch.cuda.is_available())
+</span></span><span style="display:flex;"><span>model = GrayScaleCNN().to(device)
+</span></span><span style="display:flex;"><span>criterion = nn.CrossEntropyLoss().to(device)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=64, shuffle=True)
+</span></span><span style="display:flex;"><span>val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=64, shuffle=False)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>epochs = 30
+</span></span><span style="display:flex;"><span>train_losses = []
+</span></span><span style="display:flex;"><span>val_losses = []
+</span></span><span style="display:flex;"><span>lr = 0.02
+</span></span><span style="display:flex;"><span>weight_decay = 0.001
+</span></span><span style="display:flex;"><span>optimizer = optim.ASGD(model.parameters(), lr = lr , weight_decay = weight_decay)
+</span></span><span style="display:flex;"><span>for epoch in range(epochs):
+</span></span><span style="display:flex;"><span>    train_loss = 0.0
+</span></span><span style="display:flex;"><span>    val_loss = 0.0
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    # Addestramento sui dati di train
+</span></span><span style="display:flex;"><span>    model.train()
+</span></span><span style="display:flex;"><span>    for data, target in train_loader:
+</span></span><span style="display:flex;"><span>        data, target = data.to(device, non_blocking=True), target.to(device, non_blocking=True)
+</span></span><span style="display:flex;"><span>        optimizer.zero_grad()
+</span></span><span style="display:flex;"><span>        output = model(data)
+</span></span><span style="display:flex;"><span>        loss = criterion(output, target)
+</span></span><span style="display:flex;"><span>        loss.backward()
+</span></span><span style="display:flex;"><span>        optimizer.step()
+</span></span><span style="display:flex;"><span>        train_loss += loss.item()
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    train_losses.append(train_loss / len(train_loader))
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    # Valutazione sui dati di validation
+</span></span><span style="display:flex;"><span>    model.eval()
+</span></span><span style="display:flex;"><span>    with torch.no_grad():
+</span></span><span style="display:flex;"><span>        for data, target in val_loader:
+</span></span><span style="display:flex;"><span>            data, target = data.to(device), target.to(device)
+</span></span><span style="display:flex;"><span>            output = model(data)
+</span></span><span style="display:flex;"><span>            loss = criterion(output, target)
+</span></span><span style="display:flex;"><span>            val_loss += loss.item()
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>    val_losses.append(val_loss / len(val_loader))
+</span></span><span style="display:flex;"><span>    clear_output(wait=True)
+</span></span><span style="display:flex;"><span>    print(&#34;Epoch {}/{} - Train Loss: {:.4f} - Val Loss: {:.4f}&#34;.format(epoch+1, epochs, train_loss, val_loss), &#34;  lr = &#34;,lr,&#34;  weight_decay = &#34;,weight_decay)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    # Plot della curva di addestramento
+</span></span><span style="display:flex;"><span>    plt.plot(train_losses, label=&#39;Training Loss&#39;)
+</span></span><span style="display:flex;"><span>    plt.plot(val_losses, label=&#39;Validation Loss&#39;)
+</span></span><span style="display:flex;"><span>    plt.legend()
+</span></span><span style="display:flex;"><span>    plt.show()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(&#34;Addestramento completato!&#34;)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Epoch 30/30 - Train Loss: 143.4445 - Val Loss: 43.1652   lr =  0.02   weight_decay =  0.001
+</span></span></code></pre></div><p><a href="https://automataia.github.io/AutoGnosis/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/output_3_1.png"><img src="https://automataia.github.io/AutoGnosis/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/output_3_1.png" alt="png"></a></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Addestramento completato!
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=64, shuffle=False)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>model.eval()
+</span></span><span style="display:flex;"><span>test_loss = 0
+</span></span><span style="display:flex;"><span>correct = 0
+</span></span><span style="display:flex;"><span>with torch.no_grad():
+</span></span><span style="display:flex;"><span>    for data, target in test_loader:
+</span></span><span style="display:flex;"><span>        data, target = data.to(device), target.to(device)
+</span></span><span style="display:flex;"><span>        output = model(data)
+</span></span><span style="display:flex;"><span>        test_loss += criterion(output, target).item()
+</span></span><span style="display:flex;"><span>        pred = output.argmax(dim=1, keepdim=True)
+</span></span><span style="display:flex;"><span>        correct += pred.eq(target.view_as(pred)).sum().item()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>test_loss /= len(test_loader)
+</span></span><span style="display:flex;"><span>accuracy = 100. * correct / len(test_dataset)
+</span></span><span style="display:flex;"><span>print(&#39;Test set: Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)&#39;.format(
+</span></span><span style="display:flex;"><span>    test_loss, correct, len(test_dataset), accuracy))
+</span></span><span style="display:flex;"><span>#Test set: Average loss: 0.2864, Accuracy: 8953/10000 (90%)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Test set: Average loss: 0.2481, Accuracy: 9095/10000 (91%)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>import torch
+</span></span><span style="display:flex;"><span>import torch.nn as nn
+</span></span><span style="display:flex;"><span>import torch.optim as optim
+</span></span><span style="display:flex;"><span>import torchvision
+</span></span><span style="display:flex;"><span>import torchvision.transforms as transforms
+</span></span><span style="display:flex;"><span>from torchviz import make_dot
+</span></span><span style="display:flex;"><span>from IPython.display import SVG
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>model = GrayScaleCNN()
+</span></span><span style="display:flex;"><span>vis_graph = make_dot(model(torch.randn(1,1,28,28)), params=dict(model.named_parameters()))
+</span></span><span style="display:flex;"><span>#vis_graph.view()
+</span></span><span style="display:flex;"><span>SVG(vis_graph.render(format=&#39;svg&#39;))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>model = GrayScaleCNN()
+</span></span><span style="display:flex;"><span>param_count = sum(p.numel() for p in model.parameters())
+</span></span><span style="display:flex;"><span>print(&#34;Il modello ha un totale di {} parametri.&#34;.format(param_count))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>model = GrayScaleCNN()
+</span></span><span style="display:flex;"><span>for name, param in model.named_parameters():
+</span></span><span style="display:flex;"><span>    print(&#34;Strato: {}\tNumero di parametri: {}&#34;.format(name, param.numel()))
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>import torch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>device = torch.device(&#34;cuda:0&#34;)
+</span></span><span style="display:flex;"><span>print(torch.cuda.is_available())
+</span></span><span style="display:flex;"><span>print(torch.cuda.get_device_name(0))
+</span></span><span style="display:flex;"><span>plt.plot(train_losses, label=&#39;Training Loss&#39;)
+</span></span><span style="display:flex;"><span>plt.plot(val_losses, label=&#39;Validation Loss&#39;)
+</span></span><span style="display:flex;"><span>plt.legend()
+</span></span><span style="display:flex;"><span>image_format = &#39;svg&#39; # e.g .png, .svg, etc.
+</span></span><span style="display:flex;"><span>image_name = &#39;myimage.svg&#39;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt.savefig(image_name, format=image_format, dpi=1200)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>True
+</span></span><span style="display:flex;"><span>Tesla T4
+</span></span></code></pre></div><p><a href="https://automataia.github.io/AutoGnosis/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/output_8_1.png"><img src="https://automataia.github.io/AutoGnosis/4-progetti/4.1-supervised-learning/4.1.2-classificatore-cnn/notebook-di-lavoro/output_8_1.png" alt="png"></a></p>
+
+      </article>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+      <hr />
+    </div>
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-2">
+        
+          <div class="blog-tags">
+            
+              <a href="https://lightbi-hugo-theme.netlify.app//tags/markdown/">markdown</a>
+            
+          </div>
+        
+      </div>
+ 
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      
+      <section id="social-share">
+        <div class="list-inline footer-links">
+          
+
+<div class="share-box" aria-hidden="true">
+  <div><p class="list-inline footer-links">Use the share button below if you liked it.</p></div>
+  <ul class="share">
+
+    
+    <li>
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2flightbi-hugo-theme.netlify.app%2fpost%2fclassificatore-di-immagine-cnn%2f" target="_blank" title="Share on Facebook">
+        <i class="bi bi-facebook facebook-color"></i>
+      </a>
+    </li>
+
+    
+    <li>
+      <a href="//twitter.com/share?url=https%3a%2f%2flightbi-hugo-theme.netlify.app%2fpost%2fclassificatore-di-immagine-cnn%2f&amp;text=Classificazione%20di%20immagini&amp;via=map%5bname%3aAutomata%20website%3ahttps%3a%2f%2fautomataia.github.io%2fAutoGnosis%2f%5d"
+        target="_blank" title="Share on Twitter">
+        <i class="bi bi-twitter twitter-color"></i>
+      </a>
+    </li>
+
+    
+    <li>
+      <a href="//reddit.com/submit?url=https%3a%2f%2flightbi-hugo-theme.netlify.app%2fpost%2fclassificatore-di-immagine-cnn%2f&amp;title=Classificazione%20di%20immagini" target="_blank" title="Share on Reddit">
+        <i class="bi bi-reddit reddit-color"></i>
+      </a>
+    </li>
+
+    
+    <li>
+      <a href="whatsapp://send?text=https%3a%2f%2flightbi-hugo-theme.netlify.app%2fpost%2fclassificatore-di-immagine-cnn%2f&amp;description=Classificazione%20di%20immagini" target="_blank" rel="noopener"
+        title="Share on WhatsApp">
+        <i class="bi bi-whatsapp whatsapp-color"></i>
+      </a>
+    </li>
+
+
+    
+
+    
+
+    
+
+    
+    
+
+  </ul>
+</div>
+<p class="text-muted">It makes me smile, when I see it.</p>
+
+        </div>
+      </section>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 mt-3">
+      <div class="card">
+        <div class="row no-gutters">
+          <div class="col-md-2 "> 
+            <div class="card-body ">
+            <img src="/img/bino-about-small.jpg" class="img-responsive img-50 img-round" alt="">
+          </div>
+          </div>
+          <div class="col-md-10">
+            <div class="card-body p-1.1">
+
+              <p class="p-0 m-0"><small class="text-muted ">Written By</small></p>
+              <h5>
+                
+                
+                Automata
+                
+                
+              </h5>
+              <p class="card-text fs-1"></p>
+            </div>
+          </div>
+        </div>
+
+      
+    </div>
+  </div>
+
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+        
+        <ul class="list-group list-group-horizontal" style="flex-direction: row">
+          
+          <li class="list-group-item b-0">
+
+            <a type="button" class="btn btn-dark" role="button" href="https://lightbi-hugo-theme.netlify.app/post/predizione-costo-immobili-in-new-taipei/"
+              data-toggle="tooltip" data-placement="top" title="Predizione Costo Immobili in New Taipei">&larr;
+              Previous Post</a>
+          </li>
+          
+
+
+          
+          <li class="list-group-item ms-auto b-0">
+            <a type="button" class="btn btn-dark" role="button" href="https://lightbi-hugo-theme.netlify.app/post/predizione-correntisti-morosi/"
+              data-toggle="tooltip" data-placement="top" title="Predizione correntisti morosi">Next Post
+              &rarr;</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4"> 
+      </div>
+    </div>
+  </div>
+
+  <div class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 mt-3">
+          <h3>Read more</h3>
+          <hr />
+        </div>
+
+        
+        
+        
+        
+
+        
+ 
+        
+        
+         
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <div class="card h-100 single-post-card shadow-effect bg-faded-light">
+        <a href="https://lightbi-hugo-theme.netlify.app/post/predizione-correntisti-morosi/">
+            <div class="card-body">
+
+                <h3 class="fw-bold post-title">Predizione correntisti morosi</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta">
+  
+  
+  &nbsp;27 February 272712 
+
+  
+
+  
+  
+  
+</span>
+
+
+                </p>
+                
+                <div class="post-entry">
+
+                    
+                    Classificazione del profilo dei correntisti tipo di una banca...
+
+                    
+                </div>
+
+                <div class="read-more-section">
+                    <h6><a href="https://lightbi-hugo-theme.netlify.app/post/predizione-correntisti-morosi/" class="post-read-more">Read more</a> </h6>
+                </div>
+            </div>
+
+            
+            <img src="post/img/Correntisti.jpg" alt="Predizione correntisti morosi" class="card-img-top img-fluid " />
+            
+            
+        </a>
+        </a>
+    </div>
+</div> 
+        
+         
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <div class="card h-100 single-post-card shadow-effect bg-faded-light">
+        <a href="https://lightbi-hugo-theme.netlify.app/post/predizione-costo-immobili-in-new-taipei/">
+            <div class="card-body">
+
+                <h3 class="fw-bold post-title">Predizione Costo Immobili in New Taipei</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta">
+  
+  
+  &nbsp;27 January 272712 
+
+  
+
+  
+  
+  
+</span>
+
+
+                </p>
+                
+                <div class="post-entry">
+
+                    
+                    Predizione del valore degli immobili tramite reti neurali artificiali...
+
+                    
+                </div>
+
+                <div class="read-more-section">
+                    <h6><a href="https://lightbi-hugo-theme.netlify.app/post/predizione-costo-immobili-in-new-taipei/" class="post-read-more">Read more</a> </h6>
+                </div>
+            </div>
+
+            
+            <img src="post/img/Taipei.jpg" alt="Predizione Costo Immobili in New Taipei" class="card-img-top img-fluid " />
+            
+            
+        </a>
+        </a>
+    </div>
+</div> 
+        
+         
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6  mb-4">
+    <div class="card h-100 single-post-card shadow-effect bg-faded-light">
+        <a href="https://lightbi-hugo-theme.netlify.app/post/reinforcing-learning-imparare-una-ricetta/">
+            <div class="card-body">
+
+                <h3 class="fw-bold post-title">Reinforced Learning - Imparare una ricetta</h3>
+                
+
+                <p class="post-meta">
+                    <span class="post-meta">
+  
+  
+  &nbsp;27 January 272712 
+
+  
+
+  
+  
+  
+</span>
+
+
+                </p>
+                
+                <div class="post-entry">
+
+                    
+                    Far imparare una ricetta alla AI tramite Reinforced Learning...
+
+                    
+                </div>
+
+                <div class="read-more-section">
+                    <h6><a href="https://lightbi-hugo-theme.netlify.app/post/reinforcing-learning-imparare-una-ricetta/" class="post-read-more">Read more</a> </h6>
+                </div>
+            </div>
+
+            
+            <img src="post/img/RL.jpg" alt="Reinforced Learning - Imparare una ricetta" class="card-img-top img-fluid " />
+            
+            
+        </a>
+        </a>
+    </div>
+</div> 
+         
+
+        
+        
+      </div>
+    </div>
+
+    
+
+  </div>
+</div>
+</div>
+
+    
+
+
+<footer>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul
+          class="list-inline list-group list-group-horizontal text-center footer-links d-flex justify-content-center flex-row">
+
+          
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p class="credits copyright text-muted">
+          
+          
+          <a href="https://automataia.github.io/AutoGnosis/">Automata</a>
+          
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+          2020
+          
+
+          
+          &nbsp;&bull;&nbsp;
+          <a href="https://lightbi-hugo-theme.netlify.app/">Automata</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          Powered by <a href="https://gohugo.io">Hugo</a> & <a href="https://github.com/binokochumolvarghese/lightbi-hugo">Lightbi.</a>&nbsp; Made with ❤ by <a href="https://codbix.com">Bino</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</footer><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+<script src="https://lightbi-hugo-theme.netlify.app/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function () { $("pre.chroma").css("padding", "0"); }); </script><script src="https://lightbi-hugo-theme.netlify.app/js/dark-mode.js"></script>
+
+    
+  </body>
+</html>
+
