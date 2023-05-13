@@ -411,10 +411,10 @@ footer .theme-by {
   text-decoration: none;
 }
 .post-meta{
-  color: #808080;
-  font-size: 13px;
+  color: #80808000;
+  font-size: 2px;
   font-style: italic;
-  margin: 0 0 10px;
+  margin: 0 0 5px;
 }
 
 .post-entry-container {
@@ -506,7 +506,7 @@ footer .theme-by {
 /* --- Post and page headers --- */
 
 .intro-header {
-  margin: 50px 0 20px;
+  margin: 10px 0 10px;
   position: relative;
   margin-top: 130px;
 }
