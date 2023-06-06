@@ -7,7 +7,9 @@ Description  : "Classificazione di immagini di abiti e accessori in bassa risolu
 ---
 # Presentazione
 
-[Avvio presentazione fullscreen](https://docs.google.com/presentation/d/e/2PACX-1vQAO3RBGqYbmRqohruiuVRg3hR5IFxAqxV2PFOHD29-iPJLiZS8tuWXGFJPPrRMa7mNcHRT5FwqTmYQ/pub?start=false&loop=false&delayms=3000)
+Avvio presentazione fullscreen
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQAO3RBGqYbmRqohruiuVRg3hR5IFxAqxV2PFOHD29-iPJLiZS8tuWXGFJPPrRMa7mNcHRT5FwqTmYQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="820" height="498" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 # Notebook
 ```

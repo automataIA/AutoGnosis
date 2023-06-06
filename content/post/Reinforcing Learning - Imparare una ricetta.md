@@ -6,6 +6,10 @@ image : "post/img/RL.jpg"
 Description  : "Far imparare una ricetta alla AI tramite Reinforced Learning..."
 ---
 
+**Avvio presentazione fullscreen**
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSZIuakv_Zm1uhLa7_x5IGQOUkaauWVTF79JlGjQTJ4fgwI94tsrULwtJUwvBIlLmZ4xHMtx84LlBgE/embed?start=true&loop=false&delayms=5000" frameborder="0" width="820" height="498" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 ### Introduzione al problema
 
 Lo script Python che ho scritto utilizza l’algoritmo di apprendimento rinforzato “Q-learning” per risolvere un problema di esplorazione di uno spazio di stati.

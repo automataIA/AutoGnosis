@@ -7,7 +7,9 @@ Description  : "Classificazione del profilo dei correntisti tipo di una banca...
 ---
 # Presentazione
 
-[Avvio presentazione fullscreen](https://docs.google.com/presentation/d/e/2PACX-1vQInj2CAhdMwHSbBjnv-A-xMn2xA5YnqO2bM21SblUcv2coL92Up7Dp2eZh07X57Ll7AugpCwvXdTmP/pub?start=false&loop=false&delayms=3000)
+**Avvio presentazione fullscreen**
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQInj2CAhdMwHSbBjnv-A-xMn2xA5YnqO2bM21SblUcv2coL92Up7Dp2eZh07X57Ll7AugpCwvXdTmP/embed?start=true&loop=false&delayms=5000" frameborder="0" width="820" height="498" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 # Notebook
 ## 2\. Raccolta dati

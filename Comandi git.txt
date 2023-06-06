@@ -6,4 +6,4 @@ git commit -m "Una nuova avventura"
 
 git config --global user.email "nomeEmail@gmail.com"
 
-git push --force origin main
+git push --force origin master

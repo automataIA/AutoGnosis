@@ -7,7 +7,9 @@ Description  : "Predizione del valore degli immobili tramite reti neurali artifi
 ---
 # Presentazione
 
-[Avvio presentazione fullscreen](https://docs.google.com/presentation/d/e/2PACX-1vQQ9YFAeAOYVbj1g1othIDZNdbPMM19OZVNMqRoCbclZP2-STve8wKDzbFDEoTO26xFUEfSAJnl6p1q/pub?start=false&loop=false&delayms=3000)
+Avvio presentazione fullscreen
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQQ9YFAeAOYVbj1g1othIDZNdbPMM19OZVNMqRoCbclZP2-STve8wKDzbFDEoTO26xFUEfSAJnl6p1q/embed?start=false&loop=false&delayms=3000" frameborder="0" width="820" height="498" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 # Notebook
 
