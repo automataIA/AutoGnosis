@@ -44,7 +44,8 @@ Notebook 2. Raccolta dati ► 2.1. Identificazione delle fonti dati ► 2.2. Sel
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://automataia.github.io/AutoGnosis/post/reinforcing-learning-imparare-una-ricetta/</guid>
-      <description>Introduzione al problema Lo script Python che ho scritto utilizza l’algoritmo di apprendimento rinforzato “Q-learning” per risolvere un problema di esplorazione di uno spazio di stati.
+      <description>Avvio presentazione fullscreen
+Introduzione al problema Lo script Python che ho scritto utilizza l’algoritmo di apprendimento rinforzato “Q-learning” per risolvere un problema di esplorazione di uno spazio di stati.
 L’agente deve esplorare l’ambiente di gioco, prendere decisioni in ogni stato e massimizzare la sua ricompensa complessiva, seguendo una politica di scelta delle azioni che si basa sul valore Q degli stati e delle azioni possibili.
 L’output dello script mostra la sequenza di azioni scelte dall’agente durante la sua esplorazione dell’ambiente di gioco, fino a raggiungere lo stato finale desiderato.</description>
     </item>
